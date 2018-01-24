@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const CoreError_1 = require("@iota-pico/core/dist/error/CoreError");
+const coreError_1 = require("@iota-pico/core/dist/error/coreError");
 /**
  * Default implentation of the configuration for an IOTA node.
  */
@@ -13,10 +13,10 @@ class DefaultNodeConfig {
      */
     constructor(protocol, host, port) {
         if (protocol === undefined || protocol === null || !/http|https/.test(protocol)) {
-            throw new CoreError_1.CoreError("The protocol must be defined as http or https");
+            throw new coreError_1.CoreError("The protocol must be defined as http or https");
         }
         if (host === undefined || host === null) {
-            throw new CoreError_1.CoreError("The host must be defined");
+            throw new coreError_1.CoreError("The host must be defined");
         }
         this._protocol = protocol;
         this._host = host;

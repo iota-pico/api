@@ -1,4 +1,4 @@
-import { CoreError } from "@iota-pico/core/dist/error/CoreError";
+import { CoreError } from "@iota-pico/core/dist/error/coreError";
 import { INodeConfig } from "../interfaces/INodeConfig";
 import { NodeProtocol } from "../interfaces/nodeProtocol";
 
