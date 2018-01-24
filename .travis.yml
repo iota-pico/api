@@ -4,7 +4,7 @@ node_js:
 install:
   - cd ..
   - git clone --branch=$TRAVIS_BRANCH https://github.com/iotaeco/iota-pico-core.git iotaeco/iota-pico-core
-  - cd iotaeco/iota-pico-core
+  - cd ./iotaeco/iota-pico-core
   - npm link
   - cd ../iotaeco/iota-pico-api
   - npm link @iota-pico/core
