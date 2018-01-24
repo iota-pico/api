@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const coreError_1 = require("@iota-pico/core/dist/error/coreError");
 /**
- * Default implentation of the configuration for an IOTA node.
+ * Default implementation of the configuration for an IOTA node.
  */
 class DefaultNodeConfig {
     /**

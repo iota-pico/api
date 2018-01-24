@@ -1,7 +1,7 @@
 import { INodeConfig } from "../interfaces/INodeConfig";
 import { NodeProtocol } from "../interfaces/nodeProtocol";
 /**
- * Default implentation of the configuration for an IOTA node.
+ * Default implementation of the configuration for an IOTA node.
  */
 export declare class DefaultNodeConfig implements INodeConfig {
     private readonly _protocol;
