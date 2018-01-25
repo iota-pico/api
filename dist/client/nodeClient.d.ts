@@ -1,11 +1,25 @@
+import { INetworkClient } from "@iota-pico/core/dist/interfaces/INetworkClient";
+import { INodeClient } from "../interfaces/INodeClient";
 import { IGetBalancesRequest } from "../models/IGetBalancesRequest";
 import { IGetBalancesResponse } from "../models/IGetBalancesResponse";
 import { IGetNodeInfoResponse } from "../models/IGetNodeInfoResponse";
 /**
- * Represents a client for performing communication with a node.
+ * Default implementation of a node client.
  * @interface
  */
-export interface INodeClient {
+export declare class NodeClient implements INodeClient {
+    private readonly _networkClient;
+    private readonly _apiVersion;
+    private readonly _additionalHeaders?;
+    /**
+     * Create an instance of NodeClient.
+     * @param networkClient The network client to communicate through.
+     * @param apiVersion The API version to send with the requests
+     * @param additionalHeaders Extra headers to send with the requests.
+     */
+    constructor(networkClient: INetworkClient, apiVersion: string, additionalHeaders?: {
+        [header: string]: string;
+    });
     /**
      * Returns information about your node.
      * @returns Promise which resolves to the getNodeInfo response object or rejects with error.
@@ -20,4 +34,5 @@ export interface INodeClient {
      * @returns Promise which resolves to the getBalances response object or rejects with error.
      */
     getBalances(request: IGetBalancesRequest): Promise<IGetBalancesResponse>;
+    private createHeaders();
 }

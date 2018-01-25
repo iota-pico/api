@@ -6,5 +6,4 @@ Object.defineProperty(exports, "__esModule", { value: true });
 /**
  * Combined index of all the modules.
  */
-__export(require("./config/defaultNodeConfig"));
-__export(require("./provider/defaultNodeConfigProvider"));
+__export(require("./client/nodeClient"));

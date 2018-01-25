@@ -85,6 +85,12 @@
 					</li>
 				</ul>
 			</section>
+			<section class="tsd-panel">
+				<h3>Implemented by</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="../classes/nodeclient.html" class="tsd-signature-type">NodeClient</a></li>
+				</ul>
+			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
@@ -105,13 +111,13 @@
 					<a name="getbalances" class="tsd-anchor"></a>
 					<h3>get<wbr>Balances</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Balances<span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><a href="igetbalancesrequest.html" class="tsd-signature-type">IGetBalancesRequest</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="igetbalancesresponse.html" class="tsd-signature-type">IGetBalancesResponse</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">IError</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Balances<span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><a href="igetbalancesrequest.html" class="tsd-signature-type">IGetBalancesRequest</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="igetbalancesresponse.html" class="tsd-signature-type">IGetBalancesResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/4f0ba31/src/interfaces/INodeClient.ts#L27">interfaces/INodeClient.ts:27</a></li>
+									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/51e5f7e/src/interfaces/INodeClient.ts#L24">interfaces/INodeClient.ts:24</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -131,7 +137,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="igetbalancesresponse.html" class="tsd-signature-type">IGetBalancesResponse</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">IError</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="igetbalancesresponse.html" class="tsd-signature-type">IGetBalancesResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
 							<p>Promise which resolves to the getBalances response object or rejects with error.</p>
 						</li>
 					</ul>
@@ -140,13 +146,13 @@
 					<a name="getnodeinfo" class="tsd-anchor"></a>
 					<h3>get<wbr>Node<wbr>Info</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Node<wbr>Info<span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><a href="igetnodeinforequest.html" class="tsd-signature-type">IGetNodeInfoRequest</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="igetnodeinforesponse.html" class="tsd-signature-type">IGetNodeInfoResponse</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">IError</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Node<wbr>Info<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="igetnodeinforesponse.html" class="tsd-signature-type">IGetNodeInfoResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/4f0ba31/src/interfaces/INodeClient.ts#L17">interfaces/INodeClient.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/51e5f7e/src/interfaces/INodeClient.ts#L14">interfaces/INodeClient.ts:14</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -154,16 +160,7 @@
 									<p>Returns information about your node.</p>
 								</div>
 							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>request: <a href="igetnodeinforequest.html" class="tsd-signature-type">IGetNodeInfoRequest</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The getNodeInfo request object.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="igetnodeinforesponse.html" class="tsd-signature-type">IGetNodeInfoResponse</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">IError</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="igetnodeinforesponse.html" class="tsd-signature-type">IGetNodeInfoResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
 							<p>Promise which resolves to the getNodeInfo response object or rejects with error.</p>
 						</li>
 					</ul>
@@ -181,19 +178,13 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-class">
-						<a href="../classes/defaultnodeconfig.html" class="tsd-kind-icon">Default<wbr>Node<wbr>Config</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/defaultnodeconfigprovider.html" class="tsd-kind-icon">Default<wbr>Node<wbr>Config<wbr>Provider</a>
+						<a href="../classes/nodeclient.html" class="tsd-kind-icon">Node<wbr>Client</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="igetbalancesrequest.html" class="tsd-kind-icon">IGet<wbr>Balances<wbr>Request</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="igetbalancesresponse.html" class="tsd-kind-icon">IGet<wbr>Balances<wbr>Response</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="igetnodeinforequest.html" class="tsd-kind-icon">IGet<wbr>Node<wbr>Info<wbr>Request</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="igetnodeinforesponse.html" class="tsd-kind-icon">IGet<wbr>Node<wbr>Info<wbr>Response</a>
@@ -213,18 +204,6 @@
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface">
-						<a href="inodecommand.html" class="tsd-kind-icon">INode<wbr>Command</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="inodeconfig.html" class="tsd-kind-icon">INode<wbr>Config</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="inodeconfigprovider.html" class="tsd-kind-icon">INode<wbr>Config<wbr>Provider</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="../index.html#nodeprotocol" class="tsd-kind-icon">Node<wbr>Protocol</a>
-					</li>
 				</ul>
 			</nav>
 		</div>

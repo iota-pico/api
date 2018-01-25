@@ -1,10 +1,8 @@
-import { INodeCommand } from "../interfaces/INodeCommand";
-
 /**
  * Represents the request for getBalances command.
  * @interface
  */
-export interface IGetBalancesRequest extends INodeCommand {
+export interface IGetBalancesRequest {
     /**
      * List of addresses you want to get the confirmed balance from.
      */

@@ -1,10 +1,8 @@
-import { INodeCommand } from "../interfaces/INodeCommand";
-
 /**
  * Represents the response from getNodeInfo command.
  * @interface
  */
-export interface IGetNodeInfoResponse extends INodeCommand {
+export interface IGetNodeInfoResponse {
     /**
      * Name of the IOTA software you're currently using (IRI stands for Initial Reference Implementation).
      */
@@ -16,7 +14,11 @@ export interface IGetNodeInfoResponse extends INodeCommand {
     /**
      * Available cores on your machine for JRE.
      */
-    jreAvailableProcesses: number;
+    jreAvailableProcessors: number;
+    /**
+     * The version of the Java Virtual Machine.
+     */
+    jreVersion: number;
     /**
      * Returns the amount of free memory in the Java Virtual Machine.
      */
@@ -67,4 +69,8 @@ export interface IGetNodeInfoResponse extends INodeCommand {
      * Transactions to request during syncing process.
      */
     transactionsToRequest: number;
+    /**
+     * The duration of the request.
+     */
+    duration: number;
 }
