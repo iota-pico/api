@@ -1,12 +1,4 @@
 "use strict";
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 const coreError_1 = require("@iota-pico/core/dist/error/coreError");
 /**
@@ -35,12 +27,10 @@ class NodeClient {
      * Returns information about your node.
      * @returns Promise which resolves to the getNodeInfo response object or rejects with error.
      */
-    getNodeInfo() {
-        return __awaiter(this, void 0, void 0, function* () {
-            return this._networkClient.postJson({
-                command: "getNodeInfo"
-            }, this.createHeaders());
-        });
+    async getNodeInfo() {
+        return this._networkClient.postJson({
+            command: "getNodeInfo"
+        }, this.createHeaders());
     }
     /**
      * Returns the confirmed balance which a list of addresses have at the latest confirmed milestone.
@@ -50,13 +40,11 @@ class NodeClient {
      * @param request The getBalances request object.
      * @returns Promise which resolves to the getBalances response object or rejects with error.
      */
-    getBalances(request) {
-        return __awaiter(this, void 0, void 0, function* () {
-            Object.defineProperty(request, "command", {
-                value: "getBalances"
-            });
-            return this._networkClient.postJson(request, this.createHeaders());
+    async getBalances(request) {
+        Object.defineProperty(request, "command", {
+            value: "getBalances"
         });
+        return this._networkClient.postJson(request, this.createHeaders());
     }
     createHeaders() {
         const headers = this._additionalHeaders || {};
