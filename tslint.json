@@ -194,6 +194,7 @@
         "prefer-const": true,
         "prefer-for-of": false,
         "prefer-method-signature": true,
+        "prefer-readonly": true,
         "prefer-template": true,
         "return-undefined": false,
         "typedef": [
