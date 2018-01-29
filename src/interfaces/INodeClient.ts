@@ -1,7 +1,11 @@
+import { IAddNeighborsRequest } from "../models/IAddNeighborsRequest";
+import { IAddNeighborsResponse } from "../models/IAddNeighborsResponse";
 import { IGetBalancesRequest } from "../models/IGetBalancesRequest";
 import { IGetBalancesResponse } from "../models/IGetBalancesResponse";
 import { IGetNeighborsResponse } from "../models/IGetNeighborsResponse";
 import { IGetNodeInfoResponse } from "../models/IGetNodeInfoResponse";
+import { IRemoveNeighborsRequest } from "../models/IRemoveNeighborsRequest";
+import { IRemoveNeighborsResponse } from "../models/IRemoveNeighborsResponse";
 
 /**
  * Represents a client for performing communication with a node.
@@ -20,6 +24,20 @@ export interface INodeClient {
      * @returns Promise which resolves to the getNeighbors response object or rejects with error.
      */
     getNeighbors(): Promise<IGetNeighborsResponse>;
+
+    /**
+     * Add a list of neighbors to your node. It should be noted that this is only temporary,
+     * and the added neighbors will be removed from your set of neighbors after you relaunch IRI.
+     * @returns Promise which resolves to the addNeighbors response object or rejects with error.
+     */
+    addNeighbors(request: IAddNeighborsRequest): Promise<IAddNeighborsResponse>;
+
+    /**
+     * Removes a list of neighbors from your node. This is only temporary, and if you have your
+     * neighbors added via the command line, they will be retained after you restart your node.
+     * @returns Promise which resolves to the removeNeighbors response object or rejects with error.
+     */
+    removeNeighbors(request: IRemoveNeighborsRequest): Promise<IRemoveNeighborsResponse>;
 
     /**
      * Returns the confirmed balance which a list of addresses have at the latest confirmed milestone.

@@ -2,10 +2,14 @@ import { CoreError } from "@iota-pico/core/dist/error/coreError";
 import { IError } from "@iota-pico/core/dist/interfaces/IError";
 import { INetworkClient } from "@iota-pico/core/dist/interfaces/INetworkClient";
 import { INodeClient } from "../interfaces/INodeClient";
+import { IAddNeighborsRequest } from "../models/IAddNeighborsRequest";
+import { IAddNeighborsResponse } from "../models/IAddNeighborsResponse";
 import { IGetBalancesRequest } from "../models/IGetBalancesRequest";
 import { IGetBalancesResponse } from "../models/IGetBalancesResponse";
 import { IGetNeighborsResponse } from "../models/IGetNeighborsResponse";
 import { IGetNodeInfoResponse } from "../models/IGetNodeInfoResponse";
+import { IRemoveNeighborsRequest } from "../models/IRemoveNeighborsRequest";
+import { IRemoveNeighborsResponse } from "../models/IRemoveNeighborsResponse";
 
 /**
  * Default implementation of a node client.
@@ -49,6 +53,24 @@ export class NodeClient implements INodeClient {
      */
     public async getNeighbors(): Promise<IGetNeighborsResponse> {
         return this.sendCommand<{}, IGetNeighborsResponse>("getNeighbors", {});
+    }
+
+    /**
+     * Add a list of neighbors to your node. It should be noted that this is only temporary,
+     * and the added neighbors will be removed from your set of neighbors after you relaunch IRI.
+     * @returns Promise which resolves to the addNeighbors response object or rejects with error.
+     */
+    public async addNeighbors(request: IAddNeighborsRequest): Promise<IAddNeighborsResponse> {
+        return this.sendCommand<IAddNeighborsRequest, IAddNeighborsResponse>("addNeighbors", request);
+    }
+
+    /**
+     * Removes a list of neighbors from your node. This is only temporary, and if you have your
+     * neighbors added via the command line, they will be retained after you restart your node.
+     * @returns Promise which resolves to the removeNeighbors response object or rejects with error.
+     */
+    public async removeNeighbors(request: IRemoveNeighborsRequest): Promise<IRemoveNeighborsResponse> {
+        return this.sendCommand<IRemoveNeighborsRequest, IRemoveNeighborsResponse>("removeNeighbors", request);
     }
 
     /**

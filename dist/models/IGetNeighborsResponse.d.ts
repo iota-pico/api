@@ -5,11 +5,11 @@ import { INeighbor } from "./INeighbor";
  */
 export interface IGetNeighborsResponse {
     /**
-     * The duration.
-     */
-    duration: number;
-    /**
      * The neighbors of the node.
      */
     neighbors: INeighbor[];
+    /**
+     * The duration of the request.
+     */
+    duration: number;
 }

@@ -39,6 +39,22 @@ class NodeClient {
         return this.sendCommand("getNeighbors", {});
     }
     /**
+     * Add a list of neighbors to your node. It should be noted that this is only temporary,
+     * and the added neighbors will be removed from your set of neighbors after you relaunch IRI.
+     * @returns Promise which resolves to the addNeighbors response object or rejects with error.
+     */
+    async addNeighbors(request) {
+        return this.sendCommand("addNeighbors", request);
+    }
+    /**
+     * Removes a list of neighbors from your node. This is only temporary, and if you have your
+     * neighbors added via the command line, they will be retained after you restart your node.
+     * @returns Promise which resolves to the removeNeighbors response object or rejects with error.
+     */
+    async removeNeighbors(request) {
+        return this.sendCommand("removeNeighbors", request);
+    }
+    /**
      * Returns the confirmed balance which a list of addresses have at the latest confirmed milestone.
      * In addition to the balances, it also returns the milestone as well as the index with which the
      * confirmed balance was determined. The balances is returned as a list in the same order as the

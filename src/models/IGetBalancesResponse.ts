@@ -8,10 +8,6 @@ export interface IGetBalancesResponse {
      */
     balances: string[];
     /**
-     * The duration.
-     */
-    duration: number;
-    /**
      * The milestone at which the balances were calculated.
      */
     milestone: string;
@@ -19,4 +15,8 @@ export interface IGetBalancesResponse {
      * The milestone index at which the balances were calculated.
      */
     milestoneIndex: number;
+    /**
+     * The duration of the request.
+     */
+    duration: number;
 }
