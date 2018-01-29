@@ -1,8 +1,10 @@
 import { CoreError } from "@iota-pico/core/dist/error/coreError";
+import { IError } from "@iota-pico/core/dist/interfaces/IError";
 import { INetworkClient } from "@iota-pico/core/dist/interfaces/INetworkClient";
 import { INodeClient } from "../interfaces/INodeClient";
 import { IGetBalancesRequest } from "../models/IGetBalancesRequest";
 import { IGetBalancesResponse } from "../models/IGetBalancesResponse";
+import { IGetNeighborsResponse } from "../models/IGetNeighborsResponse";
 import { IGetNodeInfoResponse } from "../models/IGetNodeInfoResponse";
 
 /**
@@ -37,11 +39,16 @@ export class NodeClient implements INodeClient {
      * @returns Promise which resolves to the getNodeInfo response object or rejects with error.
      */
     public async getNodeInfo(): Promise<IGetNodeInfoResponse> {
-        return this._networkClient.postJson<{ command: string }, IGetNodeInfoResponse>(
-            {
-                command: "getNodeInfo"
-            },
-            this.createHeaders());
+        return this.sendCommand<{}, IGetNodeInfoResponse>("getNodeInfo", {});
+    }
+
+    /**
+     * Returns the set of neighbors you are connected with, as well as their activity count.
+     * The activity counter is reset after restarting IRI.
+     * @returns Promise which resolves to the getNeighbors response object or rejects with error.
+     */
+    public async getNeighbors(): Promise<IGetNeighborsResponse> {
+        return this.sendCommand<{}, IGetNeighborsResponse>("getNeighbors", {});
     }
 
     /**
@@ -53,10 +60,28 @@ export class NodeClient implements INodeClient {
      * @returns Promise which resolves to the getBalances response object or rejects with error.
      */
     public async getBalances(request: IGetBalancesRequest): Promise<IGetBalancesResponse> {
+        return this.sendCommand<IGetBalancesRequest, IGetBalancesResponse>("getBalances", request);
+    }
+
+    private async sendCommand<T, U>(command: string, request: T): Promise<U> {
         Object.defineProperty(request, "command", {
-            value: "getBalances"
+            value: command,
+            enumerable: true
         });
-        return this._networkClient.postJson<IGetBalancesRequest, IGetBalancesResponse>(request, this.createHeaders());
+        return this._networkClient.postJson<T, U>(request, this.createHeaders())
+            .catch((err: IError) => {
+                if (err.additional && err.additional.response) {
+                    try {
+                        const commandError = JSON.parse(err.additional.response);
+                        if (commandError.error) {
+                            delete err.additional.response;
+                            err.additional.commandError = commandError.error;
+                        }
+                    } catch (e) {
+                    }
+                }
+                throw err;
+            });
     }
 
     private createHeaders(): { [headers: string]: string } {

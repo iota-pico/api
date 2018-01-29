@@ -28,9 +28,15 @@ class NodeClient {
      * @returns Promise which resolves to the getNodeInfo response object or rejects with error.
      */
     async getNodeInfo() {
-        return this._networkClient.postJson({
-            command: "getNodeInfo"
-        }, this.createHeaders());
+        return this.sendCommand("getNodeInfo", {});
+    }
+    /**
+     * Returns the set of neighbors you are connected with, as well as their activity count.
+     * The activity counter is reset after restarting IRI.
+     * @returns Promise which resolves to the getNeighbors response object or rejects with error.
+     */
+    async getNeighbors() {
+        return this.sendCommand("getNeighbors", {});
     }
     /**
      * Returns the confirmed balance which a list of addresses have at the latest confirmed milestone.
@@ -41,10 +47,28 @@ class NodeClient {
      * @returns Promise which resolves to the getBalances response object or rejects with error.
      */
     async getBalances(request) {
+        return this.sendCommand("getBalances", request);
+    }
+    async sendCommand(command, request) {
         Object.defineProperty(request, "command", {
-            value: "getBalances"
+            value: command,
+            enumerable: true
         });
-        return this._networkClient.postJson(request, this.createHeaders());
+        return this._networkClient.postJson(request, this.createHeaders())
+            .catch((err) => {
+            if (err.additional && err.additional.response) {
+                try {
+                    const commandError = JSON.parse(err.additional.response);
+                    if (commandError.error) {
+                        delete err.additional.response;
+                        err.additional.commandError = commandError.error;
+                    }
+                }
+                catch (e) {
+                }
+            }
+            throw err;
+        });
     }
     createHeaders() {
         const headers = this._additionalHeaders || {};

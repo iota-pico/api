@@ -105,6 +105,7 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="nodeclient.html#getbalances" class="tsd-kind-icon">get<wbr>Balances</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="nodeclient.html#getneighbors" class="tsd-kind-icon">get<wbr>Neighbors</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="nodeclient.html#getnodeinfo" class="tsd-kind-icon">get<wbr>Node<wbr>Info</a></li>
 							</ul>
 						</section>
@@ -123,7 +124,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/5c6d612/src/client/nodeClient.ts#L15">client/nodeClient.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/0659f7d/src/client/nodeClient.ts#L17">client/nodeClient.ts:17</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -176,7 +177,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/inodeclient.html">INodeClient</a>.<a href="../interfaces/inodeclient.html#getbalances">getBalances</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/5c6d612/src/client/nodeClient.ts#L55">client/nodeClient.ts:55</a></li>
+									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/0659f7d/src/client/nodeClient.ts#L62">client/nodeClient.ts:62</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -202,6 +203,31 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getneighbors" class="tsd-anchor"></a>
+					<h3>get<wbr>Neighbors</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Neighbors<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/igetneighborsresponse.html" class="tsd-signature-type">IGetNeighborsResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/inodeclient.html">INodeClient</a>.<a href="../interfaces/inodeclient.html#getneighbors">getNeighbors</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/0659f7d/src/client/nodeClient.ts#L50">client/nodeClient.ts:50</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the set of neighbors you are connected with, as well as their activity count.
+									The activity counter is reset after restarting IRI.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/igetneighborsresponse.html" class="tsd-signature-type">IGetNeighborsResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Promise which resolves to the getNeighbors response object or rejects with error.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="getnodeinfo" class="tsd-anchor"></a>
 					<h3>get<wbr>Node<wbr>Info</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -212,7 +238,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/inodeclient.html">INodeClient</a>.<a href="../interfaces/inodeclient.html#getnodeinfo">getNodeInfo</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/5c6d612/src/client/nodeClient.ts#L39">client/nodeClient.ts:39</a></li>
+									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/0659f7d/src/client/nodeClient.ts#L41">client/nodeClient.ts:41</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -249,6 +275,9 @@
 								<a href="nodeclient.html#getbalances" class="tsd-kind-icon">get<wbr>Balances</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="nodeclient.html#getneighbors" class="tsd-kind-icon">get<wbr>Neighbors</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="nodeclient.html#getnodeinfo" class="tsd-kind-icon">get<wbr>Node<wbr>Info</a>
 							</li>
 						</ul>
@@ -262,7 +291,13 @@
 						<a href="../interfaces/igetbalancesresponse.html" class="tsd-kind-icon">IGet<wbr>Balances<wbr>Response</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="../interfaces/igetneighborsresponse.html" class="tsd-kind-icon">IGet<wbr>Neighbors<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="../interfaces/igetnodeinforesponse.html" class="tsd-kind-icon">IGet<wbr>Node<wbr>Info<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/ineighbor.html" class="tsd-kind-icon">INeighbor</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="../interfaces/inodeclient.html" class="tsd-kind-icon">INode<wbr>Client</a>
