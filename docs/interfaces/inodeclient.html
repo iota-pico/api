@@ -98,9 +98,11 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="inodeclient.html#addneighbors" class="tsd-kind-icon">add<wbr>Neighbors</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="inodeclient.html#getbalances" class="tsd-kind-icon">get<wbr>Balances</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="inodeclient.html#getneighbors" class="tsd-kind-icon">get<wbr>Neighbors</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="inodeclient.html#getnodeinfo" class="tsd-kind-icon">get<wbr>Node<wbr>Info</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="inodeclient.html#removeneighbors" class="tsd-kind-icon">remove<wbr>Neighbors</a></li>
 							</ul>
 						</section>
 					</div>
@@ -108,6 +110,36 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="addneighbors" class="tsd-anchor"></a>
+					<h3>add<wbr>Neighbors</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Neighbors<span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><a href="iaddneighborsrequest.html" class="tsd-signature-type">IAddNeighborsRequest</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="iaddneighborsresponse.html" class="tsd-signature-type">IAddNeighborsResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/77369be/src/interfaces/INodeClient.ts#L33">interfaces/INodeClient.ts:33</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Add a list of neighbors to your node. It should be noted that this is only temporary,
+									and the added neighbors will be removed from your set of neighbors after you relaunch IRI.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>request: <a href="iaddneighborsrequest.html" class="tsd-signature-type">IAddNeighborsRequest</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="iaddneighborsresponse.html" class="tsd-signature-type">IAddNeighborsResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Promise which resolves to the addNeighbors response object or rejects with error.</p>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
 					<a name="getbalances" class="tsd-anchor"></a>
 					<h3>get<wbr>Balances</h3>
@@ -118,7 +150,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/0659f7d/src/interfaces/INodeClient.ts#L32">interfaces/INodeClient.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/77369be/src/interfaces/INodeClient.ts#L50">interfaces/INodeClient.ts:50</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -153,7 +185,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/0659f7d/src/interfaces/INodeClient.ts#L22">interfaces/INodeClient.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/77369be/src/interfaces/INodeClient.ts#L26">interfaces/INodeClient.ts:26</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -177,7 +209,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/0659f7d/src/interfaces/INodeClient.ts#L15">interfaces/INodeClient.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/77369be/src/interfaces/INodeClient.ts#L19">interfaces/INodeClient.ts:19</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -187,6 +219,36 @@
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="igetnodeinforesponse.html" class="tsd-signature-type">IGetNodeInfoResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
 							<p>Promise which resolves to the getNodeInfo response object or rejects with error.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="removeneighbors" class="tsd-anchor"></a>
+					<h3>remove<wbr>Neighbors</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Neighbors<span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><a href="iremoveneighborsrequest.html" class="tsd-signature-type">IRemoveNeighborsRequest</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="iremoveneighborsresponse.html" class="tsd-signature-type">IRemoveNeighborsResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/77369be/src/interfaces/INodeClient.ts#L40">interfaces/INodeClient.ts:40</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Removes a list of neighbors from your node. This is only temporary, and if you have your
+									neighbors added via the command line, they will be retained after you restart your node.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>request: <a href="iremoveneighborsrequest.html" class="tsd-signature-type">IRemoveNeighborsRequest</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="iremoveneighborsresponse.html" class="tsd-signature-type">IRemoveNeighborsResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Promise which resolves to the removeNeighbors response object or rejects with error.</p>
 						</li>
 					</ul>
 				</section>
@@ -204,6 +266,12 @@
 				<ul class="before-current">
 					<li class=" tsd-kind-class">
 						<a href="../classes/nodeclient.html" class="tsd-kind-icon">Node<wbr>Client</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="iaddneighborsrequest.html" class="tsd-kind-icon">IAdd<wbr>Neighbors<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="iaddneighborsresponse.html" class="tsd-kind-icon">IAdd<wbr>Neighbors<wbr>Response</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="igetbalancesrequest.html" class="tsd-kind-icon">IGet<wbr>Balances<wbr>Request</a>
@@ -226,6 +294,9 @@
 						<a href="inodeclient.html" class="tsd-kind-icon">INode<wbr>Client</a>
 						<ul>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="inodeclient.html#addneighbors" class="tsd-kind-icon">add<wbr>Neighbors</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="inodeclient.html#getbalances" class="tsd-kind-icon">get<wbr>Balances</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
@@ -234,10 +305,19 @@
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="inodeclient.html#getnodeinfo" class="tsd-kind-icon">get<wbr>Node<wbr>Info</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="inodeclient.html#removeneighbors" class="tsd-kind-icon">remove<wbr>Neighbors</a>
+							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface">
+						<a href="iremoveneighborsrequest.html" class="tsd-kind-icon">IRemove<wbr>Neighbors<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="iremoveneighborsresponse.html" class="tsd-kind-icon">IRemove<wbr>Neighbors<wbr>Response</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
