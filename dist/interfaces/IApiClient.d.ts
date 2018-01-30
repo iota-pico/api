@@ -1,5 +1,3 @@
-import { INetworkClient } from "@iota-pico/core/dist/interfaces/INetworkClient";
-import { INodeClient } from "../interfaces/INodeClient";
 import { IAddNeighborsRequest } from "../models/IAddNeighborsRequest";
 import { IAddNeighborsResponse } from "../models/IAddNeighborsResponse";
 import { IFindTransactionsRequest } from "../models/IFindTransactionsRequest";
@@ -18,22 +16,10 @@ import { IGetTrytesResponse } from "../models/IGetTrytesResponse";
 import { IRemoveNeighborsRequest } from "../models/IRemoveNeighborsRequest";
 import { IRemoveNeighborsResponse } from "../models/IRemoveNeighborsResponse";
 /**
- * Default implementation of a node client.
+ * Represents a client for performing communication with a node api.
  * @interface
  */
-export declare class NodeClient implements INodeClient {
-    private readonly _networkClient;
-    private readonly _apiVersion;
-    private readonly _additionalHeaders?;
-    /**
-     * Create an instance of NodeClient.
-     * @param networkClient The network client to communicate through.
-     * @param apiVersion The API version to send with the requests
-     * @param additionalHeaders Extra headers to send with the requests.
-     */
-    constructor(networkClient: INetworkClient, apiVersion: string, additionalHeaders?: {
-        [header: string]: string;
-    });
+export interface IApiClient {
     /**
      * Returns information about your node.
      * @returns Promise which resolves to the getNodeInfo response object or rejects with error.
@@ -73,7 +59,7 @@ export declare class NodeClient implements INodeClient {
     /**
      * Returns the raw transaction data (trytes) of a specific transaction.
      * These trytes can then be easily converted into the actual transaction object.
-     * @returns Promise which resolves to the findTransactions response object or rejects with error.
+     * @returns Promise which resolves to the getTrytes response object or rejects with error.
      */
     getTrytes(request: IGetTrytesRequest): Promise<IGetTrytesResponse>;
     /**
@@ -100,6 +86,4 @@ export declare class NodeClient implements INodeClient {
      * @returns Promise which resolves to the getTransactionsToApprove response object or rejects with error.
      */
     getTransactionsToApprove(request: IGetTransactionsToApproveRequest): Promise<IGetTransactionsToApproveResponse>;
-    private sendCommand<T, U>(command, request);
-    private createHeaders();
 }

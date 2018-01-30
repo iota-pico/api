@@ -2,12 +2,12 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const coreError_1 = require("@iota-pico/core/dist/error/coreError");
 /**
- * Default implementation of a node client.
+ * Default implementation of an api client.
  * @interface
  */
-class NodeClient {
+class ApiClient {
     /**
-     * Create an instance of NodeClient.
+     * Create an instance of ApiClient.
      * @param networkClient The network client to communicate through.
      * @param apiVersion The API version to send with the requests
      * @param additionalHeaders Extra headers to send with the requests.
@@ -136,4 +136,4 @@ class NodeClient {
         return headers;
     }
 }
-exports.NodeClient = NodeClient;
+exports.ApiClient = ApiClient;

@@ -17,10 +17,10 @@ import { IRemoveNeighborsRequest } from "../models/IRemoveNeighborsRequest";
 import { IRemoveNeighborsResponse } from "../models/IRemoveNeighborsResponse";
 
 /**
- * Represents a client for performing communication with a node.
+ * Represents a client for performing communication with a node api.
  * @interface
  */
-export interface INodeClient {
+export interface IApiClient {
     /**
      * Returns information about your node.
      * @returns Promise which resolves to the getNodeInfo response object or rejects with error.

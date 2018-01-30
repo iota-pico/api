@@ -1,7 +1,7 @@
 import { CoreError } from "@iota-pico/core/dist/error/coreError";
 import { IError } from "@iota-pico/core/dist/interfaces/IError";
 import { INetworkClient } from "@iota-pico/core/dist/interfaces/INetworkClient";
-import { INodeClient } from "../interfaces/INodeClient";
+import { IApiClient } from "../interfaces/IApiClient";
 import { IAddNeighborsRequest } from "../models/IAddNeighborsRequest";
 import { IAddNeighborsResponse } from "../models/IAddNeighborsResponse";
 import { IFindTransactionsRequest } from "../models/IFindTransactionsRequest";
@@ -21,16 +21,16 @@ import { IRemoveNeighborsRequest } from "../models/IRemoveNeighborsRequest";
 import { IRemoveNeighborsResponse } from "../models/IRemoveNeighborsResponse";
 
 /**
- * Default implementation of a node client.
+ * Default implementation of an api client.
  * @interface
  */
-export class NodeClient implements INodeClient {
+export class ApiClient implements IApiClient {
     private readonly _networkClient: INetworkClient;
     private readonly _apiVersion: string;
     private readonly _additionalHeaders?: { [header: string]: string };
 
     /**
-     * Create an instance of NodeClient.
+     * Create an instance of ApiClient.
      * @param networkClient The network client to communicate through.
      * @param apiVersion The API version to send with the requests
      * @param additionalHeaders Extra headers to send with the requests.

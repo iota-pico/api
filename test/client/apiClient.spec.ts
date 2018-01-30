@@ -1,11 +1,11 @@
 /**
- * Tests for NodeClient.
+ * Tests for ApiClient.
  */
 import { INetworkClient } from "@iota-pico/core/dist/interfaces/INetworkClient";
 import * as chai from "chai";
-import { NodeClient } from "../../src/client/nodeClient";
+import { ApiClient } from "../../src/client/apiClient";
 
-describe("DefaultNodeClient", () => {
+describe("ApiClient", () => {
     let networkClientStub: INetworkClient;
 
     beforeEach(() => {
@@ -13,7 +13,7 @@ describe("DefaultNodeClient", () => {
     });
 
     it("can be created", () => {
-        const obj = new NodeClient(networkClientStub, "1");
+        const obj = new ApiClient(networkClientStub, "1");
         chai.should().exist(obj);
     });
 });
