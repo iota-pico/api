@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IGetBalancesResponse | @iota-pico/api</title>
+	<title>IGetTrytesRequest | @iota-pico/api</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../index.html">Globals</a>
 				</li>
 				<li>
-					<a href="igetbalancesresponse.html">IGetBalancesResponse</a>
+					<a href="igettrytesrequest.html">IGetTrytesRequest</a>
 				</li>
 			</ul>
-			<h1>Interface IGetBalancesResponse</h1>
+			<h1>Interface IGetTrytesRequest</h1>
 		</div>
 	</div>
 </header>
@@ -69,7 +69,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Represents the response from getBalances command.</p>
+						<p>Represents the request for getTrytes command.</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>interface</dt>
@@ -81,7 +81,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IGetBalancesResponse</span>
+						<span class="target">IGetTrytesRequest</span>
 					</li>
 				</ul>
 			</section>
@@ -92,10 +92,7 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="igetbalancesresponse.html#balances" class="tsd-kind-icon">balances</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="igetbalancesresponse.html#duration" class="tsd-kind-icon">duration</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="igetbalancesresponse.html#milestone" class="tsd-kind-icon">milestone</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="igetbalancesresponse.html#milestoneindex" class="tsd-kind-icon">milestone<wbr>Index</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="igettrytesrequest.html#hashes" class="tsd-kind-icon">hashes</a></li>
 							</ul>
 						</section>
 					</div>
@@ -104,62 +101,17 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="balances" class="tsd-anchor"></a>
-					<h3>balances</h3>
-					<div class="tsd-signature tsd-kind-icon">balances<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<a name="hashes" class="tsd-anchor"></a>
+					<h3>hashes</h3>
+					<div class="tsd-signature tsd-kind-icon">hashes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/a2b9615/src/models/IGetBalancesResponse.ts#L9">models/IGetBalancesResponse.ts:9</a></li>
+							<li>Defined in models/IGetTrytesRequest.ts:9</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>List of balances for the addresses.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="duration" class="tsd-anchor"></a>
-					<h3>duration</h3>
-					<div class="tsd-signature tsd-kind-icon">duration<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/a2b9615/src/models/IGetBalancesResponse.ts#L21">models/IGetBalancesResponse.ts:21</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The duration of the request.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="milestone" class="tsd-anchor"></a>
-					<h3>milestone</h3>
-					<div class="tsd-signature tsd-kind-icon">milestone<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/a2b9615/src/models/IGetBalancesResponse.ts#L13">models/IGetBalancesResponse.ts:13</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The milestone at which the balances were calculated.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="milestoneindex" class="tsd-anchor"></a>
-					<h3>milestone<wbr>Index</h3>
-					<div class="tsd-signature tsd-kind-icon">milestone<wbr>Index<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/a2b9615/src/models/IGetBalancesResponse.ts#L17">models/IGetBalancesResponse.ts:17</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The milestone index at which the balances were calculated.</p>
+							<p>List of transaction hashes of which you want to get trytes from.</p>
 						</div>
 					</div>
 				</section>
@@ -193,27 +145,9 @@
 					<li class=" tsd-kind-interface">
 						<a href="igetbalancesrequest.html" class="tsd-kind-icon">IGet<wbr>Balances<wbr>Request</a>
 					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-interface">
+					<li class=" tsd-kind-interface">
 						<a href="igetbalancesresponse.html" class="tsd-kind-icon">IGet<wbr>Balances<wbr>Response</a>
-						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="igetbalancesresponse.html#balances" class="tsd-kind-icon">balances</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="igetbalancesresponse.html#duration" class="tsd-kind-icon">duration</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="igetbalancesresponse.html#milestone" class="tsd-kind-icon">milestone</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="igetbalancesresponse.html#milestoneindex" class="tsd-kind-icon">milestone<wbr>Index</a>
-							</li>
-						</ul>
 					</li>
-				</ul>
-				<ul class="after-current">
 					<li class=" tsd-kind-interface">
 						<a href="igetinclusionstatesrequest.html" class="tsd-kind-icon">IGet<wbr>Inclusion<wbr>States<wbr>Request</a>
 					</li>
@@ -235,9 +169,18 @@
 					<li class=" tsd-kind-interface">
 						<a href="igettransactionstoapproveresponse.html" class="tsd-kind-icon">IGet<wbr>Transactions<wbr>ToApprove<wbr>Response</a>
 					</li>
-					<li class=" tsd-kind-interface">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface">
 						<a href="igettrytesrequest.html" class="tsd-kind-icon">IGet<wbr>Trytes<wbr>Request</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="igettrytesrequest.html#hashes" class="tsd-kind-icon">hashes</a>
+							</li>
+						</ul>
 					</li>
+				</ul>
+				<ul class="after-current">
 					<li class=" tsd-kind-interface">
 						<a href="igettrytesresponse.html" class="tsd-kind-icon">IGet<wbr>Trytes<wbr>Response</a>
 					</li>

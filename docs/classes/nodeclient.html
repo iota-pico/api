@@ -105,9 +105,14 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="nodeclient.html#addneighbors" class="tsd-kind-icon">add<wbr>Neighbors</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="nodeclient.html#findtransactions" class="tsd-kind-icon">find<wbr>Transactions</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="nodeclient.html#getbalances" class="tsd-kind-icon">get<wbr>Balances</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="nodeclient.html#getinclusionstates" class="tsd-kind-icon">get<wbr>Inclusion<wbr>States</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="nodeclient.html#getneighbors" class="tsd-kind-icon">get<wbr>Neighbors</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="nodeclient.html#getnodeinfo" class="tsd-kind-icon">get<wbr>Node<wbr>Info</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="nodeclient.html#gettips" class="tsd-kind-icon">get<wbr>Tips</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="nodeclient.html#gettransactionstoapprove" class="tsd-kind-icon">get<wbr>Transactions<wbr>ToApprove</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="nodeclient.html#gettrytes" class="tsd-kind-icon">get<wbr>Trytes</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="nodeclient.html#removeneighbors" class="tsd-kind-icon">remove<wbr>Neighbors</a></li>
 							</ul>
 						</section>
@@ -126,7 +131,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/ae09bcc/src/client/nodeClient.ts#L21">client/nodeClient.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/a2b9615/src/client/nodeClient.ts#L30">client/nodeClient.ts:30</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -179,7 +184,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/inodeclient.html">INodeClient</a>.<a href="../interfaces/inodeclient.html#addneighbors">addNeighbors</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/ae09bcc/src/client/nodeClient.ts#L63">client/nodeClient.ts:63</a></li>
+									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/a2b9615/src/client/nodeClient.ts#L72">client/nodeClient.ts:72</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -200,6 +205,39 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="findtransactions" class="tsd-anchor"></a>
+					<h3>find<wbr>Transactions</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">find<wbr>Transactions<span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><a href="../interfaces/ifindtransactionsrequest.html" class="tsd-signature-type">IFindTransactionsRequest</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/ifindtransactionsresponse.html" class="tsd-signature-type">IFindTransactionsResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/inodeclient.html">INodeClient</a>.<a href="../interfaces/inodeclient.html#findtransactions">findTransactions</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/a2b9615/src/client/nodeClient.ts#L100">client/nodeClient.ts:100</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Find the transactions which match the specified input and return. All input values are lists,
+										for which a list of return values (transaction hashes), in the same order, is returned for all
+										individual elements. The input fields can either be bundles, addresses, tags or approvees.
+									Using multiple of these input fields returns the intersection of the values.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>request: <a href="../interfaces/ifindtransactionsrequest.html" class="tsd-signature-type">IFindTransactionsRequest</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/ifindtransactionsresponse.html" class="tsd-signature-type">IFindTransactionsResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Promise which resolves to the findTransactions response object or rejects with error.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="getbalances" class="tsd-anchor"></a>
 					<h3>get<wbr>Balances</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -210,7 +248,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/inodeclient.html">INodeClient</a>.<a href="../interfaces/inodeclient.html#getbalances">getBalances</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/ae09bcc/src/client/nodeClient.ts#L84">client/nodeClient.ts:84</a></li>
+									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/a2b9615/src/client/nodeClient.ts#L131">client/nodeClient.ts:131</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -236,6 +274,38 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getinclusionstates" class="tsd-anchor"></a>
+					<h3>get<wbr>Inclusion<wbr>States</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Inclusion<wbr>States<span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><a href="../interfaces/igetinclusionstatesrequest.html" class="tsd-signature-type">IGetInclusionStatesRequest</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/igetinclusionstatesresponse.html" class="tsd-signature-type">IGetInclusionStatesResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/inodeclient.html">INodeClient</a>.<a href="../interfaces/inodeclient.html#getinclusionstates">getInclusionStates</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/a2b9615/src/client/nodeClient.ts#L119">client/nodeClient.ts:119</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the inclusion states of a set of transactions. This is for determining if a transaction
+										was accepted and confirmed by the network or not. You can search for multiple tips (and thus,
+									milestones) to get past inclusion states of transactions.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>request: <a href="../interfaces/igetinclusionstatesrequest.html" class="tsd-signature-type">IGetInclusionStatesRequest</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/igetinclusionstatesresponse.html" class="tsd-signature-type">IGetInclusionStatesResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Promise which resolves to the getInclusionStates response object or rejects with error.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="getneighbors" class="tsd-anchor"></a>
 					<h3>get<wbr>Neighbors</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -246,7 +316,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/inodeclient.html">INodeClient</a>.<a href="../interfaces/inodeclient.html#getneighbors">getNeighbors</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/ae09bcc/src/client/nodeClient.ts#L54">client/nodeClient.ts:54</a></li>
+									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/a2b9615/src/client/nodeClient.ts#L63">client/nodeClient.ts:63</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -271,7 +341,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/inodeclient.html">INodeClient</a>.<a href="../interfaces/inodeclient.html#getnodeinfo">getNodeInfo</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/ae09bcc/src/client/nodeClient.ts#L45">client/nodeClient.ts:45</a></li>
+									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/a2b9615/src/client/nodeClient.ts#L54">client/nodeClient.ts:54</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -281,6 +351,96 @@
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/igetnodeinforesponse.html" class="tsd-signature-type">IGetNodeInfoResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
 							<p>Promise which resolves to the getNodeInfo response object or rejects with error.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="gettips" class="tsd-anchor"></a>
+					<h3>get<wbr>Tips</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Tips<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/igettipsresponse.html" class="tsd-signature-type">IGetTipsResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/inodeclient.html">INodeClient</a>.<a href="../interfaces/inodeclient.html#gettips">getTips</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/a2b9615/src/client/nodeClient.ts#L89">client/nodeClient.ts:89</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the list of tips.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/igettipsresponse.html" class="tsd-signature-type">IGetTipsResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Promise which resolves to the getTips response object or rejects with error.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="gettransactionstoapprove" class="tsd-anchor"></a>
+					<h3>get<wbr>Transactions<wbr>ToApprove</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Transactions<wbr>ToApprove<span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><a href="../interfaces/igettransactionstoapproverequest.html" class="tsd-signature-type">IGetTransactionsToApproveRequest</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/igettransactionstoapproveresponse.html" class="tsd-signature-type">IGetTransactionsToApproveResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/inodeclient.html">INodeClient</a>.<a href="../interfaces/inodeclient.html#gettransactionstoapprove">getTransactionsToApprove</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/a2b9615/src/client/nodeClient.ts#L142">client/nodeClient.ts:142</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Tip selection which returns trunkTransaction and branchTransaction. The input value is depth,
+										which basically determines how many bundles to go back to for finding the transactions to approve.
+									The higher your depth value, the more &quot;babysitting&quot; you do for the network (as you have to confirm more transactions).</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>request: <a href="../interfaces/igettransactionstoapproverequest.html" class="tsd-signature-type">IGetTransactionsToApproveRequest</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The getTransactionsToApprove request object.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/igettransactionstoapproveresponse.html" class="tsd-signature-type">IGetTransactionsToApproveResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Promise which resolves to the getTransactionsToApprove response object or rejects with error.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="gettrytes" class="tsd-anchor"></a>
+					<h3>get<wbr>Trytes</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Trytes<span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><a href="../interfaces/igettrytesrequest.html" class="tsd-signature-type">IGetTrytesRequest</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/igettrytesresponse.html" class="tsd-signature-type">IGetTrytesResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/inodeclient.html">INodeClient</a>.<a href="../interfaces/inodeclient.html#gettrytes">getTrytes</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/a2b9615/src/client/nodeClient.ts#L109">client/nodeClient.ts:109</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the raw transaction data (trytes) of a specific transaction.
+									These trytes can then be easily converted into the actual transaction object.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>request: <a href="../interfaces/igettrytesrequest.html" class="tsd-signature-type">IGetTrytesRequest</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/igettrytesresponse.html" class="tsd-signature-type">IGetTrytesResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Promise which resolves to the findTransactions response object or rejects with error.</p>
 						</li>
 					</ul>
 				</section>
@@ -295,7 +455,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/inodeclient.html">INodeClient</a>.<a href="../interfaces/inodeclient.html#removeneighbors">removeNeighbors</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/ae09bcc/src/client/nodeClient.ts#L72">client/nodeClient.ts:72</a></li>
+									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/a2b9615/src/client/nodeClient.ts#L81">client/nodeClient.ts:81</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -339,13 +499,28 @@
 								<a href="nodeclient.html#addneighbors" class="tsd-kind-icon">add<wbr>Neighbors</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="nodeclient.html#findtransactions" class="tsd-kind-icon">find<wbr>Transactions</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="nodeclient.html#getbalances" class="tsd-kind-icon">get<wbr>Balances</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="nodeclient.html#getinclusionstates" class="tsd-kind-icon">get<wbr>Inclusion<wbr>States</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="nodeclient.html#getneighbors" class="tsd-kind-icon">get<wbr>Neighbors</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="nodeclient.html#getnodeinfo" class="tsd-kind-icon">get<wbr>Node<wbr>Info</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="nodeclient.html#gettips" class="tsd-kind-icon">get<wbr>Tips</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="nodeclient.html#gettransactionstoapprove" class="tsd-kind-icon">get<wbr>Transactions<wbr>ToApprove</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="nodeclient.html#gettrytes" class="tsd-kind-icon">get<wbr>Trytes</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="nodeclient.html#removeneighbors" class="tsd-kind-icon">remove<wbr>Neighbors</a>
@@ -361,16 +536,43 @@
 						<a href="../interfaces/iaddneighborsresponse.html" class="tsd-kind-icon">IAdd<wbr>Neighbors<wbr>Response</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="../interfaces/ifindtransactionsrequest.html" class="tsd-kind-icon">IFind<wbr>Transactions<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/ifindtransactionsresponse.html" class="tsd-kind-icon">IFind<wbr>Transactions<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="../interfaces/igetbalancesrequest.html" class="tsd-kind-icon">IGet<wbr>Balances<wbr>Request</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="../interfaces/igetbalancesresponse.html" class="tsd-kind-icon">IGet<wbr>Balances<wbr>Response</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="../interfaces/igetinclusionstatesrequest.html" class="tsd-kind-icon">IGet<wbr>Inclusion<wbr>States<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/igetinclusionstatesresponse.html" class="tsd-kind-icon">IGet<wbr>Inclusion<wbr>States<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="../interfaces/igetneighborsresponse.html" class="tsd-kind-icon">IGet<wbr>Neighbors<wbr>Response</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="../interfaces/igetnodeinforesponse.html" class="tsd-kind-icon">IGet<wbr>Node<wbr>Info<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/igettipsresponse.html" class="tsd-kind-icon">IGet<wbr>Tips<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/igettransactionstoapproverequest.html" class="tsd-kind-icon">IGet<wbr>Transactions<wbr>ToApprove<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/igettransactionstoapproveresponse.html" class="tsd-kind-icon">IGet<wbr>Transactions<wbr>ToApprove<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/igettrytesrequest.html" class="tsd-kind-icon">IGet<wbr>Trytes<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/igettrytesresponse.html" class="tsd-kind-icon">IGet<wbr>Trytes<wbr>Response</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="../interfaces/ineighbor.html" class="tsd-kind-icon">INeighbor</a>

@@ -1,9 +1,18 @@
 import { IAddNeighborsRequest } from "../models/IAddNeighborsRequest";
 import { IAddNeighborsResponse } from "../models/IAddNeighborsResponse";
+import { IFindTransactionsRequest } from "../models/IFindTransactionsRequest";
+import { IFindTransactionsResponse } from "../models/IFindTransactionsResponse";
 import { IGetBalancesRequest } from "../models/IGetBalancesRequest";
 import { IGetBalancesResponse } from "../models/IGetBalancesResponse";
+import { IGetInclusionStatesRequest } from "../models/IGetInclusionStatesRequest";
+import { IGetInclusionStatesResponse } from "../models/IGetInclusionStatesResponse";
 import { IGetNeighborsResponse } from "../models/IGetNeighborsResponse";
 import { IGetNodeInfoResponse } from "../models/IGetNodeInfoResponse";
+import { IGetTipsResponse } from "../models/IGetTipsResponse";
+import { IGetTransactionsToApproveRequest } from "../models/IGetTransactionsToApproveRequest";
+import { IGetTransactionsToApproveResponse } from "../models/IGetTransactionsToApproveResponse";
+import { IGetTrytesRequest } from "../models/IGetTrytesRequest";
+import { IGetTrytesResponse } from "../models/IGetTrytesResponse";
 import { IRemoveNeighborsRequest } from "../models/IRemoveNeighborsRequest";
 import { IRemoveNeighborsResponse } from "../models/IRemoveNeighborsResponse";
 /**
@@ -35,6 +44,32 @@ export interface INodeClient {
      */
     removeNeighbors(request: IRemoveNeighborsRequest): Promise<IRemoveNeighborsResponse>;
     /**
+     * Returns the list of tips.
+     * @returns Promise which resolves to the getTips response object or rejects with error.
+     */
+    getTips(): Promise<IGetTipsResponse>;
+    /**
+     * Find the transactions which match the specified input and return. All input values are lists,
+     * for which a list of return values (transaction hashes), in the same order, is returned for all
+     * individual elements. The input fields can either be bundles, addresses, tags or approvees.
+     * Using multiple of these input fields returns the intersection of the values.
+     * @returns Promise which resolves to the findTransactions response object or rejects with error.
+     */
+    findTransactions(request: IFindTransactionsRequest): Promise<IFindTransactionsResponse>;
+    /**
+     * Returns the raw transaction data (trytes) of a specific transaction.
+     * These trytes can then be easily converted into the actual transaction object.
+     * @returns Promise which resolves to the getTrytes response object or rejects with error.
+     */
+    getTrytes(request: IGetTrytesRequest): Promise<IGetTrytesResponse>;
+    /**
+     * Get the inclusion states of a set of transactions. This is for determining if a transaction
+     * was accepted and confirmed by the network or not. You can search for multiple tips (and thus,
+     * milestones) to get past inclusion states of transactions.
+     * @returns Promise which resolves to the getInclusionStates response object or rejects with error.
+     */
+    getInclusionStates(request: IGetInclusionStatesRequest): Promise<IGetInclusionStatesResponse>;
+    /**
      * Returns the confirmed balance which a list of addresses have at the latest confirmed milestone.
      * In addition to the balances, it also returns the milestone as well as the index with which the
      * confirmed balance was determined. The balances is returned as a list in the same order as the
@@ -43,4 +78,12 @@ export interface INodeClient {
      * @returns Promise which resolves to the getBalances response object or rejects with error.
      */
     getBalances(request: IGetBalancesRequest): Promise<IGetBalancesResponse>;
+    /**
+     * Tip selection which returns trunkTransaction and branchTransaction. The input value is depth,
+     * which basically determines how many bundles to go back to for finding the transactions to approve.
+     * The higher your depth value, the more "babysitting" you do for the network (as you have to confirm more transactions).
+     * @param request The getTransactionsToApprove request object.
+     * @returns Promise which resolves to the getTransactionsToApprove response object or rejects with error.
+     */
+    getTransactionsToApprove(request: IGetTransactionsToApproveRequest): Promise<IGetTransactionsToApproveResponse>;
 }
