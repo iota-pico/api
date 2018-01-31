@@ -109,6 +109,63 @@ class ApiClient {
     async getTransactionsToApprove(request) {
         return this.sendCommand("getTransactionsToApprove", request);
     }
+    /**
+     * Attaches the specified transactions (trytes) to the Tangle by doing Proof of Work. You need to supply
+     * branchTransaction as well as trunkTransaction (basically the tips which you're going to validate and
+     * reference with this transaction) - both of which you'll get through the getTransactionsToApprove API call.
+     * @param request The attachToTangle request object.
+     * @returns Promise which resolves to the attachToTangle response object or rejects with error.
+     */
+    async attachToTangle(request) {
+        return this.sendCommand("attachToTangle", request);
+    }
+    /**
+     * Interrupts and completely aborts the attachToTangle process
+     * @returns Promise which resolves with empty response object or rejects with error.
+     */
+    async interruptAttachingToTangle() {
+        return this.sendCommand("interruptAttachingToTangle", {});
+    }
+    /**
+     * Broadcast a list of transactions to all neighbors. The input trytes for this call are provided by attachToTangle.
+     * @param request The broadcastTransactions request object.
+     * @returns Promise which resolves with empty response object or rejects with error.
+     */
+    async broadcastTransactions(request) {
+        return this.sendCommand("broadcastTransactions", request);
+    }
+    /**
+     * Store transactions into the local storage. The trytes to be used for this call are returned by attachToTangle.
+     * @param request The storeTransactions request object.
+     * @returns Promise which resolves with empty response object or rejects with error.
+     */
+    async storeTransactions(request) {
+        return this.sendCommand("storeTransactions", request);
+    }
+    /**
+     * Get transactions with missing references.
+     * @param request The getMissingTransactions request object.
+     * @returns Promise which resolves to the getMissingTransactions response object or rejects with error.
+     */
+    async getMissingTransactions() {
+        return this.sendCommand("getMissingTransactions", {});
+    }
+    /**
+     * Check the consistency of tail hashes.
+     * @param request The checkConsistency request object.
+     * @returns Promise which resolves to the checkConsistency response object or rejects with error.
+     */
+    async checkConsistency(request) {
+        return this.sendCommand("checkConsistency", request);
+    }
+    /**
+     * Have the requested addresses been spent from already.
+     * @param request The wereAddressesSpentFrom request object.
+     * @returns Promise which resolves to the wereAddressesSpentFrom response object or rejects with error.
+     */
+    async wereAddressesSpentFrom(request) {
+        return this.sendCommand("wereAddressesSpentFrom", request);
+    }
     async sendCommand(command, request) {
         Object.defineProperty(request, "command", {
             value: command,
@@ -122,6 +179,10 @@ class ApiClient {
                     if (commandError.error) {
                         delete err.additional.response;
                         err.additional.commandError = commandError.error;
+                    }
+                    else if (commandError.exception) {
+                        delete err.additional.response;
+                        err.additional.commandError = commandError.exception;
                     }
                 }
                 catch (e) {

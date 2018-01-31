@@ -4,12 +4,18 @@ import { INetworkClient } from "@iota-pico/core/dist/interfaces/INetworkClient";
 import { IApiClient } from "../interfaces/IApiClient";
 import { IAddNeighborsRequest } from "../models/IAddNeighborsRequest";
 import { IAddNeighborsResponse } from "../models/IAddNeighborsResponse";
+import { IAttachToTangleRequest } from "../models/IAttachToTangleRequest";
+import { IAttachToTangleResponse } from "../models/IAttachToTangleResponse";
+import { IBroadcastTransactionsRequest } from "../models/IBroadcastTransactionsRequest";
+import { ICheckConsistencyRequest } from "../models/ICheckConsistencyRequest";
+import { ICheckConsistencyResponse } from "../models/ICheckConsistencyResponse";
 import { IFindTransactionsRequest } from "../models/IFindTransactionsRequest";
 import { IFindTransactionsResponse } from "../models/IFindTransactionsResponse";
 import { IGetBalancesRequest } from "../models/IGetBalancesRequest";
 import { IGetBalancesResponse } from "../models/IGetBalancesResponse";
 import { IGetInclusionStatesRequest } from "../models/IGetInclusionStatesRequest";
 import { IGetInclusionStatesResponse } from "../models/IGetInclusionStatesResponse";
+import { IGetMissingTransactionsResponse } from "../models/IGetMissingTransactionsResponse";
 import { IGetNeighborsResponse } from "../models/IGetNeighborsResponse";
 import { IGetNodeInfoResponse } from "../models/IGetNodeInfoResponse";
 import { IGetTipsResponse } from "../models/IGetTipsResponse";
@@ -19,6 +25,9 @@ import { IGetTrytesRequest } from "../models/IGetTrytesRequest";
 import { IGetTrytesResponse } from "../models/IGetTrytesResponse";
 import { IRemoveNeighborsRequest } from "../models/IRemoveNeighborsRequest";
 import { IRemoveNeighborsResponse } from "../models/IRemoveNeighborsResponse";
+import { IStoreTransactionsRequest } from "../models/IStoreTransactionsRequest";
+import { IWereAddressesSpentFromRequest } from "../models/IWereAddressesSpentFromRequest";
+import { IWereAddressesSpentFromResponse } from "../models/IWereAddressesSpentFromResponse";
 
 /**
  * Default implementation of an api client.
@@ -143,6 +152,70 @@ export class ApiClient implements IApiClient {
         return this.sendCommand<IGetTransactionsToApproveRequest, IGetTransactionsToApproveResponse>("getTransactionsToApprove", request);
     }
 
+    /**
+     * Attaches the specified transactions (trytes) to the Tangle by doing Proof of Work. You need to supply
+     * branchTransaction as well as trunkTransaction (basically the tips which you're going to validate and
+     * reference with this transaction) - both of which you'll get through the getTransactionsToApprove API call.
+     * @param request The attachToTangle request object.
+     * @returns Promise which resolves to the attachToTangle response object or rejects with error.
+     */
+    public async attachToTangle(request: IAttachToTangleRequest): Promise<IAttachToTangleResponse> {
+        return this.sendCommand<IAttachToTangleRequest, IAttachToTangleResponse>("attachToTangle", request);
+    }
+
+    /**
+     * Interrupts and completely aborts the attachToTangle process
+     * @returns Promise which resolves with empty response object or rejects with error.
+     */
+    public async interruptAttachingToTangle(): Promise<void> {
+        return this.sendCommand<{}, void>("interruptAttachingToTangle", {});
+    }
+
+    /**
+     * Broadcast a list of transactions to all neighbors. The input trytes for this call are provided by attachToTangle.
+     * @param request The broadcastTransactions request object.
+     * @returns Promise which resolves with empty response object or rejects with error.
+     */
+    public async broadcastTransactions(request: IBroadcastTransactionsRequest): Promise<void> {
+        return this.sendCommand<IBroadcastTransactionsRequest, void>("broadcastTransactions", request);
+    }
+
+    /**
+     * Store transactions into the local storage. The trytes to be used for this call are returned by attachToTangle.
+     * @param request The storeTransactions request object.
+     * @returns Promise which resolves with empty response object or rejects with error.
+     */
+    public async storeTransactions(request: IStoreTransactionsRequest): Promise<void> {
+        return this.sendCommand<IStoreTransactionsRequest, void>("storeTransactions", request);
+    }
+
+    /**
+     * Get transactions with missing references.
+     * @param request The getMissingTransactions request object.
+     * @returns Promise which resolves to the getMissingTransactions response object or rejects with error.
+     */
+    public async getMissingTransactions(): Promise<IGetMissingTransactionsResponse> {
+        return this.sendCommand<{}, IGetMissingTransactionsResponse>("getMissingTransactions", {});
+    }
+
+    /**
+     * Check the consistency of tail hashes.
+     * @param request The checkConsistency request object.
+     * @returns Promise which resolves to the checkConsistency response object or rejects with error.
+     */
+    public async checkConsistency(request: ICheckConsistencyRequest): Promise<ICheckConsistencyResponse> {
+        return this.sendCommand<ICheckConsistencyRequest, ICheckConsistencyResponse>("checkConsistency", request);
+    }
+
+    /**
+     * Have the requested addresses been spent from already.
+     * @param request The wereAddressesSpentFrom request object.
+     * @returns Promise which resolves to the wereAddressesSpentFrom response object or rejects with error.
+     */
+    public async wereAddressesSpentFrom(request: IWereAddressesSpentFromRequest): Promise<IWereAddressesSpentFromResponse> {
+        return this.sendCommand<IWereAddressesSpentFromRequest, IWereAddressesSpentFromResponse>("wereAddressesSpentFrom", request);
+    }
+
     private async sendCommand<T, U>(command: string, request: T): Promise<U> {
         Object.defineProperty(request, "command", {
             value: command,
@@ -156,6 +229,9 @@ export class ApiClient implements IApiClient {
                         if (commandError.error) {
                             delete err.additional.response;
                             err.additional.commandError = commandError.error;
+                        } else if (commandError.exception) {
+                            delete err.additional.response;
+                            err.additional.commandError = commandError.exception;
                         }
                     } catch (e) {
                     }

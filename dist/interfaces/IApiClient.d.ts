@@ -1,11 +1,17 @@
 import { IAddNeighborsRequest } from "../models/IAddNeighborsRequest";
 import { IAddNeighborsResponse } from "../models/IAddNeighborsResponse";
+import { IAttachToTangleRequest } from "../models/IAttachToTangleRequest";
+import { IAttachToTangleResponse } from "../models/IAttachToTangleResponse";
+import { IBroadcastTransactionsRequest } from "../models/IBroadcastTransactionsRequest";
+import { ICheckConsistencyRequest } from "../models/ICheckConsistencyRequest";
+import { ICheckConsistencyResponse } from "../models/ICheckConsistencyResponse";
 import { IFindTransactionsRequest } from "../models/IFindTransactionsRequest";
 import { IFindTransactionsResponse } from "../models/IFindTransactionsResponse";
 import { IGetBalancesRequest } from "../models/IGetBalancesRequest";
 import { IGetBalancesResponse } from "../models/IGetBalancesResponse";
 import { IGetInclusionStatesRequest } from "../models/IGetInclusionStatesRequest";
 import { IGetInclusionStatesResponse } from "../models/IGetInclusionStatesResponse";
+import { IGetMissingTransactionsResponse } from "../models/IGetMissingTransactionsResponse";
 import { IGetNeighborsResponse } from "../models/IGetNeighborsResponse";
 import { IGetNodeInfoResponse } from "../models/IGetNodeInfoResponse";
 import { IGetTipsResponse } from "../models/IGetTipsResponse";
@@ -15,6 +21,9 @@ import { IGetTrytesRequest } from "../models/IGetTrytesRequest";
 import { IGetTrytesResponse } from "../models/IGetTrytesResponse";
 import { IRemoveNeighborsRequest } from "../models/IRemoveNeighborsRequest";
 import { IRemoveNeighborsResponse } from "../models/IRemoveNeighborsResponse";
+import { IStoreTransactionsRequest } from "../models/IStoreTransactionsRequest";
+import { IWereAddressesSpentFromRequest } from "../models/IWereAddressesSpentFromRequest";
+import { IWereAddressesSpentFromResponse } from "../models/IWereAddressesSpentFromResponse";
 /**
  * Represents a client for performing communication with a node api.
  * @interface
@@ -86,4 +95,47 @@ export interface IApiClient {
      * @returns Promise which resolves to the getTransactionsToApprove response object or rejects with error.
      */
     getTransactionsToApprove(request: IGetTransactionsToApproveRequest): Promise<IGetTransactionsToApproveResponse>;
+    /**
+     * Attaches the specified transactions (trytes) to the Tangle by doing Proof of Work. You need to supply
+     * branchTransaction as well as trunkTransaction (basically the tips which you're going to validate and
+     * reference with this transaction) - both of which you'll get through the getTransactionsToApprove API call.
+     * @param request The attachToTangle request object.
+     * @returns Promise which resolves to the attachToTangle response object or rejects with error.
+     */
+    attachToTangle(request: IAttachToTangleRequest): Promise<IAttachToTangleResponse>;
+    /**
+     * Interrupts and completely aborts the attachToTangle process
+     * @returns Promise which resolves with empty response object or rejects with error.
+     */
+    interruptAttachingToTangle(): Promise<void>;
+    /**
+     * Broadcast a list of transactions to all neighbors. The input trytes for this call are provided by attachToTangle.
+     * @param request The broadcastTransactions request object.
+     * @returns Promise which resolves with empty response object or rejects with error.
+     */
+    broadcastTransactions(request: IBroadcastTransactionsRequest): Promise<void>;
+    /**
+     * Store transactions into the local storage. The trytes to be used for this call are returned by attachToTangle.
+     * @param request The storeTransactions request object.
+     * @returns Promise which resolves with empty response object or rejects with error.
+     */
+    storeTransactions(request: IStoreTransactionsRequest): Promise<void>;
+    /**
+     * Get transactions with missing references.
+     * @param request The getMissingTransactions request object.
+     * @returns Promise which resolves to the getMissingTransactions response object or rejects with error.
+     */
+    getMissingTransactions(): Promise<IGetMissingTransactionsResponse>;
+    /**
+     * Check the consistency of tail hashes.
+     * @param request The checkConsistency request object.
+     * @returns Promise which resolves to the checkConsistency response object or rejects with error.
+     */
+    checkConsistency(request: ICheckConsistencyRequest): Promise<ICheckConsistencyResponse>;
+    /**
+     * Have the requested addresses been spent from already.
+     * @param request The wereAddressesSpentFrom request object.
+     * @returns Promise which resolves to the wereAddressesSpentFrom response object or rejects with error.
+     */
+    wereAddressesSpentFrom(request: IWereAddressesSpentFromRequest): Promise<IWereAddressesSpentFromResponse>;
 }

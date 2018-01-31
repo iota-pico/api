@@ -105,15 +105,22 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="apiclient.html#addneighbors" class="tsd-kind-icon">add<wbr>Neighbors</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="apiclient.html#attachtotangle" class="tsd-kind-icon">attach<wbr>ToTangle</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="apiclient.html#broadcasttransactions" class="tsd-kind-icon">broadcast<wbr>Transactions</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="apiclient.html#checkconsistency" class="tsd-kind-icon">check<wbr>Consistency</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="apiclient.html#findtransactions" class="tsd-kind-icon">find<wbr>Transactions</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="apiclient.html#getbalances" class="tsd-kind-icon">get<wbr>Balances</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="apiclient.html#getinclusionstates" class="tsd-kind-icon">get<wbr>Inclusion<wbr>States</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="apiclient.html#getmissingtransactions" class="tsd-kind-icon">get<wbr>Missing<wbr>Transactions</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="apiclient.html#getneighbors" class="tsd-kind-icon">get<wbr>Neighbors</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="apiclient.html#getnodeinfo" class="tsd-kind-icon">get<wbr>Node<wbr>Info</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="apiclient.html#gettips" class="tsd-kind-icon">get<wbr>Tips</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="apiclient.html#gettransactionstoapprove" class="tsd-kind-icon">get<wbr>Transactions<wbr>ToApprove</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="apiclient.html#gettrytes" class="tsd-kind-icon">get<wbr>Trytes</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="apiclient.html#interruptattachingtotangle" class="tsd-kind-icon">interrupt<wbr>Attaching<wbr>ToTangle</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="apiclient.html#removeneighbors" class="tsd-kind-icon">remove<wbr>Neighbors</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="apiclient.html#storetransactions" class="tsd-kind-icon">store<wbr>Transactions</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="apiclient.html#wereaddressesspentfrom" class="tsd-kind-icon">were<wbr>Addresses<wbr>Spent<wbr>From</a></li>
 							</ul>
 						</section>
 					</div>
@@ -131,7 +138,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in client/apiClient.ts:30</li>
+									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/a4eaaff/src/client/apiClient.ts#L39">client/apiClient.ts:39</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -184,7 +191,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/iapiclient.html">IApiClient</a>.<a href="../interfaces/iapiclient.html#addneighbors">addNeighbors</a></p>
 								<ul>
-									<li>Defined in client/apiClient.ts:72</li>
+									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/a4eaaff/src/client/apiClient.ts#L81">client/apiClient.ts:81</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -205,6 +212,107 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="attachtotangle" class="tsd-anchor"></a>
+					<h3>attach<wbr>ToTangle</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">attach<wbr>ToTangle<span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><a href="../interfaces/iattachtotanglerequest.html" class="tsd-signature-type">IAttachToTangleRequest</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/iattachtotangleresponse.html" class="tsd-signature-type">IAttachToTangleResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/iapiclient.html">IApiClient</a>.<a href="../interfaces/iapiclient.html#attachtotangle">attachToTangle</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/a4eaaff/src/client/apiClient.ts#L162">client/apiClient.ts:162</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Attaches the specified transactions (trytes) to the Tangle by doing Proof of Work. You need to supply
+										branchTransaction as well as trunkTransaction (basically the tips which you&#39;re going to validate and
+									reference with this transaction) - both of which you&#39;ll get through the getTransactionsToApprove API call.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>request: <a href="../interfaces/iattachtotanglerequest.html" class="tsd-signature-type">IAttachToTangleRequest</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The attachToTangle request object.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/iattachtotangleresponse.html" class="tsd-signature-type">IAttachToTangleResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Promise which resolves to the attachToTangle response object or rejects with error.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="broadcasttransactions" class="tsd-anchor"></a>
+					<h3>broadcast<wbr>Transactions</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">broadcast<wbr>Transactions<span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><a href="../interfaces/ibroadcasttransactionsrequest.html" class="tsd-signature-type">IBroadcastTransactionsRequest</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/iapiclient.html">IApiClient</a>.<a href="../interfaces/iapiclient.html#broadcasttransactions">broadcastTransactions</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/a4eaaff/src/client/apiClient.ts#L179">client/apiClient.ts:179</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Broadcast a list of transactions to all neighbors. The input trytes for this call are provided by attachToTangle.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>request: <a href="../interfaces/ibroadcasttransactionsrequest.html" class="tsd-signature-type">IBroadcastTransactionsRequest</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The broadcastTransactions request object.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Promise which resolves with empty response object or rejects with error.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="checkconsistency" class="tsd-anchor"></a>
+					<h3>check<wbr>Consistency</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">check<wbr>Consistency<span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><a href="../interfaces/icheckconsistencyrequest.html" class="tsd-signature-type">ICheckConsistencyRequest</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/icheckconsistencyresponse.html" class="tsd-signature-type">ICheckConsistencyResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/iapiclient.html">IApiClient</a>.<a href="../interfaces/iapiclient.html#checkconsistency">checkConsistency</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/a4eaaff/src/client/apiClient.ts#L206">client/apiClient.ts:206</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Check the consistency of tail hashes.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>request: <a href="../interfaces/icheckconsistencyrequest.html" class="tsd-signature-type">ICheckConsistencyRequest</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The checkConsistency request object.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/icheckconsistencyresponse.html" class="tsd-signature-type">ICheckConsistencyResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Promise which resolves to the checkConsistency response object or rejects with error.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="findtransactions" class="tsd-anchor"></a>
 					<h3>find<wbr>Transactions</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -215,7 +323,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/iapiclient.html">IApiClient</a>.<a href="../interfaces/iapiclient.html#findtransactions">findTransactions</a></p>
 								<ul>
-									<li>Defined in client/apiClient.ts:100</li>
+									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/a4eaaff/src/client/apiClient.ts#L109">client/apiClient.ts:109</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -248,7 +356,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/iapiclient.html">IApiClient</a>.<a href="../interfaces/iapiclient.html#getbalances">getBalances</a></p>
 								<ul>
-									<li>Defined in client/apiClient.ts:131</li>
+									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/a4eaaff/src/client/apiClient.ts#L140">client/apiClient.ts:140</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -284,7 +392,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/iapiclient.html">IApiClient</a>.<a href="../interfaces/iapiclient.html#getinclusionstates">getInclusionStates</a></p>
 								<ul>
-									<li>Defined in client/apiClient.ts:119</li>
+									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/a4eaaff/src/client/apiClient.ts#L128">client/apiClient.ts:128</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -306,6 +414,30 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getmissingtransactions" class="tsd-anchor"></a>
+					<h3>get<wbr>Missing<wbr>Transactions</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Missing<wbr>Transactions<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/igetmissingtransactionsresponse.html" class="tsd-signature-type">IGetMissingTransactionsResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/iapiclient.html">IApiClient</a>.<a href="../interfaces/iapiclient.html#getmissingtransactions">getMissingTransactions</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/a4eaaff/src/client/apiClient.ts#L197">client/apiClient.ts:197</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get transactions with missing references.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/igetmissingtransactionsresponse.html" class="tsd-signature-type">IGetMissingTransactionsResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Promise which resolves to the getMissingTransactions response object or rejects with error.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="getneighbors" class="tsd-anchor"></a>
 					<h3>get<wbr>Neighbors</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -316,7 +448,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/iapiclient.html">IApiClient</a>.<a href="../interfaces/iapiclient.html#getneighbors">getNeighbors</a></p>
 								<ul>
-									<li>Defined in client/apiClient.ts:63</li>
+									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/a4eaaff/src/client/apiClient.ts#L72">client/apiClient.ts:72</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -341,7 +473,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/iapiclient.html">IApiClient</a>.<a href="../interfaces/iapiclient.html#getnodeinfo">getNodeInfo</a></p>
 								<ul>
-									<li>Defined in client/apiClient.ts:54</li>
+									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/a4eaaff/src/client/apiClient.ts#L63">client/apiClient.ts:63</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -365,7 +497,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/iapiclient.html">IApiClient</a>.<a href="../interfaces/iapiclient.html#gettips">getTips</a></p>
 								<ul>
-									<li>Defined in client/apiClient.ts:89</li>
+									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/a4eaaff/src/client/apiClient.ts#L98">client/apiClient.ts:98</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -389,7 +521,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/iapiclient.html">IApiClient</a>.<a href="../interfaces/iapiclient.html#gettransactionstoapprove">getTransactionsToApprove</a></p>
 								<ul>
-									<li>Defined in client/apiClient.ts:142</li>
+									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/a4eaaff/src/client/apiClient.ts#L151">client/apiClient.ts:151</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -424,7 +556,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/iapiclient.html">IApiClient</a>.<a href="../interfaces/iapiclient.html#gettrytes">getTrytes</a></p>
 								<ul>
-									<li>Defined in client/apiClient.ts:109</li>
+									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/a4eaaff/src/client/apiClient.ts#L118">client/apiClient.ts:118</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -445,6 +577,30 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="interruptattachingtotangle" class="tsd-anchor"></a>
+					<h3>interrupt<wbr>Attaching<wbr>ToTangle</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">interrupt<wbr>Attaching<wbr>ToTangle<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/iapiclient.html">IApiClient</a>.<a href="../interfaces/iapiclient.html#interruptattachingtotangle">interruptAttachingToTangle</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/a4eaaff/src/client/apiClient.ts#L170">client/apiClient.ts:170</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Interrupts and completely aborts the attachToTangle process</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Promise which resolves with empty response object or rejects with error.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="removeneighbors" class="tsd-anchor"></a>
 					<h3>remove<wbr>Neighbors</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -455,7 +611,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/iapiclient.html">IApiClient</a>.<a href="../interfaces/iapiclient.html#removeneighbors">removeNeighbors</a></p>
 								<ul>
-									<li>Defined in client/apiClient.ts:81</li>
+									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/a4eaaff/src/client/apiClient.ts#L90">client/apiClient.ts:90</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -472,6 +628,72 @@
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/iremoveneighborsresponse.html" class="tsd-signature-type">IRemoveNeighborsResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
 							<p>Promise which resolves to the removeNeighbors response object or rejects with error.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="storetransactions" class="tsd-anchor"></a>
+					<h3>store<wbr>Transactions</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">store<wbr>Transactions<span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><a href="../interfaces/istoretransactionsrequest.html" class="tsd-signature-type">IStoreTransactionsRequest</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/iapiclient.html">IApiClient</a>.<a href="../interfaces/iapiclient.html#storetransactions">storeTransactions</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/a4eaaff/src/client/apiClient.ts#L188">client/apiClient.ts:188</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Store transactions into the local storage. The trytes to be used for this call are returned by attachToTangle.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>request: <a href="../interfaces/istoretransactionsrequest.html" class="tsd-signature-type">IStoreTransactionsRequest</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The storeTransactions request object.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Promise which resolves with empty response object or rejects with error.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="wereaddressesspentfrom" class="tsd-anchor"></a>
+					<h3>were<wbr>Addresses<wbr>Spent<wbr>From</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">were<wbr>Addresses<wbr>Spent<wbr>From<span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><a href="../interfaces/iwereaddressesspentfromrequest.html" class="tsd-signature-type">IWereAddressesSpentFromRequest</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/iwereaddressesspentfromresponse.html" class="tsd-signature-type">IWereAddressesSpentFromResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/iapiclient.html">IApiClient</a>.<a href="../interfaces/iapiclient.html#wereaddressesspentfrom">wereAddressesSpentFrom</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/iotaeco/iota-pico-api/blob/a4eaaff/src/client/apiClient.ts#L215">client/apiClient.ts:215</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Have the requested addresses been spent from already.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>request: <a href="../interfaces/iwereaddressesspentfromrequest.html" class="tsd-signature-type">IWereAddressesSpentFromRequest</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The wereAddressesSpentFrom request object.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/iwereaddressesspentfromresponse.html" class="tsd-signature-type">IWereAddressesSpentFromResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Promise which resolves to the wereAddressesSpentFrom response object or rejects with error.</p>
 						</li>
 					</ul>
 				</section>
@@ -499,6 +721,15 @@
 								<a href="apiclient.html#addneighbors" class="tsd-kind-icon">add<wbr>Neighbors</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="apiclient.html#attachtotangle" class="tsd-kind-icon">attach<wbr>ToTangle</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="apiclient.html#broadcasttransactions" class="tsd-kind-icon">broadcast<wbr>Transactions</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="apiclient.html#checkconsistency" class="tsd-kind-icon">check<wbr>Consistency</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="apiclient.html#findtransactions" class="tsd-kind-icon">find<wbr>Transactions</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
@@ -506,6 +737,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="apiclient.html#getinclusionstates" class="tsd-kind-icon">get<wbr>Inclusion<wbr>States</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="apiclient.html#getmissingtransactions" class="tsd-kind-icon">get<wbr>Missing<wbr>Transactions</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="apiclient.html#getneighbors" class="tsd-kind-icon">get<wbr>Neighbors</a>
@@ -523,7 +757,16 @@
 								<a href="apiclient.html#gettrytes" class="tsd-kind-icon">get<wbr>Trytes</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="apiclient.html#interruptattachingtotangle" class="tsd-kind-icon">interrupt<wbr>Attaching<wbr>ToTangle</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="apiclient.html#removeneighbors" class="tsd-kind-icon">remove<wbr>Neighbors</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="apiclient.html#storetransactions" class="tsd-kind-icon">store<wbr>Transactions</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="apiclient.html#wereaddressesspentfrom" class="tsd-kind-icon">were<wbr>Addresses<wbr>Spent<wbr>From</a>
 							</li>
 						</ul>
 					</li>
@@ -537,6 +780,21 @@
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="../interfaces/iapiclient.html" class="tsd-kind-icon">IApi<wbr>Client</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/iattachtotanglerequest.html" class="tsd-kind-icon">IAttach<wbr>ToTangle<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/iattachtotangleresponse.html" class="tsd-kind-icon">IAttach<wbr>ToTangle<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/ibroadcasttransactionsrequest.html" class="tsd-kind-icon">IBroadcast<wbr>Transactions<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/icheckconsistencyrequest.html" class="tsd-kind-icon">ICheck<wbr>Consistency<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/icheckconsistencyresponse.html" class="tsd-kind-icon">ICheck<wbr>Consistency<wbr>Response</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="../interfaces/ifindtransactionsrequest.html" class="tsd-kind-icon">IFind<wbr>Transactions<wbr>Request</a>
@@ -555,6 +813,9 @@
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="../interfaces/igetinclusionstatesresponse.html" class="tsd-kind-icon">IGet<wbr>Inclusion<wbr>States<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/igetmissingtransactionsresponse.html" class="tsd-kind-icon">IGet<wbr>Missing<wbr>Transactions<wbr>Response</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="../interfaces/igetneighborsresponse.html" class="tsd-kind-icon">IGet<wbr>Neighbors<wbr>Response</a>
@@ -585,6 +846,15 @@
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="../interfaces/iremoveneighborsresponse.html" class="tsd-kind-icon">IRemove<wbr>Neighbors<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/istoretransactionsrequest.html" class="tsd-kind-icon">IStore<wbr>Transactions<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/iwereaddressesspentfromrequest.html" class="tsd-kind-icon">IWere<wbr>Addresses<wbr>Spent<wbr>From<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/iwereaddressesspentfromresponse.html" class="tsd-kind-icon">IWere<wbr>Addresses<wbr>Spent<wbr>From<wbr>Response</a>
 					</li>
 				</ul>
 			</nav>
