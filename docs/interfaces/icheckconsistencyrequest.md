@@ -17,7 +17,7 @@ Represents the request for checkConsistency command.
 
 **●  tails**:  *`string`[]* 
 
-*Defined in [models/ICheckConsistencyRequest.ts:9](https://github.com/iotaeco/iota-pico-api/blob/831cef8/src/models/ICheckConsistencyRequest.ts#L9)*
+*Defined in [models/ICheckConsistencyRequest.ts:9](https://github.com/iotaeco/iota-pico-api/blob/f25437b/src/models/ICheckConsistencyRequest.ts#L9)*
 
 
 

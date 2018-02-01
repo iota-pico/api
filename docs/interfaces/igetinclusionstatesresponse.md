@@ -17,7 +17,7 @@ Represents the response from getInclusionStates command.
 
 **●  duration**:  *`number`* 
 
-*Defined in [models/IGetInclusionStatesResponse.ts:14](https://github.com/iotaeco/iota-pico-api/blob/831cef8/src/models/IGetInclusionStatesResponse.ts#L14)*
+*Defined in [models/IGetInclusionStatesResponse.ts:14](https://github.com/iotaeco/iota-pico-api/blob/f25437b/src/models/IGetInclusionStatesResponse.ts#L14)*
 
 
 
@@ -34,7 +34,7 @@ ___
 
 **●  states**:  *`boolean`[]* 
 
-*Defined in [models/IGetInclusionStatesResponse.ts:10](https://github.com/iotaeco/iota-pico-api/blob/831cef8/src/models/IGetInclusionStatesResponse.ts#L10)*
+*Defined in [models/IGetInclusionStatesResponse.ts:10](https://github.com/iotaeco/iota-pico-api/blob/f25437b/src/models/IGetInclusionStatesResponse.ts#L10)*
 
 
 
