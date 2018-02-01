@@ -1,5 +1,4 @@
 import { CoreError } from "@iota-pico/core/dist/error/coreError";
-import { IError } from "@iota-pico/core/dist/interfaces/IError";
 import { INetworkClient } from "@iota-pico/core/dist/interfaces/INetworkClient";
 import { IApiClient } from "../interfaces/IApiClient";
 import { IAddNeighborsRequest } from "../models/IAddNeighborsRequest";
@@ -222,7 +221,7 @@ export class ApiClient implements IApiClient {
             enumerable: true
         });
         return this._networkClient.postJson<T, U>(request, this.createHeaders())
-            .catch((err: IError) => {
+            .catch((err: CoreError) => {
                 if (err.additional && err.additional.response) {
                     try {
                         const commandError = JSON.parse(err.additional.response);

@@ -8,9 +8,11 @@
         "module": "commonjs",
         "declaration": true,
         "moduleResolution": "node",
-        "strict": true,
+        "noImplicitAny": true,
+        "noImplicitThis": true,
         "noImplicitReturns": true,
         "noUnusedLocals": true,
+        "strictNullChecks": false,
         "types": [],
         "esModuleInterop": true
     },
