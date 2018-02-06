@@ -31,9 +31,6 @@ import { IWereAddressesSpentFromResponse } from "../models/IWereAddressesSpentFr
  * @interface
  */
 export declare class ApiClient implements IApiClient {
-    private readonly _networkClient;
-    private readonly _apiVersion;
-    private readonly _additionalHeaders?;
     /**
      * Create an instance of ApiClient.
      * @param networkClient The network client to communicate through.
@@ -152,6 +149,4 @@ export declare class ApiClient implements IApiClient {
      * @returns Promise which resolves to the wereAddressesSpentFrom response object or rejects with error.
      */
     wereAddressesSpentFrom(request: IWereAddressesSpentFromRequest): Promise<IWereAddressesSpentFromResponse>;
-    private sendCommand<T, U>(command, request);
-    private createHeaders();
 }

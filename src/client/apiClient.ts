@@ -33,8 +33,11 @@ import { IWereAddressesSpentFromResponse } from "../models/IWereAddressesSpentFr
  * @interface
  */
 export class ApiClient implements IApiClient {
+    /* @internal */
     private readonly _networkClient: INetworkClient;
+    /* @internal */
     private readonly _apiVersion: string;
+    /* @internal */
     private readonly _additionalHeaders?: { [header: string]: string };
 
     /**
@@ -215,6 +218,7 @@ export class ApiClient implements IApiClient {
         return this.sendCommand<IWereAddressesSpentFromRequest, IWereAddressesSpentFromResponse>("wereAddressesSpentFrom", request);
     }
 
+    /* @internal */
     private async sendCommand<T, U>(command: string, request: T): Promise<U> {
         Object.defineProperty(request, "command", {
             value: command,
@@ -239,6 +243,7 @@ export class ApiClient implements IApiClient {
             });
     }
 
+    /* @internal */
     private createHeaders(): { [headers: string]: string } {
         const headers = this._additionalHeaders || {};
         headers["X-IOTA-API-Version"] = this._apiVersion;

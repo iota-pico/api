@@ -166,6 +166,7 @@ class ApiClient {
     async wereAddressesSpentFrom(request) {
         return this.sendCommand("wereAddressesSpentFrom", request);
     }
+    /* @internal */
     async sendCommand(command, request) {
         Object.defineProperty(request, "command", {
             value: command,
@@ -191,6 +192,7 @@ class ApiClient {
             throw err;
         });
     }
+    /* @internal */
     createHeaders() {
         const headers = this._additionalHeaders || {};
         headers["X-IOTA-API-Version"] = this._apiVersion;

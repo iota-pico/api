@@ -17,7 +17,7 @@ Represents the response from getBalances command.
 
 **●  balances**:  *`string`[]* 
 
-*Defined in [models/IGetBalancesResponse.ts:9](https://github.com/iotaeco/iota-pico-api/blob/a82374b/src/models/IGetBalancesResponse.ts#L9)*
+*Defined in [models/IGetBalancesResponse.ts:9](https://github.com/iotaeco/iota-pico-api/blob/cca6a02/src/models/IGetBalancesResponse.ts#L9)*
 
 
 
@@ -34,7 +34,7 @@ ___
 
 **●  duration**:  *`number`* 
 
-*Defined in [models/IGetBalancesResponse.ts:21](https://github.com/iotaeco/iota-pico-api/blob/a82374b/src/models/IGetBalancesResponse.ts#L21)*
+*Defined in [models/IGetBalancesResponse.ts:21](https://github.com/iotaeco/iota-pico-api/blob/cca6a02/src/models/IGetBalancesResponse.ts#L21)*
 
 
 
@@ -51,7 +51,7 @@ ___
 
 **●  milestone**:  *`string`* 
 
-*Defined in [models/IGetBalancesResponse.ts:13](https://github.com/iotaeco/iota-pico-api/blob/a82374b/src/models/IGetBalancesResponse.ts#L13)*
+*Defined in [models/IGetBalancesResponse.ts:13](https://github.com/iotaeco/iota-pico-api/blob/cca6a02/src/models/IGetBalancesResponse.ts#L13)*
 
 
 
@@ -68,7 +68,7 @@ ___
 
 **●  milestoneIndex**:  *`number`* 
 
-*Defined in [models/IGetBalancesResponse.ts:17](https://github.com/iotaeco/iota-pico-api/blob/a82374b/src/models/IGetBalancesResponse.ts#L17)*
+*Defined in [models/IGetBalancesResponse.ts:17](https://github.com/iotaeco/iota-pico-api/blob/cca6a02/src/models/IGetBalancesResponse.ts#L17)*
 
 
 
