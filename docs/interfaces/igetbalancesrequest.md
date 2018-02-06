@@ -17,7 +17,7 @@ Represents the request for getBalances command.
 
 **●  addresses**:  *`string`[]* 
 
-*Defined in [models/IGetBalancesRequest.ts:9](https://github.com/iotaeco/iota-pico-api/blob/cca6a02/src/models/IGetBalancesRequest.ts#L9)*
+*Defined in [models/IGetBalancesRequest.ts:9](https://github.com/iotaeco/iota-pico-api/blob/3249e6a/src/models/IGetBalancesRequest.ts#L9)*
 
 
 
@@ -34,7 +34,7 @@ ___
 
 **●  threshold**:  *`number`* 
 
-*Defined in [models/IGetBalancesRequest.ts:13](https://github.com/iotaeco/iota-pico-api/blob/cca6a02/src/models/IGetBalancesRequest.ts#L13)*
+*Defined in [models/IGetBalancesRequest.ts:13](https://github.com/iotaeco/iota-pico-api/blob/3249e6a/src/models/IGetBalancesRequest.ts#L13)*
 
 
 

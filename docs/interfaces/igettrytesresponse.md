@@ -17,7 +17,7 @@ Represents the response from getTrytes command.
 
 **●  duration**:  *`number`* 
 
-*Defined in [models/IGetTrytesResponse.ts:13](https://github.com/iotaeco/iota-pico-api/blob/cca6a02/src/models/IGetTrytesResponse.ts#L13)*
+*Defined in [models/IGetTrytesResponse.ts:13](https://github.com/iotaeco/iota-pico-api/blob/3249e6a/src/models/IGetTrytesResponse.ts#L13)*
 
 
 
@@ -34,7 +34,7 @@ ___
 
 **●  trytes**:  *`string`[]* 
 
-*Defined in [models/IGetTrytesResponse.ts:9](https://github.com/iotaeco/iota-pico-api/blob/cca6a02/src/models/IGetTrytesResponse.ts#L9)*
+*Defined in [models/IGetTrytesResponse.ts:9](https://github.com/iotaeco/iota-pico-api/blob/3249e6a/src/models/IGetTrytesResponse.ts#L9)*
 
 
 
