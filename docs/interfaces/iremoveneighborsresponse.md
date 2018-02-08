@@ -17,7 +17,7 @@ Represents the response from removeNeighbors command.
 
 **●  duration**:  *`number`* 
 
-*Defined in [models/IRemoveNeighborsResponse.ts:13](https://github.com/iotaeco/iota-pico-api/blob/3249e6a/src/models/IRemoveNeighborsResponse.ts#L13)*
+*Defined in [models/IRemoveNeighborsResponse.ts:13](https://github.com/iotaeco/iota-pico-api/blob/73d3e3b/src/models/IRemoveNeighborsResponse.ts#L13)*
 
 
 
@@ -34,7 +34,7 @@ ___
 
 **●  removedNeighbors**:  *`number`* 
 
-*Defined in [models/IRemoveNeighborsResponse.ts:9](https://github.com/iotaeco/iota-pico-api/blob/3249e6a/src/models/IRemoveNeighborsResponse.ts#L9)*
+*Defined in [models/IRemoveNeighborsResponse.ts:9](https://github.com/iotaeco/iota-pico-api/blob/73d3e3b/src/models/IRemoveNeighborsResponse.ts#L9)*
 
 
 

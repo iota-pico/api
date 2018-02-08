@@ -17,7 +17,7 @@ Represents the response from getTips command.
 
 **●  duration**:  *`number`* 
 
-*Defined in [models/IGetTipsResponse.ts:13](https://github.com/iotaeco/iota-pico-api/blob/3249e6a/src/models/IGetTipsResponse.ts#L13)*
+*Defined in [models/IGetTipsResponse.ts:13](https://github.com/iotaeco/iota-pico-api/blob/73d3e3b/src/models/IGetTipsResponse.ts#L13)*
 
 
 
@@ -34,7 +34,7 @@ ___
 
 **●  hashes**:  *`string`[]* 
 
-*Defined in [models/IGetTipsResponse.ts:9](https://github.com/iotaeco/iota-pico-api/blob/3249e6a/src/models/IGetTipsResponse.ts#L9)*
+*Defined in [models/IGetTipsResponse.ts:9](https://github.com/iotaeco/iota-pico-api/blob/73d3e3b/src/models/IGetTipsResponse.ts#L9)*
 
 
 
