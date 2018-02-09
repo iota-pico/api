@@ -1,7 +1,8 @@
 # Changelog
 
-## v0.5.3
+## v0.6.0
 
+* Version bump
 
 ## v0.5.2
 
