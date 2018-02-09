@@ -17,7 +17,7 @@ Represents the response from attachToTangle command.
 
 **●  trytes**:  *`string`[]* 
 
-*Defined in [models/IAttachToTangleResponse.ts:10](https://github.com/iotaeco/iota-pico-api/blob/fa909a6/src/models/IAttachToTangleResponse.ts#L10)*
+*Defined in [models/IAttachToTangleResponse.ts:10](https://github.com/iotaeco/iota-pico-api/blob/3beb27a/src/models/IAttachToTangleResponse.ts#L10)*
 
 
 
