@@ -23,7 +23,7 @@ Represents a client for performing communication with a node api.
 
 
 
-*Defined in [interfaces/IApiClient.ts:51](https://github.com/iotaeco/iota-pico-api/blob/3beb27a/src/interfaces/IApiClient.ts#L51)*
+*Defined in [interfaces/IApiClient.ts:51](https://github.com/iotaeco/iota-pico-api/blob/3e92717/src/interfaces/IApiClient.ts#L51)*
 
 
 
@@ -58,7 +58,7 @@ ___
 
 
 
-*Defined in [interfaces/IApiClient.ts:116](https://github.com/iotaeco/iota-pico-api/blob/3beb27a/src/interfaces/IApiClient.ts#L116)*
+*Defined in [interfaces/IApiClient.ts:116](https://github.com/iotaeco/iota-pico-api/blob/3e92717/src/interfaces/IApiClient.ts#L116)*
 
 
 
@@ -93,7 +93,7 @@ ___
 
 
 
-*Defined in [interfaces/IApiClient.ts:129](https://github.com/iotaeco/iota-pico-api/blob/3beb27a/src/interfaces/IApiClient.ts#L129)*
+*Defined in [interfaces/IApiClient.ts:129](https://github.com/iotaeco/iota-pico-api/blob/3e92717/src/interfaces/IApiClient.ts#L129)*
 
 
 
@@ -128,7 +128,7 @@ ___
 
 
 
-*Defined in [interfaces/IApiClient.ts:150](https://github.com/iotaeco/iota-pico-api/blob/3beb27a/src/interfaces/IApiClient.ts#L150)*
+*Defined in [interfaces/IApiClient.ts:150](https://github.com/iotaeco/iota-pico-api/blob/3e92717/src/interfaces/IApiClient.ts#L150)*
 
 
 
@@ -163,7 +163,7 @@ ___
 
 
 
-*Defined in [interfaces/IApiClient.ts:73](https://github.com/iotaeco/iota-pico-api/blob/3beb27a/src/interfaces/IApiClient.ts#L73)*
+*Defined in [interfaces/IApiClient.ts:73](https://github.com/iotaeco/iota-pico-api/blob/3e92717/src/interfaces/IApiClient.ts#L73)*
 
 
 
@@ -198,7 +198,7 @@ ___
 
 
 
-*Defined in [interfaces/IApiClient.ts:98](https://github.com/iotaeco/iota-pico-api/blob/3beb27a/src/interfaces/IApiClient.ts#L98)*
+*Defined in [interfaces/IApiClient.ts:98](https://github.com/iotaeco/iota-pico-api/blob/3e92717/src/interfaces/IApiClient.ts#L98)*
 
 
 
@@ -233,7 +233,7 @@ ___
 
 
 
-*Defined in [interfaces/IApiClient.ts:88](https://github.com/iotaeco/iota-pico-api/blob/3beb27a/src/interfaces/IApiClient.ts#L88)*
+*Defined in [interfaces/IApiClient.ts:88](https://github.com/iotaeco/iota-pico-api/blob/3e92717/src/interfaces/IApiClient.ts#L88)*
 
 
 
@@ -268,7 +268,7 @@ ___
 
 
 
-*Defined in [interfaces/IApiClient.ts:143](https://github.com/iotaeco/iota-pico-api/blob/3beb27a/src/interfaces/IApiClient.ts#L143)*
+*Defined in [interfaces/IApiClient.ts:143](https://github.com/iotaeco/iota-pico-api/blob/3e92717/src/interfaces/IApiClient.ts#L143)*
 
 
 
@@ -295,7 +295,7 @@ ___
 
 
 
-*Defined in [interfaces/IApiClient.ts:44](https://github.com/iotaeco/iota-pico-api/blob/3beb27a/src/interfaces/IApiClient.ts#L44)*
+*Defined in [interfaces/IApiClient.ts:44](https://github.com/iotaeco/iota-pico-api/blob/3e92717/src/interfaces/IApiClient.ts#L44)*
 
 
 
@@ -322,7 +322,7 @@ ___
 
 
 
-*Defined in [interfaces/IApiClient.ts:37](https://github.com/iotaeco/iota-pico-api/blob/3beb27a/src/interfaces/IApiClient.ts#L37)*
+*Defined in [interfaces/IApiClient.ts:37](https://github.com/iotaeco/iota-pico-api/blob/3e92717/src/interfaces/IApiClient.ts#L37)*
 
 
 
@@ -349,7 +349,7 @@ ___
 
 
 
-*Defined in [interfaces/IApiClient.ts:64](https://github.com/iotaeco/iota-pico-api/blob/3beb27a/src/interfaces/IApiClient.ts#L64)*
+*Defined in [interfaces/IApiClient.ts:64](https://github.com/iotaeco/iota-pico-api/blob/3e92717/src/interfaces/IApiClient.ts#L64)*
 
 
 
@@ -376,7 +376,7 @@ ___
 
 
 
-*Defined in [interfaces/IApiClient.ts:107](https://github.com/iotaeco/iota-pico-api/blob/3beb27a/src/interfaces/IApiClient.ts#L107)*
+*Defined in [interfaces/IApiClient.ts:107](https://github.com/iotaeco/iota-pico-api/blob/3e92717/src/interfaces/IApiClient.ts#L107)*
 
 
 
@@ -411,7 +411,7 @@ ___
 
 
 
-*Defined in [interfaces/IApiClient.ts:80](https://github.com/iotaeco/iota-pico-api/blob/3beb27a/src/interfaces/IApiClient.ts#L80)*
+*Defined in [interfaces/IApiClient.ts:80](https://github.com/iotaeco/iota-pico-api/blob/3e92717/src/interfaces/IApiClient.ts#L80)*
 
 
 
@@ -446,7 +446,7 @@ ___
 
 
 
-*Defined in [interfaces/IApiClient.ts:122](https://github.com/iotaeco/iota-pico-api/blob/3beb27a/src/interfaces/IApiClient.ts#L122)*
+*Defined in [interfaces/IApiClient.ts:122](https://github.com/iotaeco/iota-pico-api/blob/3e92717/src/interfaces/IApiClient.ts#L122)*
 
 
 
@@ -473,7 +473,7 @@ ___
 
 
 
-*Defined in [interfaces/IApiClient.ts:58](https://github.com/iotaeco/iota-pico-api/blob/3beb27a/src/interfaces/IApiClient.ts#L58)*
+*Defined in [interfaces/IApiClient.ts:58](https://github.com/iotaeco/iota-pico-api/blob/3e92717/src/interfaces/IApiClient.ts#L58)*
 
 
 
@@ -508,7 +508,7 @@ ___
 
 
 
-*Defined in [interfaces/IApiClient.ts:136](https://github.com/iotaeco/iota-pico-api/blob/3beb27a/src/interfaces/IApiClient.ts#L136)*
+*Defined in [interfaces/IApiClient.ts:136](https://github.com/iotaeco/iota-pico-api/blob/3e92717/src/interfaces/IApiClient.ts#L136)*
 
 
 
@@ -543,7 +543,7 @@ ___
 
 
 
-*Defined in [interfaces/IApiClient.ts:157](https://github.com/iotaeco/iota-pico-api/blob/3beb27a/src/interfaces/IApiClient.ts#L157)*
+*Defined in [interfaces/IApiClient.ts:157](https://github.com/iotaeco/iota-pico-api/blob/3e92717/src/interfaces/IApiClient.ts#L157)*
 
 
 
