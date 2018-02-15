@@ -50,7 +50,7 @@ Default implementation of an api client.
 ### ⊕ **new ApiClient**(networkClient: *`INetworkClient`*, apiVersion: *`string`*, additionalHeaders?: *`object`*): [ApiClient](apiclient.md)
 
 
-*Defined in [client/apiClient.ts:41](https://github.com/iotaeco/iota-pico-api/blob/3e92717/src/client/apiClient.ts#L41)*
+*Defined in [client/apiClient.ts:41](https://github.com/iotaeco/iota-pico-api/blob/7e47175/src/client/apiClient.ts#L41)*
 
 
 
@@ -85,7 +85,7 @@ Create an instance of ApiClient.
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[addNeighbors](../interfaces/iapiclient.md#addneighbors)*
 
-*Defined in [client/apiClient.ts:83](https://github.com/iotaeco/iota-pico-api/blob/3e92717/src/client/apiClient.ts#L83)*
+*Defined in [client/apiClient.ts:83](https://github.com/iotaeco/iota-pico-api/blob/7e47175/src/client/apiClient.ts#L83)*
 
 
 
@@ -122,7 +122,7 @@ ___
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[attachToTangle](../interfaces/iapiclient.md#attachtotangle)*
 
-*Defined in [client/apiClient.ts:164](https://github.com/iotaeco/iota-pico-api/blob/3e92717/src/client/apiClient.ts#L164)*
+*Defined in [client/apiClient.ts:164](https://github.com/iotaeco/iota-pico-api/blob/7e47175/src/client/apiClient.ts#L164)*
 
 
 
@@ -159,7 +159,7 @@ ___
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[broadcastTransactions](../interfaces/iapiclient.md#broadcasttransactions)*
 
-*Defined in [client/apiClient.ts:181](https://github.com/iotaeco/iota-pico-api/blob/3e92717/src/client/apiClient.ts#L181)*
+*Defined in [client/apiClient.ts:181](https://github.com/iotaeco/iota-pico-api/blob/7e47175/src/client/apiClient.ts#L181)*
 
 
 
@@ -196,7 +196,7 @@ ___
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[checkConsistency](../interfaces/iapiclient.md#checkconsistency)*
 
-*Defined in [client/apiClient.ts:208](https://github.com/iotaeco/iota-pico-api/blob/3e92717/src/client/apiClient.ts#L208)*
+*Defined in [client/apiClient.ts:208](https://github.com/iotaeco/iota-pico-api/blob/7e47175/src/client/apiClient.ts#L208)*
 
 
 
@@ -233,7 +233,7 @@ ___
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[findTransactions](../interfaces/iapiclient.md#findtransactions)*
 
-*Defined in [client/apiClient.ts:111](https://github.com/iotaeco/iota-pico-api/blob/3e92717/src/client/apiClient.ts#L111)*
+*Defined in [client/apiClient.ts:111](https://github.com/iotaeco/iota-pico-api/blob/7e47175/src/client/apiClient.ts#L111)*
 
 
 
@@ -270,7 +270,7 @@ ___
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[getBalances](../interfaces/iapiclient.md#getbalances)*
 
-*Defined in [client/apiClient.ts:142](https://github.com/iotaeco/iota-pico-api/blob/3e92717/src/client/apiClient.ts#L142)*
+*Defined in [client/apiClient.ts:142](https://github.com/iotaeco/iota-pico-api/blob/7e47175/src/client/apiClient.ts#L142)*
 
 
 
@@ -307,7 +307,7 @@ ___
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[getInclusionStates](../interfaces/iapiclient.md#getinclusionstates)*
 
-*Defined in [client/apiClient.ts:130](https://github.com/iotaeco/iota-pico-api/blob/3e92717/src/client/apiClient.ts#L130)*
+*Defined in [client/apiClient.ts:130](https://github.com/iotaeco/iota-pico-api/blob/7e47175/src/client/apiClient.ts#L130)*
 
 
 
@@ -344,7 +344,7 @@ ___
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[getMissingTransactions](../interfaces/iapiclient.md#getmissingtransactions)*
 
-*Defined in [client/apiClient.ts:199](https://github.com/iotaeco/iota-pico-api/blob/3e92717/src/client/apiClient.ts#L199)*
+*Defined in [client/apiClient.ts:199](https://github.com/iotaeco/iota-pico-api/blob/7e47175/src/client/apiClient.ts#L199)*
 
 
 
@@ -373,7 +373,7 @@ ___
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[getNeighbors](../interfaces/iapiclient.md#getneighbors)*
 
-*Defined in [client/apiClient.ts:74](https://github.com/iotaeco/iota-pico-api/blob/3e92717/src/client/apiClient.ts#L74)*
+*Defined in [client/apiClient.ts:74](https://github.com/iotaeco/iota-pico-api/blob/7e47175/src/client/apiClient.ts#L74)*
 
 
 
@@ -402,7 +402,7 @@ ___
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[getNodeInfo](../interfaces/iapiclient.md#getnodeinfo)*
 
-*Defined in [client/apiClient.ts:65](https://github.com/iotaeco/iota-pico-api/blob/3e92717/src/client/apiClient.ts#L65)*
+*Defined in [client/apiClient.ts:65](https://github.com/iotaeco/iota-pico-api/blob/7e47175/src/client/apiClient.ts#L65)*
 
 
 
@@ -431,7 +431,7 @@ ___
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[getTips](../interfaces/iapiclient.md#gettips)*
 
-*Defined in [client/apiClient.ts:100](https://github.com/iotaeco/iota-pico-api/blob/3e92717/src/client/apiClient.ts#L100)*
+*Defined in [client/apiClient.ts:100](https://github.com/iotaeco/iota-pico-api/blob/7e47175/src/client/apiClient.ts#L100)*
 
 
 
@@ -460,7 +460,7 @@ ___
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[getTransactionsToApprove](../interfaces/iapiclient.md#gettransactionstoapprove)*
 
-*Defined in [client/apiClient.ts:153](https://github.com/iotaeco/iota-pico-api/blob/3e92717/src/client/apiClient.ts#L153)*
+*Defined in [client/apiClient.ts:153](https://github.com/iotaeco/iota-pico-api/blob/7e47175/src/client/apiClient.ts#L153)*
 
 
 
@@ -497,7 +497,7 @@ ___
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[getTrytes](../interfaces/iapiclient.md#gettrytes)*
 
-*Defined in [client/apiClient.ts:120](https://github.com/iotaeco/iota-pico-api/blob/3e92717/src/client/apiClient.ts#L120)*
+*Defined in [client/apiClient.ts:120](https://github.com/iotaeco/iota-pico-api/blob/7e47175/src/client/apiClient.ts#L120)*
 
 
 
@@ -534,7 +534,7 @@ ___
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[interruptAttachingToTangle](../interfaces/iapiclient.md#interruptattachingtotangle)*
 
-*Defined in [client/apiClient.ts:172](https://github.com/iotaeco/iota-pico-api/blob/3e92717/src/client/apiClient.ts#L172)*
+*Defined in [client/apiClient.ts:172](https://github.com/iotaeco/iota-pico-api/blob/7e47175/src/client/apiClient.ts#L172)*
 
 
 
@@ -563,7 +563,7 @@ ___
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[removeNeighbors](../interfaces/iapiclient.md#removeneighbors)*
 
-*Defined in [client/apiClient.ts:92](https://github.com/iotaeco/iota-pico-api/blob/3e92717/src/client/apiClient.ts#L92)*
+*Defined in [client/apiClient.ts:92](https://github.com/iotaeco/iota-pico-api/blob/7e47175/src/client/apiClient.ts#L92)*
 
 
 
@@ -600,7 +600,7 @@ ___
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[storeTransactions](../interfaces/iapiclient.md#storetransactions)*
 
-*Defined in [client/apiClient.ts:190](https://github.com/iotaeco/iota-pico-api/blob/3e92717/src/client/apiClient.ts#L190)*
+*Defined in [client/apiClient.ts:190](https://github.com/iotaeco/iota-pico-api/blob/7e47175/src/client/apiClient.ts#L190)*
 
 
 
@@ -637,7 +637,7 @@ ___
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[wereAddressesSpentFrom](../interfaces/iapiclient.md#wereaddressesspentfrom)*
 
-*Defined in [client/apiClient.ts:217](https://github.com/iotaeco/iota-pico-api/blob/3e92717/src/client/apiClient.ts#L217)*
+*Defined in [client/apiClient.ts:217](https://github.com/iotaeco/iota-pico-api/blob/7e47175/src/client/apiClient.ts#L217)*
 
 
 

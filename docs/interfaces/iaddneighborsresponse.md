@@ -17,7 +17,7 @@ Represents the response from addNeighbors command.
 
 **●  addedNeighbors**:  *`number`* 
 
-*Defined in [models/IAddNeighborsResponse.ts:9](https://github.com/iotaeco/iota-pico-api/blob/3e92717/src/models/IAddNeighborsResponse.ts#L9)*
+*Defined in [models/IAddNeighborsResponse.ts:9](https://github.com/iotaeco/iota-pico-api/blob/7e47175/src/models/IAddNeighborsResponse.ts#L9)*
 
 
 
@@ -34,7 +34,7 @@ ___
 
 **●  duration**:  *`number`* 
 
-*Defined in [models/IAddNeighborsResponse.ts:13](https://github.com/iotaeco/iota-pico-api/blob/3e92717/src/models/IAddNeighborsResponse.ts#L13)*
+*Defined in [models/IAddNeighborsResponse.ts:13](https://github.com/iotaeco/iota-pico-api/blob/7e47175/src/models/IAddNeighborsResponse.ts#L13)*
 
 
 
