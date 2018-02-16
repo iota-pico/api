@@ -17,7 +17,7 @@ Represents the response from getNeighbors command.
 
 **●  duration**:  *`number`* 
 
-*Defined in [models/IGetNeighborsResponse.ts:15](https://github.com/iotaeco/iota-pico-api/blob/7e47175/src/models/IGetNeighborsResponse.ts#L15)*
+*Defined in [models/IGetNeighborsResponse.ts:15](https://github.com/iotaeco/iota-pico-api/blob/bea785e/src/models/IGetNeighborsResponse.ts#L15)*
 
 
 
@@ -34,7 +34,7 @@ ___
 
 **●  neighbors**:  *[INeighbor](ineighbor.md)[]* 
 
-*Defined in [models/IGetNeighborsResponse.ts:11](https://github.com/iotaeco/iota-pico-api/blob/7e47175/src/models/IGetNeighborsResponse.ts#L11)*
+*Defined in [models/IGetNeighborsResponse.ts:11](https://github.com/iotaeco/iota-pico-api/blob/bea785e/src/models/IGetNeighborsResponse.ts#L11)*
 
 
 

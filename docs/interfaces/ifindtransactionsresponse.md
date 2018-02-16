@@ -17,7 +17,7 @@ Represents the response from findTransactions command.
 
 **●  duration**:  *`number`* 
 
-*Defined in [models/IFindTransactionsResponse.ts:18](https://github.com/iotaeco/iota-pico-api/blob/7e47175/src/models/IFindTransactionsResponse.ts#L18)*
+*Defined in [models/IFindTransactionsResponse.ts:18](https://github.com/iotaeco/iota-pico-api/blob/bea785e/src/models/IFindTransactionsResponse.ts#L18)*
 
 
 
@@ -34,7 +34,7 @@ ___
 
 **●  hashes**:  *`string`[]* 
 
-*Defined in [models/IFindTransactionsResponse.ts:14](https://github.com/iotaeco/iota-pico-api/blob/7e47175/src/models/IFindTransactionsResponse.ts#L14)*
+*Defined in [models/IFindTransactionsResponse.ts:14](https://github.com/iotaeco/iota-pico-api/blob/bea785e/src/models/IFindTransactionsResponse.ts#L14)*
 
 
 

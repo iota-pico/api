@@ -6,17 +6,17 @@ export interface IFindTransactionsRequest {
     /**
      * List of bundle hashes. The hashes need to be extended to 81chars by padding the hash with 9's.
      */
-    bundles: string[];
+    bundles?: string[];
     /**
      * List of addresses.
      */
-    addresses: string[];
+    addresses?: string[];
     /**
      * List of transaction tags.
      */
-    tags: string[];
+    tags?: string[];
     /**
      * List of approvees of a transaction.
      */
-    approvees: string[];
+    approvees?: string[];
 }
