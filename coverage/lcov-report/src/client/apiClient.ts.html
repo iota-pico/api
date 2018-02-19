@@ -1,0 +1,821 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/client/apiClient.ts</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="..\..\prettify.css" />
+    <link rel="stylesheet" href="..\..\base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(..\..\sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="..\..\index.html">All files</a> / <a href="index.html">src/client</a> apiClient.ts
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">17.07% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>7/41</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">36.84% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>7/19</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">4.76% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>1/21</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">17.07% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>7/41</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { CoreError } from "@iota-pico/core/dist/error/coreError";
+import { INetworkClient } from "@iota-pico/core/dist/interfaces/INetworkClient";
+import { IApiClient } from "../interfaces/IApiClient";
+import { IAddNeighborsRequest } from "../models/IAddNeighborsRequest";
+import { IAddNeighborsResponse } from "../models/IAddNeighborsResponse";
+import { IAttachToTangleRequest } from "../models/IAttachToTangleRequest";
+import { IAttachToTangleResponse } from "../models/IAttachToTangleResponse";
+import { IBroadcastTransactionsRequest } from "../models/IBroadcastTransactionsRequest";
+import { ICheckConsistencyRequest } from "../models/ICheckConsistencyRequest";
+import { ICheckConsistencyResponse } from "../models/ICheckConsistencyResponse";
+import { IFindTransactionsRequest } from "../models/IFindTransactionsRequest";
+import { IFindTransactionsResponse } from "../models/IFindTransactionsResponse";
+import { IGetBalancesRequest } from "../models/IGetBalancesRequest";
+import { IGetBalancesResponse } from "../models/IGetBalancesResponse";
+import { IGetInclusionStatesRequest } from "../models/IGetInclusionStatesRequest";
+import { IGetInclusionStatesResponse } from "../models/IGetInclusionStatesResponse";
+import { IGetMissingTransactionsResponse } from "../models/IGetMissingTransactionsResponse";
+import { IGetNeighborsResponse } from "../models/IGetNeighborsResponse";
+import { IGetNodeInfoResponse } from "../models/IGetNodeInfoResponse";
+import { IGetTipsResponse } from "../models/IGetTipsResponse";
+import { IGetTransactionsToApproveRequest } from "../models/IGetTransactionsToApproveRequest";
+import { IGetTransactionsToApproveResponse } from "../models/IGetTransactionsToApproveResponse";
+import { IGetTrytesRequest } from "../models/IGetTrytesRequest";
+import { IGetTrytesResponse } from "../models/IGetTrytesResponse";
+import { IRemoveNeighborsRequest } from "../models/IRemoveNeighborsRequest";
+import { IRemoveNeighborsResponse } from "../models/IRemoveNeighborsResponse";
+import { IStoreTransactionsRequest } from "../models/IStoreTransactionsRequest";
+import { IWereAddressesSpentFromRequest } from "../models/IWereAddressesSpentFromRequest";
+import { IWereAddressesSpentFromResponse } from "../models/IWereAddressesSpentFromResponse";
+&nbsp;
+/**
+ * Default implementation of an api client.
+ * @interface
+ */
+export class ApiClient implements IApiClient {
+    /* @internal */
+    private readonly _networkClient: INetworkClient;
+    /* @internal */
+    private readonly _apiVersion: string;
+    /* @internal */
+    private readonly _additionalHeaders?: { [header: string]: string };
+&nbsp;
+    /**
+     * Create an instance of ApiClient.
+     * @param networkClient The network client to communicate through.
+     * @param apiVersion The API version to send with the requests
+     * @param additionalHeaders Extra headers to send with the requests.
+     */
+    constructor(networkClient: INetworkClient, apiVersion: string, additionalHeaders?: { [header: string]: string }) {
+        <span class="missing-if-branch" title="if path not taken" >I</span>if (networkClient === undefined || networkClient === null) {
+<span class="cstat-no" title="statement not covered" >            throw new CoreError("The networkClient must be defined");</span>
+        }
+        <span class="missing-if-branch" title="if path not taken" >I</span>if (apiVersion === undefined || apiVersion === null || apiVersion.length === 0) {
+<span class="cstat-no" title="statement not covered" >            throw new CoreError("The apiVersion must be defined");</span>
+        }
+        this._networkClient = networkClient;
+        this._apiVersion = apiVersion;
+        this._additionalHeaders = additionalHeaders;
+    }
+&nbsp;
+    /**
+     * Returns information about your node.
+     * @returns Promise which resolves to the getNodeInfo response object or rejects with error.
+     */
+    public <span class="fstat-no" title="function not covered" >async</span> getNodeInfo(): Promise&lt;IGetNodeInfoResponse&gt; {
+<span class="cstat-no" title="statement not covered" >        return this.sendCommand&lt;{}, IGetNodeInfoResponse&gt;("getNodeInfo", {});</span>
+    }
+&nbsp;
+    /**
+     * Returns the set of neighbors you are connected with, as well as their activity count.
+     * The activity counter is reset after restarting IRI.
+     * @returns Promise which resolves to the getNeighbors response object or rejects with error.
+     */
+    public <span class="fstat-no" title="function not covered" >async</span> getNeighbors(): Promise&lt;IGetNeighborsResponse&gt; {
+<span class="cstat-no" title="statement not covered" >        return this.sendCommand&lt;{}, IGetNeighborsResponse&gt;("getNeighbors", {});</span>
+    }
+&nbsp;
+    /**
+     * Add a list of neighbors to your node. It should be noted that this is only temporary,
+     * and the added neighbors will be removed from your set of neighbors after you relaunch IRI.
+     * @returns Promise which resolves to the addNeighbors response object or rejects with error.
+     */
+    public <span class="fstat-no" title="function not covered" >async</span> addNeighbors(request: IAddNeighborsRequest): Promise&lt;IAddNeighborsResponse&gt; {
+<span class="cstat-no" title="statement not covered" >        return this.sendCommand&lt;IAddNeighborsRequest, IAddNeighborsResponse&gt;("addNeighbors", request);</span>
+    }
+&nbsp;
+    /**
+     * Removes a list of neighbors from your node. This is only temporary, and if you have your
+     * neighbors added via the command line, they will be retained after you restart your node.
+     * @returns Promise which resolves to the removeNeighbors response object or rejects with error.
+     */
+    public <span class="fstat-no" title="function not covered" >async</span> removeNeighbors(request: IRemoveNeighborsRequest): Promise&lt;IRemoveNeighborsResponse&gt; {
+<span class="cstat-no" title="statement not covered" >        return this.sendCommand&lt;IRemoveNeighborsRequest, IRemoveNeighborsResponse&gt;("removeNeighbors", request);</span>
+    }
+&nbsp;
+    /**
+     * Returns the list of tips.
+     * @returns Promise which resolves to the getTips response object or rejects with error.
+     */
+    public <span class="fstat-no" title="function not covered" >async</span> getTips(): Promise&lt;IGetTipsResponse&gt; {
+<span class="cstat-no" title="statement not covered" >        return this.sendCommand&lt;{}, IGetTipsResponse&gt;("getTips", {});</span>
+    }
+&nbsp;
+    /**
+     * Find the transactions which match the specified input and return. All input values are lists,
+     * for which a list of return values (transaction hashes), in the same order, is returned for all
+     * individual elements. The input fields can either be bundles, addresses, tags or approvees.
+     * Using multiple of these input fields returns the intersection of the values.
+     * @returns Promise which resolves to the findTransactions response object or rejects with error.
+     */
+    public <span class="fstat-no" title="function not covered" >async</span> findTransactions(request: IFindTransactionsRequest): Promise&lt;IFindTransactionsResponse&gt; {
+<span class="cstat-no" title="statement not covered" >        return this.sendCommand&lt;IFindTransactionsRequest, IFindTransactionsResponse&gt;("findTransactions", request);</span>
+    }
+&nbsp;
+    /**
+     * Returns the raw transaction data (trytes) of a specific transaction.
+     * These trytes can then be easily converted into the actual transaction object.
+     * @returns Promise which resolves to the findTransactions response object or rejects with error.
+     */
+    public <span class="fstat-no" title="function not covered" >async</span> getTrytes(request: IGetTrytesRequest): Promise&lt;IGetTrytesResponse&gt; {
+<span class="cstat-no" title="statement not covered" >        return this.sendCommand&lt;IGetTrytesRequest, IGetTrytesResponse&gt;("getTrytes", request);</span>
+    }
+&nbsp;
+    /**
+     * Get the inclusion states of a set of transactions. This is for determining if a transaction
+     * was accepted and confirmed by the network or not. You can search for multiple tips (and thus,
+     * milestones) to get past inclusion states of transactions.
+     * @returns Promise which resolves to the getInclusionStates response object or rejects with error.
+     */
+    public <span class="fstat-no" title="function not covered" >async</span> getInclusionStates(request: IGetInclusionStatesRequest): Promise&lt;IGetInclusionStatesResponse&gt; {
+<span class="cstat-no" title="statement not covered" >        return this.sendCommand&lt;IGetInclusionStatesRequest, IGetInclusionStatesResponse&gt;("getInclusionStates", request);</span>
+    }
+&nbsp;
+    /**
+     * Returns the confirmed balance which a list of addresses have at the latest confirmed milestone.
+     * In addition to the balances, it also returns the milestone as well as the index with which the
+     * confirmed balance was determined. The balances is returned as a list in the same order as the
+     * addresses were provided as input.
+     * @param request The getBalances request object.
+     * @returns Promise which resolves to the getBalances response object or rejects with error.
+     */
+    public <span class="fstat-no" title="function not covered" >async</span> getBalances(request: IGetBalancesRequest): Promise&lt;IGetBalancesResponse&gt; {
+<span class="cstat-no" title="statement not covered" >        return this.sendCommand&lt;IGetBalancesRequest, IGetBalancesResponse&gt;("getBalances", request);</span>
+    }
+&nbsp;
+    /**
+     * Tip selection which returns trunkTransaction and branchTransaction. The input value is depth,
+     * which basically determines how many bundles to go back to for finding the transactions to approve.
+     * The higher your depth value, the more "babysitting" you do for the network (as you have to confirm more transactions).
+     * @param request The getTransactionsToApprove request object.
+     * @returns Promise which resolves to the getTransactionsToApprove response object or rejects with error.
+     */
+    public <span class="fstat-no" title="function not covered" >async</span> getTransactionsToApprove(request: IGetTransactionsToApproveRequest): Promise&lt;IGetTransactionsToApproveResponse&gt; {
+<span class="cstat-no" title="statement not covered" >        return this.sendCommand&lt;IGetTransactionsToApproveRequest, IGetTransactionsToApproveResponse&gt;("getTransactionsToApprove", request);</span>
+    }
+&nbsp;
+    /**
+     * Attaches the specified transactions (trytes) to the Tangle by doing Proof of Work. You need to supply
+     * branchTransaction as well as trunkTransaction (basically the tips which you're going to validate and
+     * reference with this transaction) - both of which you'll get through the getTransactionsToApprove API call.
+     * @param request The attachToTangle request object.
+     * @returns Promise which resolves to the attachToTangle response object or rejects with error.
+     */
+    public <span class="fstat-no" title="function not covered" >async</span> attachToTangle(request: IAttachToTangleRequest): Promise&lt;IAttachToTangleResponse&gt; {
+<span class="cstat-no" title="statement not covered" >        return this.sendCommand&lt;IAttachToTangleRequest, IAttachToTangleResponse&gt;("attachToTangle", request);</span>
+    }
+&nbsp;
+    /**
+     * Interrupts and completely aborts the attachToTangle process
+     * @returns Promise which resolves with empty response object or rejects with error.
+     */
+    public <span class="fstat-no" title="function not covered" >async</span> interruptAttachingToTangle(): Promise&lt;void&gt; {
+<span class="cstat-no" title="statement not covered" >        return this.sendCommand&lt;{}, void&gt;("interruptAttachingToTangle", {});</span>
+    }
+&nbsp;
+    /**
+     * Broadcast a list of transactions to all neighbors. The input trytes for this call are provided by attachToTangle.
+     * @param request The broadcastTransactions request object.
+     * @returns Promise which resolves with empty response object or rejects with error.
+     */
+    public <span class="fstat-no" title="function not covered" >async</span> broadcastTransactions(request: IBroadcastTransactionsRequest): Promise&lt;void&gt; {
+<span class="cstat-no" title="statement not covered" >        return this.sendCommand&lt;IBroadcastTransactionsRequest, void&gt;("broadcastTransactions", request);</span>
+    }
+&nbsp;
+    /**
+     * Store transactions into the local storage. The trytes to be used for this call are returned by attachToTangle.
+     * @param request The storeTransactions request object.
+     * @returns Promise which resolves with empty response object or rejects with error.
+     */
+    public <span class="fstat-no" title="function not covered" >async</span> storeTransactions(request: IStoreTransactionsRequest): Promise&lt;void&gt; {
+<span class="cstat-no" title="statement not covered" >        return this.sendCommand&lt;IStoreTransactionsRequest, void&gt;("storeTransactions", request);</span>
+    }
+&nbsp;
+    /**
+     * Get transactions with missing references.
+     * @param request The getMissingTransactions request object.
+     * @returns Promise which resolves to the getMissingTransactions response object or rejects with error.
+     */
+    public <span class="fstat-no" title="function not covered" >async</span> getMissingTransactions(): Promise&lt;IGetMissingTransactionsResponse&gt; {
+<span class="cstat-no" title="statement not covered" >        return this.sendCommand&lt;{}, IGetMissingTransactionsResponse&gt;("getMissingTransactions", {});</span>
+    }
+&nbsp;
+    /**
+     * Check the consistency of tail hashes.
+     * @param request The checkConsistency request object.
+     * @returns Promise which resolves to the checkConsistency response object or rejects with error.
+     */
+    public <span class="fstat-no" title="function not covered" >async</span> checkConsistency(request: ICheckConsistencyRequest): Promise&lt;ICheckConsistencyResponse&gt; {
+<span class="cstat-no" title="statement not covered" >        return this.sendCommand&lt;ICheckConsistencyRequest, ICheckConsistencyResponse&gt;("checkConsistency", request);</span>
+    }
+&nbsp;
+    /**
+     * Have the requested addresses been spent from already.
+     * @param request The wereAddressesSpentFrom request object.
+     * @returns Promise which resolves to the wereAddressesSpentFrom response object or rejects with error.
+     */
+    public <span class="fstat-no" title="function not covered" >async</span> wereAddressesSpentFrom(request: IWereAddressesSpentFromRequest): Promise&lt;IWereAddressesSpentFromResponse&gt; {
+<span class="cstat-no" title="statement not covered" >        return this.sendCommand&lt;IWereAddressesSpentFromRequest, IWereAddressesSpentFromResponse&gt;("wereAddressesSpentFrom", request);</span>
+    }
+&nbsp;
+    /* @internal */
+    private <span class="fstat-no" title="function not covered" >async</span> sendCommand&lt;T, U&gt;(command: string, request: T): Promise&lt;U&gt; {
+<span class="cstat-no" title="statement not covered" >        Object.defineProperty(request, "command", {</span>
+            value: command,
+            enumerable: true
+        });
+<span class="cstat-no" title="statement not covered" >        return this._networkClient.postJson&lt;T, U&gt;(request, this.createHeaders())</span>
+            .catch(<span class="fstat-no" title="function not covered" >(e</span>rr: CoreError) =&gt; {
+<span class="cstat-no" title="statement not covered" >                if (err.additional &amp;&amp; err.additional.response) {</span>
+<span class="cstat-no" title="statement not covered" >                    try {</span>
+                        const commandError = <span class="cstat-no" title="statement not covered" >JSON.parse(err.additional.response);</span>
+<span class="cstat-no" title="statement not covered" >                        if (commandError.error) {</span>
+<span class="cstat-no" title="statement not covered" >                            delete err.additional.response;</span>
+<span class="cstat-no" title="statement not covered" >                            err.additional.commandError = commandError.error;</span>
+                        } else <span class="cstat-no" title="statement not covered" >if (commandError.exception) {</span>
+<span class="cstat-no" title="statement not covered" >                            delete err.additional.response;</span>
+<span class="cstat-no" title="statement not covered" >                            err.additional.commandError = commandError.exception;</span>
+                        }
+                    } catch (e) {
+                    }
+                }
+<span class="cstat-no" title="statement not covered" >                throw err;</span>
+            });
+    }
+&nbsp;
+    /* @internal */
+    private <span class="fstat-no" title="function not covered" >createHeaders</span>(): { [headers: string]: string } {
+        const headers = <span class="cstat-no" title="statement not covered" >this._additionalHeaders || {};</span>
+<span class="cstat-no" title="statement not covered" >        headers["X-IOTA-API-Version"] = this._apiVersion;</span>
+<span class="cstat-no" title="statement not covered" >        return headers;</span>
+    }
+}
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Feb 19 2018 13:41:26 GMT+0300 (Turkey Standard Time)
+</div>
+</div>
+<script src="..\..\prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="..\..\sorter.js"></script>
+</body>
+</html>
