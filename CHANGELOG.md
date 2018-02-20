@@ -4,6 +4,7 @@
 
 * IFindTransactionRequest properties now optional
 * Added code coverage to testing
+* Added reference and numWalks to IGetTransactionsToApproveRequest
 
 ## v0.6.1
 

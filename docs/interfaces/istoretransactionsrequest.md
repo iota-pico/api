@@ -17,7 +17,7 @@ Represents the request for storeTransactions command.
 
 **●  trytes**:  *`string`[]* 
 
-*Defined in [models/IStoreTransactionsRequest.ts:9](https://github.com/iotaeco/iota-pico-api/blob/bea785e/src/models/IStoreTransactionsRequest.ts#L9)*
+*Defined in [models/IStoreTransactionsRequest.ts:9](https://github.com/iotaeco/iota-pico-api/blob/37bd8b5/src/models/IStoreTransactionsRequest.ts#L9)*
 
 
 

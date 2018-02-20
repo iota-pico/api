@@ -17,7 +17,7 @@ Represents the response from getTransactionsToApprove command.
 
 **●  branchTransaction**:  *`string`* 
 
-*Defined in [models/IGetTransactionsToApproveResponse.ts:13](https://github.com/iotaeco/iota-pico-api/blob/bea785e/src/models/IGetTransactionsToApproveResponse.ts#L13)*
+*Defined in [models/IGetTransactionsToApproveResponse.ts:13](https://github.com/iotaeco/iota-pico-api/blob/37bd8b5/src/models/IGetTransactionsToApproveResponse.ts#L13)*
 
 
 
@@ -34,7 +34,7 @@ ___
 
 **●  trunkTransaction**:  *`string`* 
 
-*Defined in [models/IGetTransactionsToApproveResponse.ts:9](https://github.com/iotaeco/iota-pico-api/blob/bea785e/src/models/IGetTransactionsToApproveResponse.ts#L9)*
+*Defined in [models/IGetTransactionsToApproveResponse.ts:9](https://github.com/iotaeco/iota-pico-api/blob/37bd8b5/src/models/IGetTransactionsToApproveResponse.ts#L9)*
 
 
 
