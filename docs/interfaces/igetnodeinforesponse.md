@@ -17,7 +17,7 @@ Represents the response from getNodeInfo command.
 
 **●  appName**:  *`string`* 
 
-*Defined in [models/IGetNodeInfoResponse.ts:9](https://github.com/iotaeco/iota-pico-api/blob/37bd8b5/src/models/IGetNodeInfoResponse.ts#L9)*
+*Defined in [models/IGetNodeInfoResponse.ts:9](https://github.com/iotaeco/iota-pico-api/blob/eb0ef84/src/models/IGetNodeInfoResponse.ts#L9)*
 
 
 
@@ -34,7 +34,7 @@ ___
 
 **●  appVersion**:  *`string`* 
 
-*Defined in [models/IGetNodeInfoResponse.ts:13](https://github.com/iotaeco/iota-pico-api/blob/37bd8b5/src/models/IGetNodeInfoResponse.ts#L13)*
+*Defined in [models/IGetNodeInfoResponse.ts:13](https://github.com/iotaeco/iota-pico-api/blob/eb0ef84/src/models/IGetNodeInfoResponse.ts#L13)*
 
 
 
@@ -51,7 +51,7 @@ ___
 
 **●  duration**:  *`number`* 
 
-*Defined in [models/IGetNodeInfoResponse.ts:75](https://github.com/iotaeco/iota-pico-api/blob/37bd8b5/src/models/IGetNodeInfoResponse.ts#L75)*
+*Defined in [models/IGetNodeInfoResponse.ts:75](https://github.com/iotaeco/iota-pico-api/blob/eb0ef84/src/models/IGetNodeInfoResponse.ts#L75)*
 
 
 
@@ -68,7 +68,7 @@ ___
 
 **●  jreAvailableProcessors**:  *`number`* 
 
-*Defined in [models/IGetNodeInfoResponse.ts:17](https://github.com/iotaeco/iota-pico-api/blob/37bd8b5/src/models/IGetNodeInfoResponse.ts#L17)*
+*Defined in [models/IGetNodeInfoResponse.ts:17](https://github.com/iotaeco/iota-pico-api/blob/eb0ef84/src/models/IGetNodeInfoResponse.ts#L17)*
 
 
 
@@ -85,7 +85,7 @@ ___
 
 **●  jreFreeMemory**:  *`number`* 
 
-*Defined in [models/IGetNodeInfoResponse.ts:25](https://github.com/iotaeco/iota-pico-api/blob/37bd8b5/src/models/IGetNodeInfoResponse.ts#L25)*
+*Defined in [models/IGetNodeInfoResponse.ts:25](https://github.com/iotaeco/iota-pico-api/blob/eb0ef84/src/models/IGetNodeInfoResponse.ts#L25)*
 
 
 
@@ -102,7 +102,7 @@ ___
 
 **●  jreMaxMemory**:  *`number`* 
 
-*Defined in [models/IGetNodeInfoResponse.ts:29](https://github.com/iotaeco/iota-pico-api/blob/37bd8b5/src/models/IGetNodeInfoResponse.ts#L29)*
+*Defined in [models/IGetNodeInfoResponse.ts:29](https://github.com/iotaeco/iota-pico-api/blob/eb0ef84/src/models/IGetNodeInfoResponse.ts#L29)*
 
 
 
@@ -119,7 +119,7 @@ ___
 
 **●  jreTotalMemory**:  *`number`* 
 
-*Defined in [models/IGetNodeInfoResponse.ts:33](https://github.com/iotaeco/iota-pico-api/blob/37bd8b5/src/models/IGetNodeInfoResponse.ts#L33)*
+*Defined in [models/IGetNodeInfoResponse.ts:33](https://github.com/iotaeco/iota-pico-api/blob/eb0ef84/src/models/IGetNodeInfoResponse.ts#L33)*
 
 
 
@@ -136,7 +136,7 @@ ___
 
 **●  jreVersion**:  *`number`* 
 
-*Defined in [models/IGetNodeInfoResponse.ts:21](https://github.com/iotaeco/iota-pico-api/blob/37bd8b5/src/models/IGetNodeInfoResponse.ts#L21)*
+*Defined in [models/IGetNodeInfoResponse.ts:21](https://github.com/iotaeco/iota-pico-api/blob/eb0ef84/src/models/IGetNodeInfoResponse.ts#L21)*
 
 
 
@@ -153,7 +153,7 @@ ___
 
 **●  latestMilestone**:  *`string`* 
 
-*Defined in [models/IGetNodeInfoResponse.ts:37](https://github.com/iotaeco/iota-pico-api/blob/37bd8b5/src/models/IGetNodeInfoResponse.ts#L37)*
+*Defined in [models/IGetNodeInfoResponse.ts:37](https://github.com/iotaeco/iota-pico-api/blob/eb0ef84/src/models/IGetNodeInfoResponse.ts#L37)*
 
 
 
@@ -170,7 +170,7 @@ ___
 
 **●  latestMilestoneIndex**:  *`number`* 
 
-*Defined in [models/IGetNodeInfoResponse.ts:41](https://github.com/iotaeco/iota-pico-api/blob/37bd8b5/src/models/IGetNodeInfoResponse.ts#L41)*
+*Defined in [models/IGetNodeInfoResponse.ts:41](https://github.com/iotaeco/iota-pico-api/blob/eb0ef84/src/models/IGetNodeInfoResponse.ts#L41)*
 
 
 
@@ -187,7 +187,7 @@ ___
 
 **●  latestSolidSubtangleMilestone**:  *`string`* 
 
-*Defined in [models/IGetNodeInfoResponse.ts:47](https://github.com/iotaeco/iota-pico-api/blob/37bd8b5/src/models/IGetNodeInfoResponse.ts#L47)*
+*Defined in [models/IGetNodeInfoResponse.ts:47](https://github.com/iotaeco/iota-pico-api/blob/eb0ef84/src/models/IGetNodeInfoResponse.ts#L47)*
 
 
 
@@ -204,7 +204,7 @@ ___
 
 **●  latestSolidSubtangleMilestoneIndex**:  *`number`* 
 
-*Defined in [models/IGetNodeInfoResponse.ts:51](https://github.com/iotaeco/iota-pico-api/blob/37bd8b5/src/models/IGetNodeInfoResponse.ts#L51)*
+*Defined in [models/IGetNodeInfoResponse.ts:51](https://github.com/iotaeco/iota-pico-api/blob/eb0ef84/src/models/IGetNodeInfoResponse.ts#L51)*
 
 
 
@@ -221,7 +221,7 @@ ___
 
 **●  neighbors**:  *`number`* 
 
-*Defined in [models/IGetNodeInfoResponse.ts:55](https://github.com/iotaeco/iota-pico-api/blob/37bd8b5/src/models/IGetNodeInfoResponse.ts#L55)*
+*Defined in [models/IGetNodeInfoResponse.ts:55](https://github.com/iotaeco/iota-pico-api/blob/eb0ef84/src/models/IGetNodeInfoResponse.ts#L55)*
 
 
 
@@ -238,7 +238,7 @@ ___
 
 **●  packetsQueueSize**:  *`number`* 
 
-*Defined in [models/IGetNodeInfoResponse.ts:59](https://github.com/iotaeco/iota-pico-api/blob/37bd8b5/src/models/IGetNodeInfoResponse.ts#L59)*
+*Defined in [models/IGetNodeInfoResponse.ts:59](https://github.com/iotaeco/iota-pico-api/blob/eb0ef84/src/models/IGetNodeInfoResponse.ts#L59)*
 
 
 
@@ -255,7 +255,7 @@ ___
 
 **●  time**:  *`number`* 
 
-*Defined in [models/IGetNodeInfoResponse.ts:63](https://github.com/iotaeco/iota-pico-api/blob/37bd8b5/src/models/IGetNodeInfoResponse.ts#L63)*
+*Defined in [models/IGetNodeInfoResponse.ts:63](https://github.com/iotaeco/iota-pico-api/blob/eb0ef84/src/models/IGetNodeInfoResponse.ts#L63)*
 
 
 
@@ -272,7 +272,7 @@ ___
 
 **●  tips**:  *`number`* 
 
-*Defined in [models/IGetNodeInfoResponse.ts:67](https://github.com/iotaeco/iota-pico-api/blob/37bd8b5/src/models/IGetNodeInfoResponse.ts#L67)*
+*Defined in [models/IGetNodeInfoResponse.ts:67](https://github.com/iotaeco/iota-pico-api/blob/eb0ef84/src/models/IGetNodeInfoResponse.ts#L67)*
 
 
 
@@ -289,7 +289,7 @@ ___
 
 **●  transactionsToRequest**:  *`number`* 
 
-*Defined in [models/IGetNodeInfoResponse.ts:71](https://github.com/iotaeco/iota-pico-api/blob/37bd8b5/src/models/IGetNodeInfoResponse.ts#L71)*
+*Defined in [models/IGetNodeInfoResponse.ts:71](https://github.com/iotaeco/iota-pico-api/blob/eb0ef84/src/models/IGetNodeInfoResponse.ts#L71)*
 
 
 

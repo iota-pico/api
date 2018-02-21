@@ -17,7 +17,7 @@ Represents the response from wereAddressesSpentFrom command.
 
 **●  states**:  *`boolean`[]* 
 
-*Defined in [models/IWereAddressesSpentFromResponse.ts:9](https://github.com/iotaeco/iota-pico-api/blob/37bd8b5/src/models/IWereAddressesSpentFromResponse.ts#L9)*
+*Defined in [models/IWereAddressesSpentFromResponse.ts:9](https://github.com/iotaeco/iota-pico-api/blob/eb0ef84/src/models/IWereAddressesSpentFromResponse.ts#L9)*
 
 
 

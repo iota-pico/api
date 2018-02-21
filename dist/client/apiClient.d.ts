@@ -37,7 +37,7 @@ export declare class ApiClient implements IApiClient {
      * @param apiVersion The API version to send with the requests
      * @param additionalHeaders Extra headers to send with the requests.
      */
-    constructor(networkClient: INetworkClient, apiVersion: string, additionalHeaders?: {
+    constructor(networkClient: INetworkClient, apiVersion?: string, additionalHeaders?: {
         [header: string]: string;
     });
     /**
