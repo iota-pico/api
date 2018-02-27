@@ -2,6 +2,7 @@
  * Combined index of all the modules.
  */
 export * from "./client/apiClient";
+export * from "./error/apiError";
 export * from "./interfaces/IApiClient";
 export * from "./models/IGetBalancesRequest";
 export * from "./models/IGetBalancesResponse";

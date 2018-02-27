@@ -17,7 +17,7 @@ Represents the response from getMissingTransactions command.
 
 **●  duration**:  *`number`* 
 
-*Defined in [models/IGetMissingTransactionsResponse.ts:13](https://github.com/iotaeco/iota-pico-api/blob/eb0ef84/src/models/IGetMissingTransactionsResponse.ts#L13)*
+*Defined in [models/IGetMissingTransactionsResponse.ts:13](https://github.com/iotaeco/iota-pico-api/blob/162f328/src/models/IGetMissingTransactionsResponse.ts#L13)*
 
 
 
@@ -34,7 +34,7 @@ ___
 
 **●  hashes**:  *`string`[]* 
 
-*Defined in [models/IGetMissingTransactionsResponse.ts:9](https://github.com/iotaeco/iota-pico-api/blob/eb0ef84/src/models/IGetMissingTransactionsResponse.ts#L9)*
+*Defined in [models/IGetMissingTransactionsResponse.ts:9](https://github.com/iotaeco/iota-pico-api/blob/162f328/src/models/IGetMissingTransactionsResponse.ts#L9)*
 
 
 

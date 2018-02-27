@@ -1,9 +1,9 @@
-import { CoreError } from "@iota-pico/core/dist/error/coreError";
 import { ArrayHelper } from "@iota-pico/core/dist/helpers/arrayHelper";
 import { NumberHelper } from "@iota-pico/core/dist/helpers/numberHelper";
 import { ObjectHelper } from "@iota-pico/core/dist/helpers/objectHelper";
 import { StringHelper } from "@iota-pico/core/dist/helpers/stringHelper";
 import { INetworkClient } from "@iota-pico/core/dist/interfaces/INetworkClient";
+import { ApiError } from "../error/apiError";
 import { IApiClient } from "../interfaces/IApiClient";
 import { IAddNeighborsRequest } from "../models/IAddNeighborsRequest";
 import { IAddNeighborsResponse } from "../models/IAddNeighborsResponse";
@@ -52,10 +52,10 @@ export class ApiClient implements IApiClient {
      */
     constructor(networkClient: INetworkClient, apiVersion: string = "1", additionalHeaders?: { [header: string]: string }) {
         if (ObjectHelper.isEmpty(networkClient)) {
-            throw new CoreError("The networkClient must be defined");
+            throw new ApiError("The networkClient must be defined");
         }
         if (StringHelper.isEmpty(apiVersion)) {
-            throw new CoreError("The apiVersion must not be empty");
+            throw new ApiError("The apiVersion must not be empty");
         }
         this._networkClient = networkClient;
         this._apiVersion = apiVersion;
@@ -86,10 +86,10 @@ export class ApiClient implements IApiClient {
      */
     public async addNeighbors(request: IAddNeighborsRequest): Promise<IAddNeighborsResponse> {
         if (ObjectHelper.isEmpty(request)) {
-            throw new CoreError("The request must be defined");
+            throw new ApiError("The request must be defined");
         }
         if (ArrayHelper.isEmpty(request.uris)) {
-            throw new CoreError("The request.uris must not be empty");
+            throw new ApiError("The request.uris must not be empty");
         }
         return this.sendCommand<IAddNeighborsRequest, IAddNeighborsResponse>("addNeighbors", request);
     }
@@ -101,10 +101,10 @@ export class ApiClient implements IApiClient {
      */
     public async removeNeighbors(request: IRemoveNeighborsRequest): Promise<IRemoveNeighborsResponse> {
         if (ObjectHelper.isEmpty(request)) {
-            throw new CoreError("The request must be defined");
+            throw new ApiError("The request must be defined");
         }
         if (ArrayHelper.isEmpty(request.uris)) {
-            throw new CoreError("The request.uris must not be empty");
+            throw new ApiError("The request.uris must not be empty");
         }
         return this.sendCommand<IRemoveNeighborsRequest, IRemoveNeighborsResponse>("removeNeighbors", request);
     }
@@ -126,14 +126,14 @@ export class ApiClient implements IApiClient {
      */
     public async findTransactions(request: IFindTransactionsRequest): Promise<IFindTransactionsResponse> {
         if (ObjectHelper.isEmpty(request)) {
-            throw new CoreError("The request must be defined");
+            throw new ApiError("The request must be defined");
         }
         const bundlesEmpty = ArrayHelper.isEmpty(request.bundles);
         const addressesEmpty = ArrayHelper.isEmpty(request.addresses);
         const tagsEmpty = ArrayHelper.isEmpty(request.tags);
         const approveesEmpty = ArrayHelper.isEmpty(request.approvees);
         if (bundlesEmpty && addressesEmpty && tagsEmpty && approveesEmpty) {
-            throw new CoreError("One of the bundle, addresses, tags or approvees must not be empty");
+            throw new ApiError("One of the bundle, addresses, tags or approvees must not be empty");
         }
         return this.sendCommand<IFindTransactionsRequest, IFindTransactionsResponse>("findTransactions", request);
     }
@@ -145,10 +145,10 @@ export class ApiClient implements IApiClient {
      */
     public async getTrytes(request: IGetTrytesRequest): Promise<IGetTrytesResponse> {
         if (ObjectHelper.isEmpty(request)) {
-            throw new CoreError("The request must be defined");
+            throw new ApiError("The request must be defined");
         }
         if (ArrayHelper.isEmpty(request.hashes)) {
-            throw new CoreError("The request.hashes must not be empty");
+            throw new ApiError("The request.hashes must not be empty");
         }
         return this.sendCommand<IGetTrytesRequest, IGetTrytesResponse>("getTrytes", request);
     }
@@ -161,13 +161,13 @@ export class ApiClient implements IApiClient {
      */
     public async getInclusionStates(request: IGetInclusionStatesRequest): Promise<IGetInclusionStatesResponse> {
         if (ObjectHelper.isEmpty(request)) {
-            throw new CoreError("The request must be defined");
+            throw new ApiError("The request must be defined");
         }
         if (ArrayHelper.isEmpty(request.transactions)) {
-            throw new CoreError("The request.transactions must not be empty");
+            throw new ApiError("The request.transactions must not be empty");
         }
         if (ArrayHelper.isEmpty(request.tips)) {
-            throw new CoreError("The request.tips must not be empty");
+            throw new ApiError("The request.tips must not be empty");
         }
         return this.sendCommand<IGetInclusionStatesRequest, IGetInclusionStatesResponse>("getInclusionStates", request);
     }
@@ -182,13 +182,13 @@ export class ApiClient implements IApiClient {
      */
     public async getBalances(request: IGetBalancesRequest): Promise<IGetBalancesResponse> {
         if (ObjectHelper.isEmpty(request)) {
-            throw new CoreError("The request must be defined");
+            throw new ApiError("The request must be defined");
         }
         if (ArrayHelper.isEmpty(request.addresses)) {
-            throw new CoreError("The request.addresses must not be empty");
+            throw new ApiError("The request.addresses must not be empty");
         }
         if (!NumberHelper.isInteger(request.threshold)) {
-            throw new CoreError("The request.threshold must be a valid number");
+            throw new ApiError("The request.threshold must be a valid number");
         }
         return this.sendCommand<IGetBalancesRequest, IGetBalancesResponse>("getBalances", request);
     }
@@ -202,16 +202,16 @@ export class ApiClient implements IApiClient {
      */
     public async getTransactionsToApprove(request: IGetTransactionsToApproveRequest): Promise<IGetTransactionsToApproveResponse> {
         if (ObjectHelper.isEmpty(request)) {
-            throw new CoreError("The request must be defined");
+            throw new ApiError("The request must be defined");
         }
         if (!NumberHelper.isInteger(request.depth)) {
-            throw new CoreError("The request.depth must be a valid number");
+            throw new ApiError("The request.depth must be a valid number");
         }
         if (!ObjectHelper.isEmpty(request.reference) && StringHelper.isEmpty(request.reference)) {
-            throw new CoreError("The request.reference must be a non empty string");
+            throw new ApiError("The request.reference must be a non empty string");
         }
         if (!ObjectHelper.isEmpty(request.numWalks) && !NumberHelper.isInteger(request.numWalks)) {
-            throw new CoreError("The request.numWalks must be a valid number");
+            throw new ApiError("The request.numWalks must be a valid number");
         }
         return this.sendCommand<IGetTransactionsToApproveRequest, IGetTransactionsToApproveResponse>("getTransactionsToApprove", request);
     }
@@ -225,19 +225,19 @@ export class ApiClient implements IApiClient {
      */
     public async attachToTangle(request: IAttachToTangleRequest): Promise<IAttachToTangleResponse> {
         if (ObjectHelper.isEmpty(request)) {
-            throw new CoreError("The request must be defined");
+            throw new ApiError("The request must be defined");
         }
         if (StringHelper.isEmpty(request.trunkTransaction)) {
-            throw new CoreError("The request.trunkTransaction must not be empty");
+            throw new ApiError("The request.trunkTransaction must not be empty");
         }
         if (StringHelper.isEmpty(request.branchTransaction)) {
-            throw new CoreError("The request.branchTransaction must not be empty");
+            throw new ApiError("The request.branchTransaction must not be empty");
         }
         if (!NumberHelper.isInteger(request.minWeightMagnitude)) {
-            throw new CoreError("The request.minWeightMagnitude must be a valid number");
+            throw new ApiError("The request.minWeightMagnitude must be a valid number");
         }
         if (ArrayHelper.isEmpty(request.trytes)) {
-            throw new CoreError("The request.trytes must not be empty");
+            throw new ApiError("The request.trytes must not be empty");
         }
         return this.sendCommand<IAttachToTangleRequest, IAttachToTangleResponse>("attachToTangle", request);
     }
@@ -257,10 +257,10 @@ export class ApiClient implements IApiClient {
      */
     public async broadcastTransactions(request: IBroadcastTransactionsRequest): Promise<void> {
         if (ObjectHelper.isEmpty(request)) {
-            throw new CoreError("The request must be defined");
+            throw new ApiError("The request must be defined");
         }
         if (ArrayHelper.isEmpty(request.trytes)) {
-            throw new CoreError("The request.trytes must not be empty");
+            throw new ApiError("The request.trytes must not be empty");
         }
         return this.sendCommand<IBroadcastTransactionsRequest, void>("broadcastTransactions", request);
     }
@@ -272,10 +272,10 @@ export class ApiClient implements IApiClient {
      */
     public async storeTransactions(request: IStoreTransactionsRequest): Promise<void> {
         if (ObjectHelper.isEmpty(request)) {
-            throw new CoreError("The request must be defined");
+            throw new ApiError("The request must be defined");
         }
         if (ArrayHelper.isEmpty(request.trytes)) {
-            throw new CoreError("The request.trytes must not be empty");
+            throw new ApiError("The request.trytes must not be empty");
         }
         return this.sendCommand<IStoreTransactionsRequest, void>("storeTransactions", request);
     }
@@ -296,10 +296,10 @@ export class ApiClient implements IApiClient {
      */
     public async checkConsistency(request: ICheckConsistencyRequest): Promise<ICheckConsistencyResponse> {
         if (ObjectHelper.isEmpty(request)) {
-            throw new CoreError("The request must be defined");
+            throw new ApiError("The request must be defined");
         }
         if (ArrayHelper.isEmpty(request.tails)) {
-            throw new CoreError("The request.tails must not be empty");
+            throw new ApiError("The request.tails must not be empty");
         }
         return this.sendCommand<ICheckConsistencyRequest, ICheckConsistencyResponse>("checkConsistency", request);
     }
@@ -311,10 +311,10 @@ export class ApiClient implements IApiClient {
      */
     public async wereAddressesSpentFrom(request: IWereAddressesSpentFromRequest): Promise<IWereAddressesSpentFromResponse> {
         if (ObjectHelper.isEmpty(request)) {
-            throw new CoreError("The request must be defined");
+            throw new ApiError("The request must be defined");
         }
         if (ArrayHelper.isEmpty(request.addresses)) {
-            throw new CoreError("The request.addresses must not be empty");
+            throw new ApiError("The request.addresses must not be empty");
         }
         return this.sendCommand<IWereAddressesSpentFromRequest, IWereAddressesSpentFromResponse>("wereAddressesSpentFrom", request);
     }
@@ -326,7 +326,7 @@ export class ApiClient implements IApiClient {
             enumerable: true
         });
         return this._networkClient.postJson<T, U>(request, this.createHeaders())
-            .catch((err: CoreError) => {
+            .catch((err: ApiError) => {
                 if (err.additional && err.additional.response) {
                     try {
                         const commandError = JSON.parse(err.additional.response);

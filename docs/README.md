@@ -8,6 +8,7 @@
 ### Classes
 
 * [ApiClient](classes/apiclient.md)
+* [ApiError](classes/apierror.md)
 
 
 ### Interfaces
