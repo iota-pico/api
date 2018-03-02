@@ -9,6 +9,19 @@ Represents the response from getTransactionsToApprove command.
 *__interface__*: 
 
 
+## Hierarchy
+
+
+ [ICommonResponse](icommonresponse.md)
+
+**↳ IGetTransactionsToApproveResponse**
+
+
+
+
+
+
+
 
 ## Properties
 <a id="branchtransaction"></a>
@@ -17,11 +30,30 @@ Represents the response from getTransactionsToApprove command.
 
 **●  branchTransaction**:  *`string`* 
 
-*Defined in [models/IGetTransactionsToApproveResponse.ts:13](https://github.com/iotaeco/iota-pico-api/blob/162f328/src/models/IGetTransactionsToApproveResponse.ts#L13)*
+*Defined in [models/IGetTransactionsToApproveResponse.ts:15](https://github.com/iotaeco/iota-pico-api/blob/1def555/src/models/IGetTransactionsToApproveResponse.ts#L15)*
 
 
 
 The branch transaction.
+
+
+
+
+___
+
+<a id="duration"></a>
+
+###  duration
+
+**●  duration**:  *`number`* 
+
+*Inherited from [ICommonResponse](icommonresponse.md).[duration](icommonresponse.md#duration)*
+
+*Defined in models/ICommonResponse.ts:9*
+
+
+
+The duration of the request.
 
 
 
@@ -34,7 +66,7 @@ ___
 
 **●  trunkTransaction**:  *`string`* 
 
-*Defined in [models/IGetTransactionsToApproveResponse.ts:9](https://github.com/iotaeco/iota-pico-api/blob/162f328/src/models/IGetTransactionsToApproveResponse.ts#L9)*
+*Defined in [models/IGetTransactionsToApproveResponse.ts:11](https://github.com/iotaeco/iota-pico-api/blob/1def555/src/models/IGetTransactionsToApproveResponse.ts#L11)*
 
 
 

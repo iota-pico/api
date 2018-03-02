@@ -1,14 +1,12 @@
+import { ICommonResponse } from "./ICommonResponse";
+
 /**
  * Represents the response from getTips command.
  * @interface
  */
-export interface IGetTipsResponse {
+export interface IGetTipsResponse extends ICommonResponse {
     /**
      * The hashes for the tips.
      */
     hashes: string[];
-    /**
-     * The duration of the request.
-     */
-    duration: number;
 }

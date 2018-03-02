@@ -1,8 +1,10 @@
+import { ICommonResponse } from "./ICommonResponse";
+
 /**
  * Represents the response from getNodeInfo command.
  * @interface
  */
-export interface IGetNodeInfoResponse {
+export interface IGetNodeInfoResponse extends ICommonResponse {
     /**
      * Name of the IOTA software you're currently using (IRI stands for Initial Reference Implementation).
      */
@@ -69,8 +71,4 @@ export interface IGetNodeInfoResponse {
      * Transactions to request during syncing process.
      */
     transactionsToRequest: number;
-    /**
-     * The duration of the request.
-     */
-    duration: number;
 }

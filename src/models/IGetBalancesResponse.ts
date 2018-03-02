@@ -1,8 +1,10 @@
+import { ICommonResponse } from "./ICommonResponse";
+
 /**
  * Represents the response from getBalances command.
  * @interface
  */
-export interface IGetBalancesResponse {
+export interface IGetBalancesResponse extends ICommonResponse {
     /**
      * List of balances for the addresses.
      */
@@ -15,8 +17,4 @@ export interface IGetBalancesResponse {
      * The milestone index at which the balances were calculated.
      */
     milestoneIndex: number;
-    /**
-     * The duration of the request.
-     */
-    duration: number;
 }

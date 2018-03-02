@@ -9,6 +9,19 @@ Represents the response from getNeighbors command.
 *__interface__*: 
 
 
+## Hierarchy
+
+
+ [ICommonResponse](icommonresponse.md)
+
+**↳ IGetNeighborsResponse**
+
+
+
+
+
+
+
 
 ## Properties
 <a id="duration"></a>
@@ -17,7 +30,9 @@ Represents the response from getNeighbors command.
 
 **●  duration**:  *`number`* 
 
-*Defined in [models/IGetNeighborsResponse.ts:15](https://github.com/iotaeco/iota-pico-api/blob/162f328/src/models/IGetNeighborsResponse.ts#L15)*
+*Inherited from [ICommonResponse](icommonresponse.md).[duration](icommonresponse.md#duration)*
+
+*Defined in models/ICommonResponse.ts:9*
 
 
 
@@ -34,7 +49,7 @@ ___
 
 **●  neighbors**:  *[INeighbor](ineighbor.md)[]* 
 
-*Defined in [models/IGetNeighborsResponse.ts:11](https://github.com/iotaeco/iota-pico-api/blob/162f328/src/models/IGetNeighborsResponse.ts#L11)*
+*Defined in [models/IGetNeighborsResponse.ts:12](https://github.com/iotaeco/iota-pico-api/blob/1def555/src/models/IGetNeighborsResponse.ts#L12)*
 
 
 

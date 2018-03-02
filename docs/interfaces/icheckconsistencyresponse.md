@@ -9,6 +9,19 @@ Represents the response from checkConsistency command.
 *__interface__*: 
 
 
+## Hierarchy
+
+
+ [ICommonResponse](icommonresponse.md)
+
+**↳ ICheckConsistencyResponse**
+
+
+
+
+
+
+
 
 ## Properties
 <a id="duration"></a>
@@ -17,7 +30,9 @@ Represents the response from checkConsistency command.
 
 **●  duration**:  *`number`* 
 
-*Defined in [models/ICheckConsistencyResponse.ts:17](https://github.com/iotaeco/iota-pico-api/blob/162f328/src/models/ICheckConsistencyResponse.ts#L17)*
+*Inherited from [ICommonResponse](icommonresponse.md).[duration](icommonresponse.md#duration)*
+
+*Defined in models/ICommonResponse.ts:9*
 
 
 
@@ -34,7 +49,7 @@ ___
 
 **●  info**:  *`string`* 
 
-*Defined in [models/ICheckConsistencyResponse.ts:13](https://github.com/iotaeco/iota-pico-api/blob/162f328/src/models/ICheckConsistencyResponse.ts#L13)*
+*Defined in [models/ICheckConsistencyResponse.ts:15](https://github.com/iotaeco/iota-pico-api/blob/1def555/src/models/ICheckConsistencyResponse.ts#L15)*
 
 
 
@@ -51,7 +66,7 @@ ___
 
 **●  state**:  *`boolean`* 
 
-*Defined in [models/ICheckConsistencyResponse.ts:9](https://github.com/iotaeco/iota-pico-api/blob/162f328/src/models/ICheckConsistencyResponse.ts#L9)*
+*Defined in [models/ICheckConsistencyResponse.ts:11](https://github.com/iotaeco/iota-pico-api/blob/1def555/src/models/ICheckConsistencyResponse.ts#L11)*
 
 
 

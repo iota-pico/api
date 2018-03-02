@@ -9,6 +9,19 @@ Represents the response from getMissingTransactions command.
 *__interface__*: 
 
 
+## Hierarchy
+
+
+ [ICommonResponse](icommonresponse.md)
+
+**↳ IGetMissingTransactionsResponse**
+
+
+
+
+
+
+
 
 ## Properties
 <a id="duration"></a>
@@ -17,7 +30,9 @@ Represents the response from getMissingTransactions command.
 
 **●  duration**:  *`number`* 
 
-*Defined in [models/IGetMissingTransactionsResponse.ts:13](https://github.com/iotaeco/iota-pico-api/blob/162f328/src/models/IGetMissingTransactionsResponse.ts#L13)*
+*Inherited from [ICommonResponse](icommonresponse.md).[duration](icommonresponse.md#duration)*
+
+*Defined in models/ICommonResponse.ts:9*
 
 
 
@@ -34,7 +49,7 @@ ___
 
 **●  hashes**:  *`string`[]* 
 
-*Defined in [models/IGetMissingTransactionsResponse.ts:9](https://github.com/iotaeco/iota-pico-api/blob/162f328/src/models/IGetMissingTransactionsResponse.ts#L9)*
+*Defined in [models/IGetMissingTransactionsResponse.ts:11](https://github.com/iotaeco/iota-pico-api/blob/1def555/src/models/IGetMissingTransactionsResponse.ts#L11)*
 
 
 

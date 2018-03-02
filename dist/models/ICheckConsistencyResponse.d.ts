@@ -1,8 +1,9 @@
+import { ICommonResponse } from "./ICommonResponse";
 /**
  * Represents the response from checkConsistency command.
  * @interface
  */
-export interface ICheckConsistencyResponse {
+export interface ICheckConsistencyResponse extends ICommonResponse {
     /**
      * Is the tail reference consistent.
      */
@@ -11,8 +12,4 @@ export interface ICheckConsistencyResponse {
      * Is the tail reference consistent.
      */
     info: string;
-    /**
-     * The duration of the request.
-     */
-    duration: number;
 }

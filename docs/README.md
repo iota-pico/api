@@ -21,6 +21,7 @@
 * [IBroadcastTransactionsRequest](interfaces/ibroadcasttransactionsrequest.md)
 * [ICheckConsistencyRequest](interfaces/icheckconsistencyrequest.md)
 * [ICheckConsistencyResponse](interfaces/icheckconsistencyresponse.md)
+* [ICommonResponse](interfaces/icommonresponse.md)
 * [IFindTransactionsRequest](interfaces/ifindtransactionsrequest.md)
 * [IFindTransactionsResponse](interfaces/ifindtransactionsresponse.md)
 * [IGetBalancesRequest](interfaces/igetbalancesrequest.md)

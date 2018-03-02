@@ -9,6 +9,19 @@ Represents the response from removeNeighbors command.
 *__interface__*: 
 
 
+## Hierarchy
+
+
+ [ICommonResponse](icommonresponse.md)
+
+**↳ IRemoveNeighborsResponse**
+
+
+
+
+
+
+
 
 ## Properties
 <a id="duration"></a>
@@ -17,7 +30,9 @@ Represents the response from removeNeighbors command.
 
 **●  duration**:  *`number`* 
 
-*Defined in [models/IRemoveNeighborsResponse.ts:13](https://github.com/iotaeco/iota-pico-api/blob/162f328/src/models/IRemoveNeighborsResponse.ts#L13)*
+*Inherited from [ICommonResponse](icommonresponse.md).[duration](icommonresponse.md#duration)*
+
+*Defined in models/ICommonResponse.ts:9*
 
 
 
@@ -34,7 +49,7 @@ ___
 
 **●  removedNeighbors**:  *`number`* 
 
-*Defined in [models/IRemoveNeighborsResponse.ts:9](https://github.com/iotaeco/iota-pico-api/blob/162f328/src/models/IRemoveNeighborsResponse.ts#L9)*
+*Defined in [models/IRemoveNeighborsResponse.ts:11](https://github.com/iotaeco/iota-pico-api/blob/1def555/src/models/IRemoveNeighborsResponse.ts#L11)*
 
 
 

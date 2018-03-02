@@ -1,8 +1,9 @@
+import { ICommonResponse } from "./ICommonResponse";
 /**
  * Represents the response from findTransactions command.
  * @interface
  */
-export interface IFindTransactionsResponse {
+export interface IFindTransactionsResponse extends ICommonResponse {
     /**
      * The transaction hashes which are returned depend on your input.
      * For each specified input value, the command will return the following:
@@ -12,8 +13,4 @@ export interface IFindTransactionsResponse {
      * approvees: returns the list of transaction which reference (i.e. confirm) the specified transaction.
      */
     hashes: string[];
-    /**
-     * The duration of the request.
-     */
-    duration: number;
 }

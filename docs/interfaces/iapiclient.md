@@ -23,7 +23,7 @@ Represents a client for performing communication with a node api.
 
 
 
-*Defined in [interfaces/IApiClient.ts:51](https://github.com/iotaeco/iota-pico-api/blob/162f328/src/interfaces/IApiClient.ts#L51)*
+*Defined in [interfaces/IApiClient.ts:52](https://github.com/iotaeco/iota-pico-api/blob/1def555/src/interfaces/IApiClient.ts#L52)*
 
 
 
@@ -58,7 +58,7 @@ ___
 
 
 
-*Defined in [interfaces/IApiClient.ts:116](https://github.com/iotaeco/iota-pico-api/blob/162f328/src/interfaces/IApiClient.ts#L116)*
+*Defined in [interfaces/IApiClient.ts:117](https://github.com/iotaeco/iota-pico-api/blob/1def555/src/interfaces/IApiClient.ts#L117)*
 
 
 
@@ -89,11 +89,11 @@ ___
 
 ###  broadcastTransactions
 
-► **broadcastTransactions**(request: *[IBroadcastTransactionsRequest](ibroadcasttransactionsrequest.md)*): `Promise`.<`void`>
+► **broadcastTransactions**(request: *[IBroadcastTransactionsRequest](ibroadcasttransactionsrequest.md)*): `Promise`.<[ICommonResponse](icommonresponse.md)>
 
 
 
-*Defined in [interfaces/IApiClient.ts:129](https://github.com/iotaeco/iota-pico-api/blob/162f328/src/interfaces/IApiClient.ts#L129)*
+*Defined in [interfaces/IApiClient.ts:130](https://github.com/iotaeco/iota-pico-api/blob/1def555/src/interfaces/IApiClient.ts#L130)*
 
 
 
@@ -110,7 +110,7 @@ Broadcast a list of transactions to all neighbors. The input trytes for this cal
 
 
 
-**Returns:** `Promise`.<`void`>
+**Returns:** `Promise`.<[ICommonResponse](icommonresponse.md)>
 Promise which resolves with empty response object or rejects with error.
 
 
@@ -128,7 +128,7 @@ ___
 
 
 
-*Defined in [interfaces/IApiClient.ts:150](https://github.com/iotaeco/iota-pico-api/blob/162f328/src/interfaces/IApiClient.ts#L150)*
+*Defined in [interfaces/IApiClient.ts:151](https://github.com/iotaeco/iota-pico-api/blob/1def555/src/interfaces/IApiClient.ts#L151)*
 
 
 
@@ -163,7 +163,7 @@ ___
 
 
 
-*Defined in [interfaces/IApiClient.ts:73](https://github.com/iotaeco/iota-pico-api/blob/162f328/src/interfaces/IApiClient.ts#L73)*
+*Defined in [interfaces/IApiClient.ts:74](https://github.com/iotaeco/iota-pico-api/blob/1def555/src/interfaces/IApiClient.ts#L74)*
 
 
 
@@ -198,7 +198,7 @@ ___
 
 
 
-*Defined in [interfaces/IApiClient.ts:98](https://github.com/iotaeco/iota-pico-api/blob/162f328/src/interfaces/IApiClient.ts#L98)*
+*Defined in [interfaces/IApiClient.ts:99](https://github.com/iotaeco/iota-pico-api/blob/1def555/src/interfaces/IApiClient.ts#L99)*
 
 
 
@@ -233,7 +233,7 @@ ___
 
 
 
-*Defined in [interfaces/IApiClient.ts:88](https://github.com/iotaeco/iota-pico-api/blob/162f328/src/interfaces/IApiClient.ts#L88)*
+*Defined in [interfaces/IApiClient.ts:89](https://github.com/iotaeco/iota-pico-api/blob/1def555/src/interfaces/IApiClient.ts#L89)*
 
 
 
@@ -268,7 +268,7 @@ ___
 
 
 
-*Defined in [interfaces/IApiClient.ts:143](https://github.com/iotaeco/iota-pico-api/blob/162f328/src/interfaces/IApiClient.ts#L143)*
+*Defined in [interfaces/IApiClient.ts:144](https://github.com/iotaeco/iota-pico-api/blob/1def555/src/interfaces/IApiClient.ts#L144)*
 
 
 
@@ -295,7 +295,7 @@ ___
 
 
 
-*Defined in [interfaces/IApiClient.ts:44](https://github.com/iotaeco/iota-pico-api/blob/162f328/src/interfaces/IApiClient.ts#L44)*
+*Defined in [interfaces/IApiClient.ts:45](https://github.com/iotaeco/iota-pico-api/blob/1def555/src/interfaces/IApiClient.ts#L45)*
 
 
 
@@ -322,7 +322,7 @@ ___
 
 
 
-*Defined in [interfaces/IApiClient.ts:37](https://github.com/iotaeco/iota-pico-api/blob/162f328/src/interfaces/IApiClient.ts#L37)*
+*Defined in [interfaces/IApiClient.ts:38](https://github.com/iotaeco/iota-pico-api/blob/1def555/src/interfaces/IApiClient.ts#L38)*
 
 
 
@@ -349,7 +349,7 @@ ___
 
 
 
-*Defined in [interfaces/IApiClient.ts:64](https://github.com/iotaeco/iota-pico-api/blob/162f328/src/interfaces/IApiClient.ts#L64)*
+*Defined in [interfaces/IApiClient.ts:65](https://github.com/iotaeco/iota-pico-api/blob/1def555/src/interfaces/IApiClient.ts#L65)*
 
 
 
@@ -376,7 +376,7 @@ ___
 
 
 
-*Defined in [interfaces/IApiClient.ts:107](https://github.com/iotaeco/iota-pico-api/blob/162f328/src/interfaces/IApiClient.ts#L107)*
+*Defined in [interfaces/IApiClient.ts:108](https://github.com/iotaeco/iota-pico-api/blob/1def555/src/interfaces/IApiClient.ts#L108)*
 
 
 
@@ -411,7 +411,7 @@ ___
 
 
 
-*Defined in [interfaces/IApiClient.ts:80](https://github.com/iotaeco/iota-pico-api/blob/162f328/src/interfaces/IApiClient.ts#L80)*
+*Defined in [interfaces/IApiClient.ts:81](https://github.com/iotaeco/iota-pico-api/blob/1def555/src/interfaces/IApiClient.ts#L81)*
 
 
 
@@ -442,11 +442,11 @@ ___
 
 ###  interruptAttachingToTangle
 
-► **interruptAttachingToTangle**(): `Promise`.<`void`>
+► **interruptAttachingToTangle**(): `Promise`.<[ICommonResponse](icommonresponse.md)>
 
 
 
-*Defined in [interfaces/IApiClient.ts:122](https://github.com/iotaeco/iota-pico-api/blob/162f328/src/interfaces/IApiClient.ts#L122)*
+*Defined in [interfaces/IApiClient.ts:123](https://github.com/iotaeco/iota-pico-api/blob/1def555/src/interfaces/IApiClient.ts#L123)*
 
 
 
@@ -455,7 +455,7 @@ Interrupts and completely aborts the attachToTangle process
 
 
 
-**Returns:** `Promise`.<`void`>
+**Returns:** `Promise`.<[ICommonResponse](icommonresponse.md)>
 Promise which resolves with empty response object or rejects with error.
 
 
@@ -473,7 +473,7 @@ ___
 
 
 
-*Defined in [interfaces/IApiClient.ts:58](https://github.com/iotaeco/iota-pico-api/blob/162f328/src/interfaces/IApiClient.ts#L58)*
+*Defined in [interfaces/IApiClient.ts:59](https://github.com/iotaeco/iota-pico-api/blob/1def555/src/interfaces/IApiClient.ts#L59)*
 
 
 
@@ -504,11 +504,11 @@ ___
 
 ###  storeTransactions
 
-► **storeTransactions**(request: *[IStoreTransactionsRequest](istoretransactionsrequest.md)*): `Promise`.<`void`>
+► **storeTransactions**(request: *[IStoreTransactionsRequest](istoretransactionsrequest.md)*): `Promise`.<[ICommonResponse](icommonresponse.md)>
 
 
 
-*Defined in [interfaces/IApiClient.ts:136](https://github.com/iotaeco/iota-pico-api/blob/162f328/src/interfaces/IApiClient.ts#L136)*
+*Defined in [interfaces/IApiClient.ts:137](https://github.com/iotaeco/iota-pico-api/blob/1def555/src/interfaces/IApiClient.ts#L137)*
 
 
 
@@ -525,7 +525,7 @@ Store transactions into the local storage. The trytes to be used for this call a
 
 
 
-**Returns:** `Promise`.<`void`>
+**Returns:** `Promise`.<[ICommonResponse](icommonresponse.md)>
 Promise which resolves with empty response object or rejects with error.
 
 
@@ -543,7 +543,7 @@ ___
 
 
 
-*Defined in [interfaces/IApiClient.ts:157](https://github.com/iotaeco/iota-pico-api/blob/162f328/src/interfaces/IApiClient.ts#L157)*
+*Defined in [interfaces/IApiClient.ts:158](https://github.com/iotaeco/iota-pico-api/blob/1def555/src/interfaces/IApiClient.ts#L158)*
 
 
 

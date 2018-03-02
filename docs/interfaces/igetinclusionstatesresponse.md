@@ -9,6 +9,19 @@ Represents the response from getInclusionStates command.
 *__interface__*: 
 
 
+## Hierarchy
+
+
+ [ICommonResponse](icommonresponse.md)
+
+**↳ IGetInclusionStatesResponse**
+
+
+
+
+
+
+
 
 ## Properties
 <a id="duration"></a>
@@ -17,7 +30,9 @@ Represents the response from getInclusionStates command.
 
 **●  duration**:  *`number`* 
 
-*Defined in [models/IGetInclusionStatesResponse.ts:14](https://github.com/iotaeco/iota-pico-api/blob/162f328/src/models/IGetInclusionStatesResponse.ts#L14)*
+*Inherited from [ICommonResponse](icommonresponse.md).[duration](icommonresponse.md#duration)*
+
+*Defined in models/ICommonResponse.ts:9*
 
 
 
@@ -34,7 +49,7 @@ ___
 
 **●  states**:  *`boolean`[]* 
 
-*Defined in [models/IGetInclusionStatesResponse.ts:10](https://github.com/iotaeco/iota-pico-api/blob/162f328/src/models/IGetInclusionStatesResponse.ts#L10)*
+*Defined in [models/IGetInclusionStatesResponse.ts:12](https://github.com/iotaeco/iota-pico-api/blob/1def555/src/models/IGetInclusionStatesResponse.ts#L12)*
 
 
 

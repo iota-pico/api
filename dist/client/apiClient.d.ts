@@ -7,6 +7,7 @@ import { IAttachToTangleResponse } from "../models/IAttachToTangleResponse";
 import { IBroadcastTransactionsRequest } from "../models/IBroadcastTransactionsRequest";
 import { ICheckConsistencyRequest } from "../models/ICheckConsistencyRequest";
 import { ICheckConsistencyResponse } from "../models/ICheckConsistencyResponse";
+import { ICommonResponse } from "../models/ICommonResponse";
 import { IFindTransactionsRequest } from "../models/IFindTransactionsRequest";
 import { IFindTransactionsResponse } from "../models/IFindTransactionsResponse";
 import { IGetBalancesRequest } from "../models/IGetBalancesRequest";
@@ -118,19 +119,19 @@ export declare class ApiClient implements IApiClient {
      * Interrupts and completely aborts the attachToTangle process
      * @returns Promise which resolves with empty response object or rejects with error.
      */
-    interruptAttachingToTangle(): Promise<void>;
+    interruptAttachingToTangle(): Promise<ICommonResponse>;
     /**
      * Broadcast a list of transactions to all neighbors. The input trytes for this call are provided by attachToTangle.
      * @param request The broadcastTransactions request object.
      * @returns Promise which resolves with empty response object or rejects with error.
      */
-    broadcastTransactions(request: IBroadcastTransactionsRequest): Promise<void>;
+    broadcastTransactions(request: IBroadcastTransactionsRequest): Promise<ICommonResponse>;
     /**
      * Store transactions into the local storage. The trytes to be used for this call are returned by attachToTangle.
      * @param request The storeTransactions request object.
      * @returns Promise which resolves with empty response object or rejects with error.
      */
-    storeTransactions(request: IStoreTransactionsRequest): Promise<void>;
+    storeTransactions(request: IStoreTransactionsRequest): Promise<ICommonResponse>;
     /**
      * Get transactions with missing references.
      * @param request The getMissingTransactions request object.

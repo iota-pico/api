@@ -1,14 +1,12 @@
+import { ICommonResponse } from "./ICommonResponse";
+
 /**
  * Represents the response from addNeighbors command.
  * @interface
  */
-export interface IAddNeighborsResponse {
+export interface IAddNeighborsResponse extends ICommonResponse {
     /**
      * The number of neighbours added.
      */
     addedNeighbors: number;
-    /**
-     * The duration of the request.
-     */
-    duration: number;
 }

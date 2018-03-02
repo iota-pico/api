@@ -12,6 +12,7 @@ import { IAttachToTangleResponse } from "../models/IAttachToTangleResponse";
 import { IBroadcastTransactionsRequest } from "../models/IBroadcastTransactionsRequest";
 import { ICheckConsistencyRequest } from "../models/ICheckConsistencyRequest";
 import { ICheckConsistencyResponse } from "../models/ICheckConsistencyResponse";
+import { ICommonResponse } from "../models/ICommonResponse";
 import { IFindTransactionsRequest } from "../models/IFindTransactionsRequest";
 import { IFindTransactionsResponse } from "../models/IFindTransactionsResponse";
 import { IGetBalancesRequest } from "../models/IGetBalancesRequest";
@@ -246,8 +247,8 @@ export class ApiClient implements IApiClient {
      * Interrupts and completely aborts the attachToTangle process
      * @returns Promise which resolves with empty response object or rejects with error.
      */
-    public async interruptAttachingToTangle(): Promise<void> {
-        return this.sendCommand<{}, void>("interruptAttachingToTangle", {});
+    public async interruptAttachingToTangle(): Promise<ICommonResponse> {
+        return this.sendCommand<{}, ICommonResponse>("interruptAttachingToTangle", {});
     }
 
     /**
@@ -255,14 +256,14 @@ export class ApiClient implements IApiClient {
      * @param request The broadcastTransactions request object.
      * @returns Promise which resolves with empty response object or rejects with error.
      */
-    public async broadcastTransactions(request: IBroadcastTransactionsRequest): Promise<void> {
+    public async broadcastTransactions(request: IBroadcastTransactionsRequest): Promise<ICommonResponse> {
         if (ObjectHelper.isEmpty(request)) {
             throw new ApiError("The request must be defined");
         }
         if (ArrayHelper.isEmpty(request.trytes)) {
             throw new ApiError("The request.trytes must not be empty");
         }
-        return this.sendCommand<IBroadcastTransactionsRequest, void>("broadcastTransactions", request);
+        return this.sendCommand<IBroadcastTransactionsRequest, ICommonResponse>("broadcastTransactions", request);
     }
 
     /**
@@ -270,14 +271,14 @@ export class ApiClient implements IApiClient {
      * @param request The storeTransactions request object.
      * @returns Promise which resolves with empty response object or rejects with error.
      */
-    public async storeTransactions(request: IStoreTransactionsRequest): Promise<void> {
+    public async storeTransactions(request: IStoreTransactionsRequest): Promise<ICommonResponse> {
         if (ObjectHelper.isEmpty(request)) {
             throw new ApiError("The request must be defined");
         }
         if (ArrayHelper.isEmpty(request.trytes)) {
             throw new ApiError("The request.trytes must not be empty");
         }
-        return this.sendCommand<IStoreTransactionsRequest, void>("storeTransactions", request);
+        return this.sendCommand<IStoreTransactionsRequest, ICommonResponse>("storeTransactions", request);
     }
 
     /**
@@ -320,7 +321,7 @@ export class ApiClient implements IApiClient {
     }
 
     /* @internal */
-    private async sendCommand<T, U>(command: string, request: T): Promise<U> {
+    private async sendCommand<T, U extends ICommonResponse>(command: string, request: T): Promise<U> {
         Object.defineProperty(request, "command", {
             value: command,
             enumerable: true

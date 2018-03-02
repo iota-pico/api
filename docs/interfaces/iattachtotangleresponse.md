@@ -9,15 +9,47 @@ Represents the response from attachToTangle command.
 *__interface__*: 
 
 
+## Hierarchy
+
+
+ [ICommonResponse](icommonresponse.md)
+
+**↳ IAttachToTangleResponse**
+
+
+
+
+
+
+
 
 ## Properties
+<a id="duration"></a>
+
+###  duration
+
+**●  duration**:  *`number`* 
+
+*Inherited from [ICommonResponse](icommonresponse.md).[duration](icommonresponse.md#duration)*
+
+*Defined in models/ICommonResponse.ts:9*
+
+
+
+The duration of the request.
+
+
+
+
+___
+
 <a id="trytes"></a>
 
 ###  trytes
 
 **●  trytes**:  *`string`[]* 
 
-*Defined in [models/IAttachToTangleResponse.ts:10](https://github.com/iotaeco/iota-pico-api/blob/162f328/src/models/IAttachToTangleResponse.ts#L10)*
+*Defined in [models/IAttachToTangleResponse.ts:12](https://github.com/iotaeco/iota-pico-api/blob/1def555/src/models/IAttachToTangleResponse.ts#L12)*
 
 
 

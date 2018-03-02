@@ -9,6 +9,19 @@ Represents the response from getBalances command.
 *__interface__*: 
 
 
+## Hierarchy
+
+
+ [ICommonResponse](icommonresponse.md)
+
+**↳ IGetBalancesResponse**
+
+
+
+
+
+
+
 
 ## Properties
 <a id="balances"></a>
@@ -17,7 +30,7 @@ Represents the response from getBalances command.
 
 **●  balances**:  *`string`[]* 
 
-*Defined in [models/IGetBalancesResponse.ts:9](https://github.com/iotaeco/iota-pico-api/blob/162f328/src/models/IGetBalancesResponse.ts#L9)*
+*Defined in [models/IGetBalancesResponse.ts:11](https://github.com/iotaeco/iota-pico-api/blob/1def555/src/models/IGetBalancesResponse.ts#L11)*
 
 
 
@@ -34,7 +47,9 @@ ___
 
 **●  duration**:  *`number`* 
 
-*Defined in [models/IGetBalancesResponse.ts:21](https://github.com/iotaeco/iota-pico-api/blob/162f328/src/models/IGetBalancesResponse.ts#L21)*
+*Inherited from [ICommonResponse](icommonresponse.md).[duration](icommonresponse.md#duration)*
+
+*Defined in models/ICommonResponse.ts:9*
 
 
 
@@ -51,7 +66,7 @@ ___
 
 **●  milestone**:  *`string`* 
 
-*Defined in [models/IGetBalancesResponse.ts:13](https://github.com/iotaeco/iota-pico-api/blob/162f328/src/models/IGetBalancesResponse.ts#L13)*
+*Defined in [models/IGetBalancesResponse.ts:15](https://github.com/iotaeco/iota-pico-api/blob/1def555/src/models/IGetBalancesResponse.ts#L15)*
 
 
 
@@ -68,7 +83,7 @@ ___
 
 **●  milestoneIndex**:  *`number`* 
 
-*Defined in [models/IGetBalancesResponse.ts:17](https://github.com/iotaeco/iota-pico-api/blob/162f328/src/models/IGetBalancesResponse.ts#L17)*
+*Defined in [models/IGetBalancesResponse.ts:19](https://github.com/iotaeco/iota-pico-api/blob/1def555/src/models/IGetBalancesResponse.ts#L19)*
 
 
 
