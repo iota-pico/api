@@ -17,7 +17,7 @@ Represents the a neighbor.
 
 **●  address**:  *`string`* 
 
-*Defined in [models/INeighbor.ts:9](https://github.com/iotaeco/iota-pico-api/blob/1def555/src/models/INeighbor.ts#L9)*
+*Defined in [models/INeighbor.ts:9](https://github.com/iotaeco/iota-pico-api/blob/b8e81eb/src/models/INeighbor.ts#L9)*
 
 
 
@@ -34,7 +34,7 @@ ___
 
 **●  numberOfAllTransactions**:  *`number`* 
 
-*Defined in [models/INeighbor.ts:13](https://github.com/iotaeco/iota-pico-api/blob/1def555/src/models/INeighbor.ts#L13)*
+*Defined in [models/INeighbor.ts:13](https://github.com/iotaeco/iota-pico-api/blob/b8e81eb/src/models/INeighbor.ts#L13)*
 
 
 
@@ -51,7 +51,7 @@ ___
 
 **●  numberOfInvalidTransactions**:  *`number`* 
 
-*Defined in [models/INeighbor.ts:18](https://github.com/iotaeco/iota-pico-api/blob/1def555/src/models/INeighbor.ts#L18)*
+*Defined in [models/INeighbor.ts:18](https://github.com/iotaeco/iota-pico-api/blob/b8e81eb/src/models/INeighbor.ts#L18)*
 
 
 
@@ -68,7 +68,7 @@ ___
 
 **●  numberOfNewTransactions**:  *`number`* 
 
-*Defined in [models/INeighbor.ts:22](https://github.com/iotaeco/iota-pico-api/blob/1def555/src/models/INeighbor.ts#L22)*
+*Defined in [models/INeighbor.ts:22](https://github.com/iotaeco/iota-pico-api/blob/b8e81eb/src/models/INeighbor.ts#L22)*
 
 
 
