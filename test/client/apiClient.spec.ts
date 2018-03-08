@@ -1004,7 +1004,7 @@ describe("ApiClient", () => {
             const mock = sinon.mock().rejects({
                 message: "blah",
                 additional: {
-                    response: JSON.stringify({ error: "foo" })
+                    errorResponse: JSON.stringify({ error: "foo" })
                 }
             });
             networkClientStub.postJson = mock;
@@ -1012,7 +1012,7 @@ describe("ApiClient", () => {
                 await obj.getNodeInfo();
             } catch (err) {
                 chai.expect(err.message).to.contain("blah");
-                chai.expect(err.additional.commandError).to.contain("foo");
+                chai.expect(err.additional.apiError).to.contain("foo");
             }
         });
 
@@ -1021,7 +1021,7 @@ describe("ApiClient", () => {
             const mock = sinon.mock().rejects({
                 message: "blah",
                 additional: {
-                    response: JSON.stringify({ exception: "foo" })
+                    errorResponse: JSON.stringify({ exception: "foo" })
                 }
             });
             networkClientStub.postJson = mock;
@@ -1029,7 +1029,7 @@ describe("ApiClient", () => {
                 await obj.getNodeInfo();
             } catch (err) {
                 chai.expect(err.message).to.contain("blah");
-                chai.expect(err.additional.commandError).to.contain("foo");
+                chai.expect(err.additional.apiError).to.contain("foo");
             }
         });
 
@@ -1038,7 +1038,7 @@ describe("ApiClient", () => {
             const mock = sinon.mock().rejects({
                 message: "blah",
                 additional: {
-                    response: JSON.stringify({ other: "foo" })
+                    errorResponse: JSON.stringify({ other: "foo" })
                 }
             });
             networkClientStub.postJson = mock;
@@ -1046,7 +1046,7 @@ describe("ApiClient", () => {
                 await obj.getNodeInfo();
             } catch (err) {
                 chai.expect(err.message).to.contain("blah");
-                chai.expect(err.additional.response).to.contain(JSON.stringify({ other: "foo" }));
+                chai.expect(err.additional.errorResponse).to.contain(JSON.stringify({ other: "foo" }));
             }
         });
     });

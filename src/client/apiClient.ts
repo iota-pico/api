@@ -326,17 +326,17 @@ export class ApiClient implements IApiClient {
             value: command,
             enumerable: true
         });
-        return this._networkClient.postJson<T, U>(request, this.createHeaders())
+        return this._networkClient.postJson<T, U>(request, undefined, this.createHeaders())
             .catch((err: ApiError) => {
-                if (err.additional && err.additional.response) {
+                if (err.additional && err.additional.errorResponse) {
                     try {
-                        const commandError = JSON.parse(err.additional.response);
-                        if (commandError.error) {
-                            delete err.additional.response;
-                            err.additional.commandError = commandError.error;
-                        } else if (commandError.exception) {
-                            delete err.additional.response;
-                            err.additional.commandError = commandError.exception;
+                        const apiError = JSON.parse(err.additional.errorResponse);
+                        if (apiError.error) {
+                            delete err.additional.errorResponse;
+                            err.additional.apiError = apiError.error;
+                        } else if (apiError.exception) {
+                            delete err.additional.errorResponse;
+                            err.additional.apiError = apiError.exception;
                         }
                     } catch (e) {
                     }

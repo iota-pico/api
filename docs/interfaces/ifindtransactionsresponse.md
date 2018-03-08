@@ -32,7 +32,7 @@ Represents the response from findTransactions command.
 
 *Inherited from [ICommonResponse](icommonresponse.md).[duration](icommonresponse.md#duration)*
 
-*Defined in [models/ICommonResponse.ts:9](https://github.com/iotaeco/iota-pico-api/blob/b8e81eb/src/models/ICommonResponse.ts#L9)*
+*Defined in [models/ICommonResponse.ts:9](https://github.com/iotaeco/iota-pico-api/blob/5964d8f/src/models/ICommonResponse.ts#L9)*
 
 
 
@@ -49,7 +49,7 @@ ___
 
 **●  hashes**:  *`string`[]* 
 
-*Defined in [models/IFindTransactionsResponse.ts:16](https://github.com/iotaeco/iota-pico-api/blob/b8e81eb/src/models/IFindTransactionsResponse.ts#L16)*
+*Defined in [models/IFindTransactionsResponse.ts:16](https://github.com/iotaeco/iota-pico-api/blob/5964d8f/src/models/IFindTransactionsResponse.ts#L16)*
 
 
 
