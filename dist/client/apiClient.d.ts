@@ -29,7 +29,6 @@ import { IWereAddressesSpentFromRequest } from "../models/IWereAddressesSpentFro
 import { IWereAddressesSpentFromResponse } from "../models/IWereAddressesSpentFromResponse";
 /**
  * Default implementation of an api client.
- * @interface
  */
 export declare class ApiClient implements IApiClient {
     /**

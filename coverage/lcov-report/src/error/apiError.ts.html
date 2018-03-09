@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for src/models/IAddNeighborsResponse.ts</title>
+    <title>Code coverage report for src/error/apiError.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="..\..\prettify.css" />
     <link rel="stylesheet" href="..\..\base.css" />
@@ -16,13 +16,13 @@
 <div class='wrapper'>
   <div class='pad1'>
     <h1>
-      <a href="..\..\index.html">All files</a> / <a href="index.html">src/models</a> IAddNeighborsResponse.ts
+      <a href="..\..\index.html">All files</a> / <a href="index.html">src/error</a> apiError.ts
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>0/0</span>
+        <span class='fraction'>2/2</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
@@ -37,7 +37,7 @@
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>0/0</span>
+        <span class='fraction'>2/2</span>
       </div>
     </div>
   </div>
@@ -50,34 +50,19 @@
 5
 6
 7
-8
-9
-10
-11
-12
-13</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+8</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { ICommonResponse } from "./ICommonResponse";
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { CoreError } from "@iota-pico/core/dist/error/coreError";
 &nbsp;
 /**
- * Represents the response from addNeighbors command.
- * @interface
+ * An api implementation of an error.
  */
-export interface IAddNeighborsResponse extends ICommonResponse {
-    /**
-     * The number of neighbours added.
-     */
-    addedNeighbors: number;
+export class ApiError extends CoreError {
 }
 &nbsp;</pre></td></tr>
 </table></pre>

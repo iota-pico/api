@@ -17,7 +17,7 @@ Represents the request for getTrytes command.
 
 **●  hashes**:  *`string`[]* 
 
-*Defined in [models/IGetTrytesRequest.ts:9](https://github.com/iotaeco/iota-pico-api/blob/5964d8f/src/models/IGetTrytesRequest.ts#L9)*
+*Defined in [models/IGetTrytesRequest.ts:9](https://github.com/iotaeco/iota-pico-api/blob/b456ac6/src/models/IGetTrytesRequest.ts#L9)*
 
 
 

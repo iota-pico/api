@@ -32,7 +32,7 @@ Represents the response from removeNeighbors command.
 
 *Inherited from [ICommonResponse](icommonresponse.md).[duration](icommonresponse.md#duration)*
 
-*Defined in [models/ICommonResponse.ts:9](https://github.com/iotaeco/iota-pico-api/blob/5964d8f/src/models/ICommonResponse.ts#L9)*
+*Defined in [models/ICommonResponse.ts:9](https://github.com/iotaeco/iota-pico-api/blob/b456ac6/src/models/ICommonResponse.ts#L9)*
 
 
 
@@ -49,7 +49,7 @@ ___
 
 **●  removedNeighbors**:  *`number`* 
 
-*Defined in [models/IRemoveNeighborsResponse.ts:11](https://github.com/iotaeco/iota-pico-api/blob/5964d8f/src/models/IRemoveNeighborsResponse.ts#L11)*
+*Defined in [models/IRemoveNeighborsResponse.ts:11](https://github.com/iotaeco/iota-pico-api/blob/b456ac6/src/models/IRemoveNeighborsResponse.ts#L11)*
 
 
 
