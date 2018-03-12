@@ -30,7 +30,7 @@ Represents the response from getNodeInfo command.
 
 **●  appName**:  *`string`* 
 
-*Defined in [models/IGetNodeInfoResponse.ts:11](https://github.com/iotaeco/iota-pico-api/blob/b456ac6/src/models/IGetNodeInfoResponse.ts#L11)*
+*Defined in [models/IGetNodeInfoResponse.ts:11](https://github.com/iotaeco/iota-pico-api/blob/b2263ad/src/models/IGetNodeInfoResponse.ts#L11)*
 
 
 
@@ -47,7 +47,7 @@ ___
 
 **●  appVersion**:  *`string`* 
 
-*Defined in [models/IGetNodeInfoResponse.ts:15](https://github.com/iotaeco/iota-pico-api/blob/b456ac6/src/models/IGetNodeInfoResponse.ts#L15)*
+*Defined in [models/IGetNodeInfoResponse.ts:15](https://github.com/iotaeco/iota-pico-api/blob/b2263ad/src/models/IGetNodeInfoResponse.ts#L15)*
 
 
 
@@ -66,7 +66,7 @@ ___
 
 *Inherited from [ICommonResponse](icommonresponse.md).[duration](icommonresponse.md#duration)*
 
-*Defined in [models/ICommonResponse.ts:9](https://github.com/iotaeco/iota-pico-api/blob/b456ac6/src/models/ICommonResponse.ts#L9)*
+*Defined in [models/ICommonResponse.ts:9](https://github.com/iotaeco/iota-pico-api/blob/b2263ad/src/models/ICommonResponse.ts#L9)*
 
 
 
@@ -83,7 +83,7 @@ ___
 
 **●  jreAvailableProcessors**:  *`number`* 
 
-*Defined in [models/IGetNodeInfoResponse.ts:19](https://github.com/iotaeco/iota-pico-api/blob/b456ac6/src/models/IGetNodeInfoResponse.ts#L19)*
+*Defined in [models/IGetNodeInfoResponse.ts:19](https://github.com/iotaeco/iota-pico-api/blob/b2263ad/src/models/IGetNodeInfoResponse.ts#L19)*
 
 
 
@@ -100,7 +100,7 @@ ___
 
 **●  jreFreeMemory**:  *`number`* 
 
-*Defined in [models/IGetNodeInfoResponse.ts:27](https://github.com/iotaeco/iota-pico-api/blob/b456ac6/src/models/IGetNodeInfoResponse.ts#L27)*
+*Defined in [models/IGetNodeInfoResponse.ts:27](https://github.com/iotaeco/iota-pico-api/blob/b2263ad/src/models/IGetNodeInfoResponse.ts#L27)*
 
 
 
@@ -117,7 +117,7 @@ ___
 
 **●  jreMaxMemory**:  *`number`* 
 
-*Defined in [models/IGetNodeInfoResponse.ts:31](https://github.com/iotaeco/iota-pico-api/blob/b456ac6/src/models/IGetNodeInfoResponse.ts#L31)*
+*Defined in [models/IGetNodeInfoResponse.ts:31](https://github.com/iotaeco/iota-pico-api/blob/b2263ad/src/models/IGetNodeInfoResponse.ts#L31)*
 
 
 
@@ -134,7 +134,7 @@ ___
 
 **●  jreTotalMemory**:  *`number`* 
 
-*Defined in [models/IGetNodeInfoResponse.ts:35](https://github.com/iotaeco/iota-pico-api/blob/b456ac6/src/models/IGetNodeInfoResponse.ts#L35)*
+*Defined in [models/IGetNodeInfoResponse.ts:35](https://github.com/iotaeco/iota-pico-api/blob/b2263ad/src/models/IGetNodeInfoResponse.ts#L35)*
 
 
 
@@ -151,7 +151,7 @@ ___
 
 **●  jreVersion**:  *`number`* 
 
-*Defined in [models/IGetNodeInfoResponse.ts:23](https://github.com/iotaeco/iota-pico-api/blob/b456ac6/src/models/IGetNodeInfoResponse.ts#L23)*
+*Defined in [models/IGetNodeInfoResponse.ts:23](https://github.com/iotaeco/iota-pico-api/blob/b2263ad/src/models/IGetNodeInfoResponse.ts#L23)*
 
 
 
@@ -168,7 +168,7 @@ ___
 
 **●  latestMilestone**:  *`string`* 
 
-*Defined in [models/IGetNodeInfoResponse.ts:39](https://github.com/iotaeco/iota-pico-api/blob/b456ac6/src/models/IGetNodeInfoResponse.ts#L39)*
+*Defined in [models/IGetNodeInfoResponse.ts:39](https://github.com/iotaeco/iota-pico-api/blob/b2263ad/src/models/IGetNodeInfoResponse.ts#L39)*
 
 
 
@@ -185,7 +185,7 @@ ___
 
 **●  latestMilestoneIndex**:  *`number`* 
 
-*Defined in [models/IGetNodeInfoResponse.ts:43](https://github.com/iotaeco/iota-pico-api/blob/b456ac6/src/models/IGetNodeInfoResponse.ts#L43)*
+*Defined in [models/IGetNodeInfoResponse.ts:43](https://github.com/iotaeco/iota-pico-api/blob/b2263ad/src/models/IGetNodeInfoResponse.ts#L43)*
 
 
 
@@ -202,7 +202,7 @@ ___
 
 **●  latestSolidSubtangleMilestone**:  *`string`* 
 
-*Defined in [models/IGetNodeInfoResponse.ts:49](https://github.com/iotaeco/iota-pico-api/blob/b456ac6/src/models/IGetNodeInfoResponse.ts#L49)*
+*Defined in [models/IGetNodeInfoResponse.ts:49](https://github.com/iotaeco/iota-pico-api/blob/b2263ad/src/models/IGetNodeInfoResponse.ts#L49)*
 
 
 
@@ -219,7 +219,7 @@ ___
 
 **●  latestSolidSubtangleMilestoneIndex**:  *`number`* 
 
-*Defined in [models/IGetNodeInfoResponse.ts:53](https://github.com/iotaeco/iota-pico-api/blob/b456ac6/src/models/IGetNodeInfoResponse.ts#L53)*
+*Defined in [models/IGetNodeInfoResponse.ts:53](https://github.com/iotaeco/iota-pico-api/blob/b2263ad/src/models/IGetNodeInfoResponse.ts#L53)*
 
 
 
@@ -236,7 +236,7 @@ ___
 
 **●  neighbors**:  *`number`* 
 
-*Defined in [models/IGetNodeInfoResponse.ts:57](https://github.com/iotaeco/iota-pico-api/blob/b456ac6/src/models/IGetNodeInfoResponse.ts#L57)*
+*Defined in [models/IGetNodeInfoResponse.ts:57](https://github.com/iotaeco/iota-pico-api/blob/b2263ad/src/models/IGetNodeInfoResponse.ts#L57)*
 
 
 
@@ -253,7 +253,7 @@ ___
 
 **●  packetsQueueSize**:  *`number`* 
 
-*Defined in [models/IGetNodeInfoResponse.ts:61](https://github.com/iotaeco/iota-pico-api/blob/b456ac6/src/models/IGetNodeInfoResponse.ts#L61)*
+*Defined in [models/IGetNodeInfoResponse.ts:61](https://github.com/iotaeco/iota-pico-api/blob/b2263ad/src/models/IGetNodeInfoResponse.ts#L61)*
 
 
 
@@ -270,7 +270,7 @@ ___
 
 **●  time**:  *`number`* 
 
-*Defined in [models/IGetNodeInfoResponse.ts:65](https://github.com/iotaeco/iota-pico-api/blob/b456ac6/src/models/IGetNodeInfoResponse.ts#L65)*
+*Defined in [models/IGetNodeInfoResponse.ts:65](https://github.com/iotaeco/iota-pico-api/blob/b2263ad/src/models/IGetNodeInfoResponse.ts#L65)*
 
 
 
@@ -287,7 +287,7 @@ ___
 
 **●  tips**:  *`number`* 
 
-*Defined in [models/IGetNodeInfoResponse.ts:69](https://github.com/iotaeco/iota-pico-api/blob/b456ac6/src/models/IGetNodeInfoResponse.ts#L69)*
+*Defined in [models/IGetNodeInfoResponse.ts:69](https://github.com/iotaeco/iota-pico-api/blob/b2263ad/src/models/IGetNodeInfoResponse.ts#L69)*
 
 
 
@@ -304,7 +304,7 @@ ___
 
 **●  transactionsToRequest**:  *`number`* 
 
-*Defined in [models/IGetNodeInfoResponse.ts:73](https://github.com/iotaeco/iota-pico-api/blob/b456ac6/src/models/IGetNodeInfoResponse.ts#L73)*
+*Defined in [models/IGetNodeInfoResponse.ts:73](https://github.com/iotaeco/iota-pico-api/blob/b2263ad/src/models/IGetNodeInfoResponse.ts#L73)*
 
 
 

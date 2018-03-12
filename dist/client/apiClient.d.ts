@@ -1,3 +1,4 @@
+import { ILogger } from "@iota-pico/core/dist/interfaces/ILogger";
 import { INetworkClient } from "@iota-pico/core/dist/interfaces/INetworkClient";
 import { IApiClient } from "../interfaces/IApiClient";
 import { IAddNeighborsRequest } from "../models/IAddNeighborsRequest";
@@ -36,10 +37,11 @@ export declare class ApiClient implements IApiClient {
      * @param networkClient The network client to communicate through.
      * @param apiVersion The API version to send with the requests
      * @param additionalHeaders Extra headers to send with the requests.
+     * @param logger Logger to send communication info to.
      */
     constructor(networkClient: INetworkClient, apiVersion?: string, additionalHeaders?: {
         [header: string]: string;
-    });
+    }, logger?: ILogger);
     /**
      * Returns information about your node.
      * @returns Promise which resolves to the getNodeInfo response object or rejects with error.

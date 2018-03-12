@@ -22,22 +22,22 @@
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>111/111</span>
+        <span class='fraction'>117/117</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>85/85</span>
+        <span class='fraction'>87/87</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>21/21</span>
+        <span class='fraction'>22/22</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>111/111</span>
+        <span class='fraction'>117/117</span>
       </div>
     </div>
   </div>
@@ -396,11 +396,25 @@
 351
 352
 353
-354</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+354
+355
+356
+357
+358
+359
+360
+361
+362
+363
+364
+365
+366</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -435,6 +449,9 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -455,6 +472,7 @@
 <span class="cline-any cline-yes">72x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">71x</span>
 <span class="cline-any cline-yes">71x</span>
 <span class="cline-any cline-yes">71x</span>
 <span class="cline-any cline-yes">71x</span>
@@ -720,11 +738,17 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">22x</span>
+<span class="cline-any cline-yes">22x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">22x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">17x</span>
+<span class="cline-any cline-yes">17x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">3x</span>
@@ -753,7 +777,9 @@
 import { NumberHelper } from "@iota-pico/core/dist/helpers/numberHelper";
 import { ObjectHelper } from "@iota-pico/core/dist/helpers/objectHelper";
 import { StringHelper } from "@iota-pico/core/dist/helpers/stringHelper";
+import { ILogger } from "@iota-pico/core/dist/interfaces/ILogger";
 import { INetworkClient } from "@iota-pico/core/dist/interfaces/INetworkClient";
+import { NullLogger } from "@iota-pico/core/dist/loggers/nullLogger";
 import { ApiError } from "../error/apiError";
 import { IApiClient } from "../interfaces/IApiClient";
 import { IAddNeighborsRequest } from "../models/IAddNeighborsRequest";
@@ -794,14 +820,17 @@ export class ApiClient implements IApiClient {
     private readonly _apiVersion: string;
     /* @internal */
     private readonly _additionalHeaders?: { [header: string]: string };
+    /* @internal */
+    private readonly _logger: ILogger;
 &nbsp;
     /**
      * Create an instance of ApiClient.
      * @param networkClient The network client to communicate through.
      * @param apiVersion The API version to send with the requests
      * @param additionalHeaders Extra headers to send with the requests.
+     * @param logger Logger to send communication info to.
      */
-    constructor(networkClient: INetworkClient, apiVersion: string = "1", additionalHeaders?: { [header: string]: string }) {
+    constructor(networkClient: INetworkClient, apiVersion: string = "1", additionalHeaders?: { [header: string]: string }, logger?: ILogger) {
         if (ObjectHelper.isEmpty(networkClient)) {
             throw new ApiError("The networkClient must be defined");
         }
@@ -811,6 +840,7 @@ export class ApiClient implements IApiClient {
         this._networkClient = networkClient;
         this._apiVersion = apiVersion;
         this._additionalHeaders = additionalHeaders;
+        this._logger = logger || new NullLogger();
     }
 &nbsp;
     /**
@@ -1072,12 +1102,18 @@ export class ApiClient implements IApiClient {
 &nbsp;
     /* @internal */
     private async sendCommand&lt;T, U extends ICommonResponse&gt;(command: string, request: T): Promise&lt;U&gt; {
+        this._logger.info(`===&gt; ${command}`, request);
         Object.defineProperty(request, "command", {
             value: command,
             enumerable: true
         });
         return this._networkClient.postJson&lt;T, U&gt;(request, undefined, this.createHeaders())
+            .then((response) =&gt; {
+                this._logger.info(`===&gt; ${command}`, response);
+                return response;
+            })
             .catch((err: ApiError) =&gt; {
+                this._logger.error(`===&gt; ${command} Error`, err);
                 if (err.additional &amp;&amp; err.additional.errorResponse) {
                     try {
                         const apiError = JSON.parse(err.additional.errorResponse);
@@ -1108,7 +1144,7 @@ export class ApiClient implements IApiClient {
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Mar 09 2018 16:12:49 GMT+0300 (Turkey Standard Time)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Mar 12 2018 14:06:27 GMT+0300 (Turkey Standard Time)
 </div>
 </div>
 <script src="..\..\prettify.js"></script>

@@ -32,7 +32,7 @@ Represents the response from checkConsistency command.
 
 *Inherited from [ICommonResponse](icommonresponse.md).[duration](icommonresponse.md#duration)*
 
-*Defined in [models/ICommonResponse.ts:9](https://github.com/iotaeco/iota-pico-api/blob/b456ac6/src/models/ICommonResponse.ts#L9)*
+*Defined in [models/ICommonResponse.ts:9](https://github.com/iotaeco/iota-pico-api/blob/b2263ad/src/models/ICommonResponse.ts#L9)*
 
 
 
@@ -49,7 +49,7 @@ ___
 
 **●  info**:  *`string`* 
 
-*Defined in [models/ICheckConsistencyResponse.ts:15](https://github.com/iotaeco/iota-pico-api/blob/b456ac6/src/models/ICheckConsistencyResponse.ts#L15)*
+*Defined in [models/ICheckConsistencyResponse.ts:15](https://github.com/iotaeco/iota-pico-api/blob/b2263ad/src/models/ICheckConsistencyResponse.ts#L15)*
 
 
 
@@ -66,7 +66,7 @@ ___
 
 **●  state**:  *`boolean`* 
 
-*Defined in [models/ICheckConsistencyResponse.ts:11](https://github.com/iotaeco/iota-pico-api/blob/b456ac6/src/models/ICheckConsistencyResponse.ts#L11)*
+*Defined in [models/ICheckConsistencyResponse.ts:11](https://github.com/iotaeco/iota-pico-api/blob/b2263ad/src/models/ICheckConsistencyResponse.ts#L11)*
 
 
 

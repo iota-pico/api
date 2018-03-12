@@ -2,7 +2,9 @@ import { ArrayHelper } from "@iota-pico/core/dist/helpers/arrayHelper";
 import { NumberHelper } from "@iota-pico/core/dist/helpers/numberHelper";
 import { ObjectHelper } from "@iota-pico/core/dist/helpers/objectHelper";
 import { StringHelper } from "@iota-pico/core/dist/helpers/stringHelper";
+import { ILogger } from "@iota-pico/core/dist/interfaces/ILogger";
 import { INetworkClient } from "@iota-pico/core/dist/interfaces/INetworkClient";
+import { NullLogger } from "@iota-pico/core/dist/loggers/nullLogger";
 import { ApiError } from "../error/apiError";
 import { IApiClient } from "../interfaces/IApiClient";
 import { IAddNeighborsRequest } from "../models/IAddNeighborsRequest";
@@ -43,14 +45,17 @@ export class ApiClient implements IApiClient {
     private readonly _apiVersion: string;
     /* @internal */
     private readonly _additionalHeaders?: { [header: string]: string };
+    /* @internal */
+    private readonly _logger: ILogger;
 
     /**
      * Create an instance of ApiClient.
      * @param networkClient The network client to communicate through.
      * @param apiVersion The API version to send with the requests
      * @param additionalHeaders Extra headers to send with the requests.
+     * @param logger Logger to send communication info to.
      */
-    constructor(networkClient: INetworkClient, apiVersion: string = "1", additionalHeaders?: { [header: string]: string }) {
+    constructor(networkClient: INetworkClient, apiVersion: string = "1", additionalHeaders?: { [header: string]: string }, logger?: ILogger) {
         if (ObjectHelper.isEmpty(networkClient)) {
             throw new ApiError("The networkClient must be defined");
         }
@@ -60,6 +65,7 @@ export class ApiClient implements IApiClient {
         this._networkClient = networkClient;
         this._apiVersion = apiVersion;
         this._additionalHeaders = additionalHeaders;
+        this._logger = logger || new NullLogger();
     }
 
     /**
@@ -321,12 +327,18 @@ export class ApiClient implements IApiClient {
 
     /* @internal */
     private async sendCommand<T, U extends ICommonResponse>(command: string, request: T): Promise<U> {
+        this._logger.info(`===> ${command}`, request);
         Object.defineProperty(request, "command", {
             value: command,
             enumerable: true
         });
         return this._networkClient.postJson<T, U>(request, undefined, this.createHeaders())
+            .then((response) => {
+                this._logger.info(`===> ${command}`, response);
+                return response;
+            })
             .catch((err: ApiError) => {
+                this._logger.error(`===> ${command} Error`, err);
                 if (err.additional && err.additional.errorResponse) {
                     try {
                         const apiError = JSON.parse(err.additional.errorResponse);

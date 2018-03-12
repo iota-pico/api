@@ -17,7 +17,7 @@ Represents the request for getInclusionStates command.
 
 **●  tips**:  *`string`[]* 
 
-*Defined in [models/IGetInclusionStatesRequest.ts:13](https://github.com/iotaeco/iota-pico-api/blob/b456ac6/src/models/IGetInclusionStatesRequest.ts#L13)*
+*Defined in [models/IGetInclusionStatesRequest.ts:13](https://github.com/iotaeco/iota-pico-api/blob/b2263ad/src/models/IGetInclusionStatesRequest.ts#L13)*
 
 
 
@@ -34,7 +34,7 @@ ___
 
 **●  transactions**:  *`string`[]* 
 
-*Defined in [models/IGetInclusionStatesRequest.ts:9](https://github.com/iotaeco/iota-pico-api/blob/b456ac6/src/models/IGetInclusionStatesRequest.ts#L9)*
+*Defined in [models/IGetInclusionStatesRequest.ts:9](https://github.com/iotaeco/iota-pico-api/blob/b2263ad/src/models/IGetInclusionStatesRequest.ts#L9)*
 
 
 

@@ -30,7 +30,7 @@ Represents the response from addNeighbors command.
 
 **●  addedNeighbors**:  *`number`* 
 
-*Defined in [models/IAddNeighborsResponse.ts:11](https://github.com/iotaeco/iota-pico-api/blob/b456ac6/src/models/IAddNeighborsResponse.ts#L11)*
+*Defined in [models/IAddNeighborsResponse.ts:11](https://github.com/iotaeco/iota-pico-api/blob/b2263ad/src/models/IAddNeighborsResponse.ts#L11)*
 
 
 
@@ -49,7 +49,7 @@ ___
 
 *Inherited from [ICommonResponse](icommonresponse.md).[duration](icommonresponse.md#duration)*
 
-*Defined in [models/ICommonResponse.ts:9](https://github.com/iotaeco/iota-pico-api/blob/b456ac6/src/models/ICommonResponse.ts#L9)*
+*Defined in [models/ICommonResponse.ts:9](https://github.com/iotaeco/iota-pico-api/blob/b2263ad/src/models/ICommonResponse.ts#L9)*
 
 
 
