@@ -327,7 +327,7 @@ export class ApiClient implements IApiClient {
 
     /* @internal */
     private async sendCommand<T, U extends ICommonResponse>(command: string, request: T): Promise<U> {
-        this._logger.info(`===> ${command}`, request);
+        this._logger.info(`===> ApiClient::${command}`, request);
         Object.defineProperty(request, "command", {
             value: command,
             enumerable: true

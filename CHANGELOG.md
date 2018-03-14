@@ -1,10 +1,12 @@
 # Changelog
 
-## v0.7.0
+## v0.9.0
 
 * IFindTransactionRequest properties now optional
 * Added code coverage to testing
 * Added reference and numWalks to IGetTransactionsToApproveRequest
+* Added logging facility to ApiClient
+* Added ApiError
 
 ## v0.6.1
 
