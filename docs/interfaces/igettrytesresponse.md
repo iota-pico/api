@@ -32,7 +32,7 @@ Represents the response from getTrytes command.
 
 *Inherited from [ICommonResponse](icommonresponse.md).[duration](icommonresponse.md#duration)*
 
-*Defined in [models/ICommonResponse.ts:9](https://github.com/iotaeco/iota-pico-api/blob/771a136/src/models/ICommonResponse.ts#L9)*
+*Defined in [models/ICommonResponse.ts:9](https://github.com/iotaeco/iota-pico-api/blob/72e857a/src/models/ICommonResponse.ts#L9)*
 
 
 
@@ -49,7 +49,7 @@ ___
 
 **●  trytes**:  *`string`[]* 
 
-*Defined in [models/IGetTrytesResponse.ts:11](https://github.com/iotaeco/iota-pico-api/blob/771a136/src/models/IGetTrytesResponse.ts#L11)*
+*Defined in [models/IGetTrytesResponse.ts:11](https://github.com/iotaeco/iota-pico-api/blob/72e857a/src/models/IGetTrytesResponse.ts#L11)*
 
 
 
