@@ -32,7 +32,7 @@ Represents the response from attachToTangle command.
 
 *Inherited from [ICommonResponse](icommonresponse.md).[duration](icommonresponse.md#duration)*
 
-*Defined in [models/ICommonResponse.ts:9](https://github.com/iotaeco/iota-pico-api/blob/15eb77a/src/models/ICommonResponse.ts#L9)*
+*Defined in [models/ICommonResponse.ts:9](https://github.com/iotaeco/iota-pico-api/blob/9d1ac6b/src/models/ICommonResponse.ts#L9)*
 
 
 
@@ -49,7 +49,7 @@ ___
 
 **●  trytes**:  *`string`[]* 
 
-*Defined in [models/IAttachToTangleResponse.ts:12](https://github.com/iotaeco/iota-pico-api/blob/15eb77a/src/models/IAttachToTangleResponse.ts#L12)*
+*Defined in [models/IAttachToTangleResponse.ts:12](https://github.com/iotaeco/iota-pico-api/blob/9d1ac6b/src/models/IAttachToTangleResponse.ts#L12)*
 
 
 
