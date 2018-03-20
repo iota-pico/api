@@ -95,7 +95,7 @@ Represents the common response from all commands.
 
 **●  duration**:  *`number`* 
 
-*Defined in [models/ICommonResponse.ts:9](https://github.com/iotaeco/iota-pico-api/blob/9d1ac6b/src/models/ICommonResponse.ts#L9)*
+*Defined in [models/ICommonResponse.ts:9](https://github.com/iotaeco/iota-pico-api/blob/4d5beae/src/models/ICommonResponse.ts#L9)*
 
 
 

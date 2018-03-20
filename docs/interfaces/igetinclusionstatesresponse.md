@@ -32,7 +32,7 @@ Represents the response from getInclusionStates command.
 
 *Inherited from [ICommonResponse](icommonresponse.md).[duration](icommonresponse.md#duration)*
 
-*Defined in [models/ICommonResponse.ts:9](https://github.com/iotaeco/iota-pico-api/blob/9d1ac6b/src/models/ICommonResponse.ts#L9)*
+*Defined in [models/ICommonResponse.ts:9](https://github.com/iotaeco/iota-pico-api/blob/4d5beae/src/models/ICommonResponse.ts#L9)*
 
 
 
@@ -49,7 +49,7 @@ ___
 
 **●  states**:  *`boolean`[]* 
 
-*Defined in [models/IGetInclusionStatesResponse.ts:12](https://github.com/iotaeco/iota-pico-api/blob/9d1ac6b/src/models/IGetInclusionStatesResponse.ts#L12)*
+*Defined in [models/IGetInclusionStatesResponse.ts:12](https://github.com/iotaeco/iota-pico-api/blob/4d5beae/src/models/IGetInclusionStatesResponse.ts#L12)*
 
 
 

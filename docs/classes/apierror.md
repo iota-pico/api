@@ -54,7 +54,7 @@ An api implementation of an error.
 
 *Overrides CoreError.__constructor*
 
-*Defined in [error/apiError.ts:6](https://github.com/iotaeco/iota-pico-api/blob/9d1ac6b/src/error/apiError.ts#L6)*
+*Defined in [error/apiError.ts:6](https://github.com/iotaeco/iota-pico-api/blob/4d5beae/src/error/apiError.ts#L6)*
 
 
 
