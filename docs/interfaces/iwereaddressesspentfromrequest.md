@@ -17,7 +17,7 @@ Represents the request for wereAddressesSpentFrom command.
 
 **●  addresses**:  *`string`[]* 
 
-*Defined in [models/IWereAddressesSpentFromRequest.ts:9](https://github.com/iotaeco/iota-pico-api/blob/4d5beae/src/models/IWereAddressesSpentFromRequest.ts#L9)*
+*Defined in [models/IWereAddressesSpentFromRequest.ts:9](https://github.com/iotaeco/iota-pico-api/blob/b0eda77/src/models/IWereAddressesSpentFromRequest.ts#L9)*
 
 
 
