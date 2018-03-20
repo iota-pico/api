@@ -17,7 +17,7 @@ Represents the request for getTransactionsToApprove command.
 
 **●  depth**:  *`number`* 
 
-*Defined in [models/IGetTransactionsToApproveRequest.ts:9](https://github.com/iotaeco/iota-pico-api/blob/af122d2/src/models/IGetTransactionsToApproveRequest.ts#L9)*
+*Defined in [models/IGetTransactionsToApproveRequest.ts:9](https://github.com/iotaeco/iota-pico-api/blob/15eb77a/src/models/IGetTransactionsToApproveRequest.ts#L9)*
 
 
 
@@ -34,7 +34,7 @@ ___
 
 **●  numWalks**:  *`number`* 
 
-*Defined in [models/IGetTransactionsToApproveRequest.ts:19](https://github.com/iotaeco/iota-pico-api/blob/af122d2/src/models/IGetTransactionsToApproveRequest.ts#L19)*
+*Defined in [models/IGetTransactionsToApproveRequest.ts:19](https://github.com/iotaeco/iota-pico-api/blob/15eb77a/src/models/IGetTransactionsToApproveRequest.ts#L19)*
 
 
 
@@ -51,7 +51,7 @@ ___
 
 **●  reference**:  *`string`* 
 
-*Defined in [models/IGetTransactionsToApproveRequest.ts:14](https://github.com/iotaeco/iota-pico-api/blob/af122d2/src/models/IGetTransactionsToApproveRequest.ts#L14)*
+*Defined in [models/IGetTransactionsToApproveRequest.ts:14](https://github.com/iotaeco/iota-pico-api/blob/15eb77a/src/models/IGetTransactionsToApproveRequest.ts#L14)*
 
 
 
