@@ -1,31 +1,33 @@
 [@iota-pico/api](../README.md) > [IAddNeighborsRequest](../interfaces/iaddneighborsrequest.md)
 
-
-
 # Interface: IAddNeighborsRequest
-
 
 Represents the request for addNeighbors command.
 *__interface__*: 
 
+## Hierarchy
 
+**IAddNeighborsRequest**
+
+## Index
+
+### Properties
+
+* [uris](iaddneighborsrequest.md#uris)
+
+---
 
 ## Properties
+
 <a id="uris"></a>
 
 ###  uris
 
 **●  uris**:  *`string`[]* 
 
-*Defined in [models/IAddNeighborsRequest.ts:9](https://github.com/iotaeco/iota-pico-api/blob/f9fbc12/src/models/IAddNeighborsRequest.ts#L9)*
-
-
+*Defined in [models/IAddNeighborsRequest.ts:9](https://github.com/iotaeco/iota-pico-api/blob/6fd129f/src/models/IAddNeighborsRequest.ts#L9)*
 
 List of URI elements.
 
-
-
-
 ___
-
 

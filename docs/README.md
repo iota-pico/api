@@ -1,6 +1,4 @@
 
-
-
 #  @iota-pico/api
 
 ## Index
@@ -9,7 +7,6 @@
 
 * [ApiClient](classes/apiclient.md)
 * [ApiError](classes/apierror.md)
-
 
 ### Interfaces
 
@@ -43,6 +40,5 @@
 * [IWereAddressesSpentFromRequest](interfaces/iwereaddressesspentfromrequest.md)
 * [IWereAddressesSpentFromResponse](interfaces/iwereaddressesspentfromresponse.md)
 
-
-
 ---
+

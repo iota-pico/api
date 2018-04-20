@@ -1,31 +1,20 @@
 [@iota-pico/api](../README.md) > [ApiError](../classes/apierror.md)
 
-
-
 # Class: ApiError
-
 
 An api implementation of an error.
 
 ## Hierarchy
 
-
  `CoreError`
 
 **↳ ApiError**
-
-
-
-
-
-
 
 ## Index
 
 ### Constructors
 
 * [constructor](apierror.md#constructor)
-
 
 ### Properties
 
@@ -36,30 +25,24 @@ An api implementation of an error.
 * [name](apierror.md#name)
 * [stack](apierror.md#stack)
 
-
 ### Methods
 
 * [format](apierror.md#format)
 * [isError](apierror.md#iserror)
 
-
-
 ---
-## Constructors
-<a id="constructor"></a>
 
+## Constructors
+
+<a id="constructor"></a>
 
 ### ⊕ **new ApiError**(message: *`string`*, additional?: *`object`*, innerError?: *`Error`*): [ApiError](apierror.md)
 
-
 *Overrides CoreError.__constructor*
 
-*Defined in [error/apiError.ts:6](https://github.com/iotaeco/iota-pico-api/blob/f9fbc12/src/error/apiError.ts#L6)*
-
-
+*Defined in [error/apiError.ts:6](https://github.com/iotaeco/iota-pico-api/blob/6fd129f/src/error/apiError.ts#L6)*
 
 Create an instance of ApiError.
-
 
 **Parameters:**
 
@@ -69,19 +52,15 @@ Create an instance of ApiError.
 | additional | `object`   |  Additional details about the error. |
 | innerError | `Error`   |  Add information from inner error if there was one. |
 
-
-
-
-
 **Returns:** [ApiError](apierror.md)
 
 ---
 
-
 ## Properties
+
 <a id="additional"></a>
 
-### «Optional» additional
+### `<Optional>` additional
 
 **●  additional**:  *`object`* 
 
@@ -89,19 +68,11 @@ Create an instance of ApiError.
 
 *Defined in D:/Workarea/iotaeco/iota-pico-api/node_modules/@iota-pico/core/dist/error/coreError.d.ts:12*
 
-
-
 Additional details about the error.
 
 #### Type declaration
 
-
 [id: `string`]: `any`
-
-
-
-
-
 
 ___
 
@@ -115,18 +86,13 @@ ___
 
 *Defined in D:/Workarea/iotaeco/iota-pico-api/node_modules/@iota-pico/core/dist/error/coreError.d.ts:8*
 
-
-
 The domain of the error.
-
-
-
 
 ___
 
 <a id="innererror"></a>
 
-### «Optional» innerError
+### `<Optional>` innerError
 
 **●  innerError**:  *`Error`* 
 
@@ -134,108 +100,75 @@ ___
 
 *Defined in D:/Workarea/iotaeco/iota-pico-api/node_modules/@iota-pico/core/dist/error/coreError.d.ts:18*
 
-
-
 The inner error if there was one.
-
-
-
 
 ___
 
 <a id="message"></a>
 
-### «Static» message
+### `<Static>` message
 
 **●  message**:  *`string`* 
 
 *Inherited from Error.message*
 
-*Defined in D:/Workarea/iotaeco/iota-pico-api/node_modules/typescript/lib/lib.es5.d.ts:886*
-
-
-
-
+*Defined in D:/Workarea/iotaeco/iota-pico-api/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:886*
 
 ___
 
 <a id="name"></a>
 
-### «Static» name
+### `<Static>` name
 
 **●  name**:  *`string`* 
 
 *Inherited from Error.name*
 
-*Defined in D:/Workarea/iotaeco/iota-pico-api/node_modules/typescript/lib/lib.es5.d.ts:885*
-
-
-
-
+*Defined in D:/Workarea/iotaeco/iota-pico-api/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:885*
 
 ___
 
 <a id="stack"></a>
 
-### «Static»«Optional» stack
+### `<Static>``<Optional>` stack
 
 **●  stack**:  *`string`* 
 
 *Inherited from Error.stack*
 
-*Defined in D:/Workarea/iotaeco/iota-pico-api/node_modules/typescript/lib/lib.es5.d.ts:887*
-
-
-
-
+*Defined in D:/Workarea/iotaeco/iota-pico-api/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:887*
 
 ___
 
-
 ## Methods
+
 <a id="format"></a>
 
 ###  format
 
-► **format**(): `string`
-
-
+▸ **format**(): `string`
 
 *Inherited from CoreError.format*
 
 *Defined in D:/Workarea/iotaeco/iota-pico-api/node_modules/@iota-pico/core/dist/error/coreError.d.ts:37*
 
-
-
 Format the error to a readable version.
 
-
-
-
 **Returns:** `string`
-
-
-
-
 
 ___
 
 <a id="iserror"></a>
 
-### «Static» isError
+### `<Static>` isError
 
-► **isError**(obj: *`any`*): `boolean`
-
-
+▸ **isError**(obj: *`any`*): `boolean`
 
 *Inherited from CoreError.isError*
 
 *Defined in D:/Workarea/iotaeco/iota-pico-api/node_modules/@iota-pico/core/dist/error/coreError.d.ts:33*
 
-
-
 Check if an object could be a CoreError.
-
 
 **Parameters:**
 
@@ -243,18 +176,8 @@ Check if an object could be a CoreError.
 | ------ | ------ | ------ |
 | obj | `any`   |  The object to check if it is a CoreError. |
 
-
-
-
-
 **Returns:** `boolean`
 true If the tested object is a CoreError.
 
-
-
-
-
-
 ___
-
 

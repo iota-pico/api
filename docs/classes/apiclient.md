@@ -1,11 +1,12 @@
 [@iota-pico/api](../README.md) > [ApiClient](../classes/apiclient.md)
 
-
-
 # Class: ApiClient
 
-
 Default implementation of an api client.
+
+## Hierarchy
+
+**ApiClient**
 
 ## Implements
 
@@ -16,7 +17,6 @@ Default implementation of an api client.
 ### Constructors
 
 * [constructor](apiclient.md#constructor)
-
 
 ### Methods
 
@@ -38,22 +38,17 @@ Default implementation of an api client.
 * [storeTransactions](apiclient.md#storetransactions)
 * [wereAddressesSpentFrom](apiclient.md#wereaddressesspentfrom)
 
-
-
 ---
-## Constructors
-<a id="constructor"></a>
 
+## Constructors
+
+<a id="constructor"></a>
 
 ### ⊕ **new ApiClient**(networkClient: *`INetworkClient`*, apiVersion?: *`string`*, additionalHeaders?: *`object`*, logger?: *`ILogger`*): [ApiClient](apiclient.md)
 
-
-*Defined in [client/apiClient.ts:49](https://github.com/iotaeco/iota-pico-api/blob/f9fbc12/src/client/apiClient.ts#L49)*
-
-
+*Defined in [client/apiClient.ts:49](https://github.com/iotaeco/iota-pico-api/blob/6fd129f/src/client/apiClient.ts#L49)*
 
 Create an instance of ApiClient.
-
 
 **Parameters:**
 
@@ -64,32 +59,23 @@ Create an instance of ApiClient.
 | additionalHeaders | `object`  | - |   Extra headers to send with the requests. |
 | logger | `ILogger`  | - |   Logger to send communication info to. |
 
-
-
-
-
 **Returns:** [ApiClient](apiclient.md)
 
 ---
 
-
 ## Methods
+
 <a id="addneighbors"></a>
 
 ###  addNeighbors
 
-► **addNeighbors**(request: *[IAddNeighborsRequest](../interfaces/iaddneighborsrequest.md)*): `Promise`.<[IAddNeighborsResponse](../interfaces/iaddneighborsresponse.md)>
-
-
+▸ **addNeighbors**(request: *[IAddNeighborsRequest](../interfaces/iaddneighborsrequest.md)*): `Promise`.<[IAddNeighborsResponse](../interfaces/iaddneighborsresponse.md)>
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[addNeighbors](../interfaces/iapiclient.md#addneighbors)*
 
-*Defined in [client/apiClient.ts:93](https://github.com/iotaeco/iota-pico-api/blob/f9fbc12/src/client/apiClient.ts#L93)*
-
-
+*Defined in [client/apiClient.ts:93](https://github.com/iotaeco/iota-pico-api/blob/6fd129f/src/client/apiClient.ts#L93)*
 
 Add a list of neighbors to your node. It should be noted that this is only temporary, and the added neighbors will be removed from your set of neighbors after you relaunch IRI.
-
 
 **Parameters:**
 
@@ -97,17 +83,8 @@ Add a list of neighbors to your node. It should be noted that this is only tempo
 | ------ | ------ | ------ |
 | request | [IAddNeighborsRequest](../interfaces/iaddneighborsrequest.md)   |  - |
 
-
-
-
-
 **Returns:** `Promise`.<[IAddNeighborsResponse](../interfaces/iaddneighborsresponse.md)>
 Promise which resolves to the addNeighbors response object or rejects with error.
-
-
-
-
-
 
 ___
 
@@ -115,18 +92,13 @@ ___
 
 ###  attachToTangle
 
-► **attachToTangle**(request: *[IAttachToTangleRequest](../interfaces/iattachtotanglerequest.md)*): `Promise`.<[IAttachToTangleResponse](../interfaces/iattachtotangleresponse.md)>
-
-
+▸ **attachToTangle**(request: *[IAttachToTangleRequest](../interfaces/iattachtotanglerequest.md)*): `Promise`.<[IAttachToTangleResponse](../interfaces/iattachtotangleresponse.md)>
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[attachToTangle](../interfaces/iapiclient.md#attachtotangle)*
 
-*Defined in [client/apiClient.ts:232](https://github.com/iotaeco/iota-pico-api/blob/f9fbc12/src/client/apiClient.ts#L232)*
-
-
+*Defined in [client/apiClient.ts:232](https://github.com/iotaeco/iota-pico-api/blob/6fd129f/src/client/apiClient.ts#L232)*
 
 Attaches the specified transactions (trytes) to the Tangle by doing Proof of Work. You need to supply branchTransaction as well as trunkTransaction (basically the tips which you're going to validate and reference with this transaction) - both of which you'll get through the getTransactionsToApprove API call.
-
 
 **Parameters:**
 
@@ -134,17 +106,8 @@ Attaches the specified transactions (trytes) to the Tangle by doing Proof of Wor
 | ------ | ------ | ------ |
 | request | [IAttachToTangleRequest](../interfaces/iattachtotanglerequest.md)   |  The attachToTangle request object. |
 
-
-
-
-
 **Returns:** `Promise`.<[IAttachToTangleResponse](../interfaces/iattachtotangleresponse.md)>
 Promise which resolves to the attachToTangle response object or rejects with error.
-
-
-
-
-
 
 ___
 
@@ -152,18 +115,13 @@ ___
 
 ###  broadcastTransactions
 
-► **broadcastTransactions**(request: *[IBroadcastTransactionsRequest](../interfaces/ibroadcasttransactionsrequest.md)*): `Promise`.<[ICommonResponse](../interfaces/icommonresponse.md)>
-
-
+▸ **broadcastTransactions**(request: *[IBroadcastTransactionsRequest](../interfaces/ibroadcasttransactionsrequest.md)*): `Promise`.<[ICommonResponse](../interfaces/icommonresponse.md)>
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[broadcastTransactions](../interfaces/iapiclient.md#broadcasttransactions)*
 
-*Defined in [client/apiClient.ts:264](https://github.com/iotaeco/iota-pico-api/blob/f9fbc12/src/client/apiClient.ts#L264)*
-
-
+*Defined in [client/apiClient.ts:264](https://github.com/iotaeco/iota-pico-api/blob/6fd129f/src/client/apiClient.ts#L264)*
 
 Broadcast a list of transactions to all neighbors. The input trytes for this call are provided by attachToTangle.
-
 
 **Parameters:**
 
@@ -171,17 +129,8 @@ Broadcast a list of transactions to all neighbors. The input trytes for this cal
 | ------ | ------ | ------ |
 | request | [IBroadcastTransactionsRequest](../interfaces/ibroadcasttransactionsrequest.md)   |  The broadcastTransactions request object. |
 
-
-
-
-
 **Returns:** `Promise`.<[ICommonResponse](../interfaces/icommonresponse.md)>
 Promise which resolves with empty response object or rejects with error.
-
-
-
-
-
 
 ___
 
@@ -189,18 +138,13 @@ ___
 
 ###  checkConsistency
 
-► **checkConsistency**(request: *[ICheckConsistencyRequest](../interfaces/icheckconsistencyrequest.md)*): `Promise`.<[ICheckConsistencyResponse](../interfaces/icheckconsistencyresponse.md)>
-
-
+▸ **checkConsistency**(request: *[ICheckConsistencyRequest](../interfaces/icheckconsistencyrequest.md)*): `Promise`.<[ICheckConsistencyResponse](../interfaces/icheckconsistencyresponse.md)>
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[checkConsistency](../interfaces/iapiclient.md#checkconsistency)*
 
-*Defined in [client/apiClient.ts:303](https://github.com/iotaeco/iota-pico-api/blob/f9fbc12/src/client/apiClient.ts#L303)*
-
-
+*Defined in [client/apiClient.ts:303](https://github.com/iotaeco/iota-pico-api/blob/6fd129f/src/client/apiClient.ts#L303)*
 
 Check the consistency of tail hashes.
-
 
 **Parameters:**
 
@@ -208,17 +152,8 @@ Check the consistency of tail hashes.
 | ------ | ------ | ------ |
 | request | [ICheckConsistencyRequest](../interfaces/icheckconsistencyrequest.md)   |  The checkConsistency request object. |
 
-
-
-
-
 **Returns:** `Promise`.<[ICheckConsistencyResponse](../interfaces/icheckconsistencyresponse.md)>
 Promise which resolves to the checkConsistency response object or rejects with error.
-
-
-
-
-
 
 ___
 
@@ -226,18 +161,13 @@ ___
 
 ###  findTransactions
 
-► **findTransactions**(request: *[IFindTransactionsRequest](../interfaces/ifindtransactionsrequest.md)*): `Promise`.<[IFindTransactionsResponse](../interfaces/ifindtransactionsresponse.md)>
-
-
+▸ **findTransactions**(request: *[IFindTransactionsRequest](../interfaces/ifindtransactionsrequest.md)*): `Promise`.<[IFindTransactionsResponse](../interfaces/ifindtransactionsresponse.md)>
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[findTransactions](../interfaces/iapiclient.md#findtransactions)*
 
-*Defined in [client/apiClient.ts:133](https://github.com/iotaeco/iota-pico-api/blob/f9fbc12/src/client/apiClient.ts#L133)*
-
-
+*Defined in [client/apiClient.ts:133](https://github.com/iotaeco/iota-pico-api/blob/6fd129f/src/client/apiClient.ts#L133)*
 
 Find the transactions which match the specified input and return. All input values are lists, for which a list of return values (transaction hashes), in the same order, is returned for all individual elements. The input fields can either be bundles, addresses, tags or approvees. Using multiple of these input fields returns the intersection of the values.
-
 
 **Parameters:**
 
@@ -245,17 +175,8 @@ Find the transactions which match the specified input and return. All input valu
 | ------ | ------ | ------ |
 | request | [IFindTransactionsRequest](../interfaces/ifindtransactionsrequest.md)   |  - |
 
-
-
-
-
 **Returns:** `Promise`.<[IFindTransactionsResponse](../interfaces/ifindtransactionsresponse.md)>
 Promise which resolves to the findTransactions response object or rejects with error.
-
-
-
-
-
 
 ___
 
@@ -263,18 +184,13 @@ ___
 
 ###  getBalances
 
-► **getBalances**(request: *[IGetBalancesRequest](../interfaces/igetbalancesrequest.md)*): `Promise`.<[IGetBalancesResponse](../interfaces/igetbalancesresponse.md)>
-
-
+▸ **getBalances**(request: *[IGetBalancesRequest](../interfaces/igetbalancesrequest.md)*): `Promise`.<[IGetBalancesResponse](../interfaces/igetbalancesresponse.md)>
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[getBalances](../interfaces/iapiclient.md#getbalances)*
 
-*Defined in [client/apiClient.ts:189](https://github.com/iotaeco/iota-pico-api/blob/f9fbc12/src/client/apiClient.ts#L189)*
-
-
+*Defined in [client/apiClient.ts:189](https://github.com/iotaeco/iota-pico-api/blob/6fd129f/src/client/apiClient.ts#L189)*
 
 Returns the confirmed balance which a list of addresses have at the latest confirmed milestone. In addition to the balances, it also returns the milestone as well as the index with which the confirmed balance was determined. The balances is returned as a list in the same order as the addresses were provided as input.
-
 
 **Parameters:**
 
@@ -282,17 +198,8 @@ Returns the confirmed balance which a list of addresses have at the latest confi
 | ------ | ------ | ------ |
 | request | [IGetBalancesRequest](../interfaces/igetbalancesrequest.md)   |  The getBalances request object. |
 
-
-
-
-
 **Returns:** `Promise`.<[IGetBalancesResponse](../interfaces/igetbalancesresponse.md)>
 Promise which resolves to the getBalances response object or rejects with error.
-
-
-
-
-
 
 ___
 
@@ -300,18 +207,13 @@ ___
 
 ###  getInclusionStates
 
-► **getInclusionStates**(request: *[IGetInclusionStatesRequest](../interfaces/igetinclusionstatesrequest.md)*): `Promise`.<[IGetInclusionStatesResponse](../interfaces/igetinclusionstatesresponse.md)>
-
-
+▸ **getInclusionStates**(request: *[IGetInclusionStatesRequest](../interfaces/igetinclusionstatesrequest.md)*): `Promise`.<[IGetInclusionStatesResponse](../interfaces/igetinclusionstatesresponse.md)>
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[getInclusionStates](../interfaces/iapiclient.md#getinclusionstates)*
 
-*Defined in [client/apiClient.ts:168](https://github.com/iotaeco/iota-pico-api/blob/f9fbc12/src/client/apiClient.ts#L168)*
-
-
+*Defined in [client/apiClient.ts:168](https://github.com/iotaeco/iota-pico-api/blob/6fd129f/src/client/apiClient.ts#L168)*
 
 Get the inclusion states of a set of transactions. This is for determining if a transaction was accepted and confirmed by the network or not. You can search for multiple tips (and thus, milestones) to get past inclusion states of transactions.
-
 
 **Parameters:**
 
@@ -319,17 +221,8 @@ Get the inclusion states of a set of transactions. This is for determining if a 
 | ------ | ------ | ------ |
 | request | [IGetInclusionStatesRequest](../interfaces/igetinclusionstatesrequest.md)   |  - |
 
-
-
-
-
 **Returns:** `Promise`.<[IGetInclusionStatesResponse](../interfaces/igetinclusionstatesresponse.md)>
 Promise which resolves to the getInclusionStates response object or rejects with error.
-
-
-
-
-
 
 ___
 
@@ -337,28 +230,16 @@ ___
 
 ###  getMissingTransactions
 
-► **getMissingTransactions**(): `Promise`.<[IGetMissingTransactionsResponse](../interfaces/igetmissingtransactionsresponse.md)>
-
-
+▸ **getMissingTransactions**(): `Promise`.<[IGetMissingTransactionsResponse](../interfaces/igetmissingtransactionsresponse.md)>
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[getMissingTransactions](../interfaces/iapiclient.md#getmissingtransactions)*
 
-*Defined in [client/apiClient.ts:294](https://github.com/iotaeco/iota-pico-api/blob/f9fbc12/src/client/apiClient.ts#L294)*
-
-
+*Defined in [client/apiClient.ts:294](https://github.com/iotaeco/iota-pico-api/blob/6fd129f/src/client/apiClient.ts#L294)*
 
 Get transactions with missing references.
 
-
-
-
 **Returns:** `Promise`.<[IGetMissingTransactionsResponse](../interfaces/igetmissingtransactionsresponse.md)>
 Promise which resolves to the getMissingTransactions response object or rejects with error.
-
-
-
-
-
 
 ___
 
@@ -366,28 +247,16 @@ ___
 
 ###  getNeighbors
 
-► **getNeighbors**(): `Promise`.<[IGetNeighborsResponse](../interfaces/igetneighborsresponse.md)>
-
-
+▸ **getNeighbors**(): `Promise`.<[IGetNeighborsResponse](../interfaces/igetneighborsresponse.md)>
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[getNeighbors](../interfaces/iapiclient.md#getneighbors)*
 
-*Defined in [client/apiClient.ts:84](https://github.com/iotaeco/iota-pico-api/blob/f9fbc12/src/client/apiClient.ts#L84)*
-
-
+*Defined in [client/apiClient.ts:84](https://github.com/iotaeco/iota-pico-api/blob/6fd129f/src/client/apiClient.ts#L84)*
 
 Returns the set of neighbors you are connected with, as well as their activity count. The activity counter is reset after restarting IRI.
 
-
-
-
 **Returns:** `Promise`.<[IGetNeighborsResponse](../interfaces/igetneighborsresponse.md)>
 Promise which resolves to the getNeighbors response object or rejects with error.
-
-
-
-
-
 
 ___
 
@@ -395,28 +264,16 @@ ___
 
 ###  getNodeInfo
 
-► **getNodeInfo**(): `Promise`.<[IGetNodeInfoResponse](../interfaces/igetnodeinforesponse.md)>
-
-
+▸ **getNodeInfo**(): `Promise`.<[IGetNodeInfoResponse](../interfaces/igetnodeinforesponse.md)>
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[getNodeInfo](../interfaces/iapiclient.md#getnodeinfo)*
 
-*Defined in [client/apiClient.ts:75](https://github.com/iotaeco/iota-pico-api/blob/f9fbc12/src/client/apiClient.ts#L75)*
-
-
+*Defined in [client/apiClient.ts:75](https://github.com/iotaeco/iota-pico-api/blob/6fd129f/src/client/apiClient.ts#L75)*
 
 Returns information about your node.
 
-
-
-
 **Returns:** `Promise`.<[IGetNodeInfoResponse](../interfaces/igetnodeinforesponse.md)>
 Promise which resolves to the getNodeInfo response object or rejects with error.
-
-
-
-
-
 
 ___
 
@@ -424,28 +281,16 @@ ___
 
 ###  getTips
 
-► **getTips**(): `Promise`.<[IGetTipsResponse](../interfaces/igettipsresponse.md)>
-
-
+▸ **getTips**(): `Promise`.<[IGetTipsResponse](../interfaces/igettipsresponse.md)>
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[getTips](../interfaces/iapiclient.md#gettips)*
 
-*Defined in [client/apiClient.ts:122](https://github.com/iotaeco/iota-pico-api/blob/f9fbc12/src/client/apiClient.ts#L122)*
-
-
+*Defined in [client/apiClient.ts:122](https://github.com/iotaeco/iota-pico-api/blob/6fd129f/src/client/apiClient.ts#L122)*
 
 Returns the list of tips.
 
-
-
-
 **Returns:** `Promise`.<[IGetTipsResponse](../interfaces/igettipsresponse.md)>
 Promise which resolves to the getTips response object or rejects with error.
-
-
-
-
-
 
 ___
 
@@ -453,18 +298,13 @@ ___
 
 ###  getTransactionsToApprove
 
-► **getTransactionsToApprove**(request: *[IGetTransactionsToApproveRequest](../interfaces/igettransactionstoapproverequest.md)*): `Promise`.<[IGetTransactionsToApproveResponse](../interfaces/igettransactionstoapproveresponse.md)>
-
-
+▸ **getTransactionsToApprove**(request: *[IGetTransactionsToApproveRequest](../interfaces/igettransactionstoapproverequest.md)*): `Promise`.<[IGetTransactionsToApproveResponse](../interfaces/igettransactionstoapproveresponse.md)>
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[getTransactionsToApprove](../interfaces/iapiclient.md#gettransactionstoapprove)*
 
-*Defined in [client/apiClient.ts:209](https://github.com/iotaeco/iota-pico-api/blob/f9fbc12/src/client/apiClient.ts#L209)*
-
-
+*Defined in [client/apiClient.ts:209](https://github.com/iotaeco/iota-pico-api/blob/6fd129f/src/client/apiClient.ts#L209)*
 
 Tip selection which returns trunkTransaction and branchTransaction. The input value is depth, which basically determines how many bundles to go back to for finding the transactions to approve. The higher your depth value, the more "babysitting" you do for the network (as you have to confirm more transactions).
-
 
 **Parameters:**
 
@@ -472,17 +312,8 @@ Tip selection which returns trunkTransaction and branchTransaction. The input va
 | ------ | ------ | ------ |
 | request | [IGetTransactionsToApproveRequest](../interfaces/igettransactionstoapproverequest.md)   |  The getTransactionsToApprove request object. |
 
-
-
-
-
 **Returns:** `Promise`.<[IGetTransactionsToApproveResponse](../interfaces/igettransactionstoapproveresponse.md)>
 Promise which resolves to the getTransactionsToApprove response object or rejects with error.
-
-
-
-
-
 
 ___
 
@@ -490,18 +321,13 @@ ___
 
 ###  getTrytes
 
-► **getTrytes**(request: *[IGetTrytesRequest](../interfaces/igettrytesrequest.md)*): `Promise`.<[IGetTrytesResponse](../interfaces/igettrytesresponse.md)>
-
-
+▸ **getTrytes**(request: *[IGetTrytesRequest](../interfaces/igettrytesrequest.md)*): `Promise`.<[IGetTrytesResponse](../interfaces/igettrytesresponse.md)>
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[getTrytes](../interfaces/iapiclient.md#gettrytes)*
 
-*Defined in [client/apiClient.ts:152](https://github.com/iotaeco/iota-pico-api/blob/f9fbc12/src/client/apiClient.ts#L152)*
-
-
+*Defined in [client/apiClient.ts:152](https://github.com/iotaeco/iota-pico-api/blob/6fd129f/src/client/apiClient.ts#L152)*
 
 Returns the raw transaction data (trytes) of a specific transaction. These trytes can then be easily converted into the actual transaction object.
-
 
 **Parameters:**
 
@@ -509,17 +335,8 @@ Returns the raw transaction data (trytes) of a specific transaction. These tryte
 | ------ | ------ | ------ |
 | request | [IGetTrytesRequest](../interfaces/igettrytesrequest.md)   |  - |
 
-
-
-
-
 **Returns:** `Promise`.<[IGetTrytesResponse](../interfaces/igettrytesresponse.md)>
 Promise which resolves to the findTransactions response object or rejects with error.
-
-
-
-
-
 
 ___
 
@@ -527,28 +344,16 @@ ___
 
 ###  interruptAttachingToTangle
 
-► **interruptAttachingToTangle**(): `Promise`.<[ICommonResponse](../interfaces/icommonresponse.md)>
-
-
+▸ **interruptAttachingToTangle**(): `Promise`.<[ICommonResponse](../interfaces/icommonresponse.md)>
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[interruptAttachingToTangle](../interfaces/iapiclient.md#interruptattachingtotangle)*
 
-*Defined in [client/apiClient.ts:255](https://github.com/iotaeco/iota-pico-api/blob/f9fbc12/src/client/apiClient.ts#L255)*
-
-
+*Defined in [client/apiClient.ts:255](https://github.com/iotaeco/iota-pico-api/blob/6fd129f/src/client/apiClient.ts#L255)*
 
 Interrupts and completely aborts the attachToTangle process
 
-
-
-
 **Returns:** `Promise`.<[ICommonResponse](../interfaces/icommonresponse.md)>
 Promise which resolves with empty response object or rejects with error.
-
-
-
-
-
 
 ___
 
@@ -556,18 +361,13 @@ ___
 
 ###  removeNeighbors
 
-► **removeNeighbors**(request: *[IRemoveNeighborsRequest](../interfaces/iremoveneighborsrequest.md)*): `Promise`.<[IRemoveNeighborsResponse](../interfaces/iremoveneighborsresponse.md)>
-
-
+▸ **removeNeighbors**(request: *[IRemoveNeighborsRequest](../interfaces/iremoveneighborsrequest.md)*): `Promise`.<[IRemoveNeighborsResponse](../interfaces/iremoveneighborsresponse.md)>
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[removeNeighbors](../interfaces/iapiclient.md#removeneighbors)*
 
-*Defined in [client/apiClient.ts:108](https://github.com/iotaeco/iota-pico-api/blob/f9fbc12/src/client/apiClient.ts#L108)*
-
-
+*Defined in [client/apiClient.ts:108](https://github.com/iotaeco/iota-pico-api/blob/6fd129f/src/client/apiClient.ts#L108)*
 
 Removes a list of neighbors from your node. This is only temporary, and if you have your neighbors added via the command line, they will be retained after you restart your node.
-
 
 **Parameters:**
 
@@ -575,17 +375,8 @@ Removes a list of neighbors from your node. This is only temporary, and if you h
 | ------ | ------ | ------ |
 | request | [IRemoveNeighborsRequest](../interfaces/iremoveneighborsrequest.md)   |  - |
 
-
-
-
-
 **Returns:** `Promise`.<[IRemoveNeighborsResponse](../interfaces/iremoveneighborsresponse.md)>
 Promise which resolves to the removeNeighbors response object or rejects with error.
-
-
-
-
-
 
 ___
 
@@ -593,18 +384,13 @@ ___
 
 ###  storeTransactions
 
-► **storeTransactions**(request: *[IStoreTransactionsRequest](../interfaces/istoretransactionsrequest.md)*): `Promise`.<[ICommonResponse](../interfaces/icommonresponse.md)>
-
-
+▸ **storeTransactions**(request: *[IStoreTransactionsRequest](../interfaces/istoretransactionsrequest.md)*): `Promise`.<[ICommonResponse](../interfaces/icommonresponse.md)>
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[storeTransactions](../interfaces/iapiclient.md#storetransactions)*
 
-*Defined in [client/apiClient.ts:279](https://github.com/iotaeco/iota-pico-api/blob/f9fbc12/src/client/apiClient.ts#L279)*
-
-
+*Defined in [client/apiClient.ts:279](https://github.com/iotaeco/iota-pico-api/blob/6fd129f/src/client/apiClient.ts#L279)*
 
 Store transactions into the local storage. The trytes to be used for this call are returned by attachToTangle.
-
 
 **Parameters:**
 
@@ -612,17 +398,8 @@ Store transactions into the local storage. The trytes to be used for this call a
 | ------ | ------ | ------ |
 | request | [IStoreTransactionsRequest](../interfaces/istoretransactionsrequest.md)   |  The storeTransactions request object. |
 
-
-
-
-
 **Returns:** `Promise`.<[ICommonResponse](../interfaces/icommonresponse.md)>
 Promise which resolves with empty response object or rejects with error.
-
-
-
-
-
 
 ___
 
@@ -630,18 +407,13 @@ ___
 
 ###  wereAddressesSpentFrom
 
-► **wereAddressesSpentFrom**(request: *[IWereAddressesSpentFromRequest](../interfaces/iwereaddressesspentfromrequest.md)*): `Promise`.<[IWereAddressesSpentFromResponse](../interfaces/iwereaddressesspentfromresponse.md)>
-
-
+▸ **wereAddressesSpentFrom**(request: *[IWereAddressesSpentFromRequest](../interfaces/iwereaddressesspentfromrequest.md)*): `Promise`.<[IWereAddressesSpentFromResponse](../interfaces/iwereaddressesspentfromresponse.md)>
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[wereAddressesSpentFrom](../interfaces/iapiclient.md#wereaddressesspentfrom)*
 
-*Defined in [client/apiClient.ts:318](https://github.com/iotaeco/iota-pico-api/blob/f9fbc12/src/client/apiClient.ts#L318)*
-
-
+*Defined in [client/apiClient.ts:318](https://github.com/iotaeco/iota-pico-api/blob/6fd129f/src/client/apiClient.ts#L318)*
 
 Have the requested addresses been spent from already.
-
 
 **Parameters:**
 
@@ -649,18 +421,8 @@ Have the requested addresses been spent from already.
 | ------ | ------ | ------ |
 | request | [IWereAddressesSpentFromRequest](../interfaces/iwereaddressesspentfromrequest.md)   |  The wereAddressesSpentFrom request object. |
 
-
-
-
-
 **Returns:** `Promise`.<[IWereAddressesSpentFromResponse](../interfaces/iwereaddressesspentfromresponse.md)>
 Promise which resolves to the wereAddressesSpentFrom response object or rejects with error.
 
-
-
-
-
-
 ___
-
 
