@@ -26,7 +26,7 @@ Represents the request for getInclusionStates command.
 
 **●  tips**:  *`string`[]* 
 
-*Defined in [models/IGetInclusionStatesRequest.ts:13](https://github.com/iotaeco/iota-pico-api/blob/6fd129f/src/models/IGetInclusionStatesRequest.ts#L13)*
+*Defined in [models/IGetInclusionStatesRequest.ts:13](https://github.com/iota-pico/api/blob/242aedb/src/models/IGetInclusionStatesRequest.ts#L13)*
 
 List of tips (including milestones) you want to search for the inclusion state.
 
@@ -38,7 +38,7 @@ ___
 
 **●  transactions**:  *`string`[]* 
 
-*Defined in [models/IGetInclusionStatesRequest.ts:9](https://github.com/iotaeco/iota-pico-api/blob/6fd129f/src/models/IGetInclusionStatesRequest.ts#L9)*
+*Defined in [models/IGetInclusionStatesRequest.ts:9](https://github.com/iota-pico/api/blob/242aedb/src/models/IGetInclusionStatesRequest.ts#L9)*
 
 List of transactions you want to get the inclusion state for.
 

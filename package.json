@@ -21,7 +21,7 @@
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/iotaeco/iota-pico-api.git"
+        "url": "https://github.com/iota-pico/api.git"
     },
     "engines": {
         "node": ">=8"

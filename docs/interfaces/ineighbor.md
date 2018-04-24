@@ -28,7 +28,7 @@ Represents the a neighbor.
 
 **●  address**:  *`string`* 
 
-*Defined in [models/INeighbor.ts:9](https://github.com/iotaeco/iota-pico-api/blob/6fd129f/src/models/INeighbor.ts#L9)*
+*Defined in [models/INeighbor.ts:9](https://github.com/iota-pico/api/blob/242aedb/src/models/INeighbor.ts#L9)*
 
 The address of your peer.
 
@@ -40,7 +40,7 @@ ___
 
 **●  numberOfAllTransactions**:  *`number`* 
 
-*Defined in [models/INeighbor.ts:13](https://github.com/iotaeco/iota-pico-api/blob/6fd129f/src/models/INeighbor.ts#L13)*
+*Defined in [models/INeighbor.ts:13](https://github.com/iota-pico/api/blob/242aedb/src/models/INeighbor.ts#L13)*
 
 Number of all transactions sent (invalid, valid, already-seen).
 
@@ -52,7 +52,7 @@ ___
 
 **●  numberOfInvalidTransactions**:  *`number`* 
 
-*Defined in [models/INeighbor.ts:18](https://github.com/iotaeco/iota-pico-api/blob/6fd129f/src/models/INeighbor.ts#L18)*
+*Defined in [models/INeighbor.ts:18](https://github.com/iota-pico/api/blob/242aedb/src/models/INeighbor.ts#L18)*
 
 Invalid transactions your peer has sent you. These are transactions with invalid signatures or overall schema.
 
@@ -64,7 +64,7 @@ ___
 
 **●  numberOfNewTransactions**:  *`number`* 
 
-*Defined in [models/INeighbor.ts:22](https://github.com/iotaeco/iota-pico-api/blob/6fd129f/src/models/INeighbor.ts#L22)*
+*Defined in [models/INeighbor.ts:22](https://github.com/iota-pico/api/blob/242aedb/src/models/INeighbor.ts#L22)*
 
 New transactions which were transmitted.
 

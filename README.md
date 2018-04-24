@@ -1,5 +1,5 @@
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/iotaeco/iota-pico-api/master/LICENSE) [![Build Status](https://travis-ci.org/iotaeco/iota-pico-api.svg?branch=master)](https://travis-ci.org/iotaeco/iota-pico-api) [![NSP Status](https://nodesecurity.io/orgs/iotaeco/projects/2edc0b1b-a893-43c1-ad41-a3832ca1da4c/badge)](https://nodesecurity.io/orgs/iotaeco/projects/2edc0b1b-a893-43c1-ad41-a3832ca1da4c)
-[![Coveralls](https://img.shields.io/coveralls/iotaeco/iota-pico-api.svg)](https://coveralls.io/github/iotaeco/iota-pico-api)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/https://github.com/iota-pico/api/master/LICENSE) [![Build Status](https://travis-ci.org/https://github.com/iota-pico/api.svg?branch=master)](https://travis-ci.org/https://github.com/iota-pico/api) [![NSP Status](https://nodesecurity.io/orgs/https://github.com/iota-pico/projects/32c93b32-c428-469a-9cea-41362108fe86/badge)](https://nodesecurity.io/orgs/https://github.com/iota-pico/projects/32c93b32-c428-469a-9cea-41362108fe86)
+[![Coveralls](https://img.shields.io/coveralls/https://github.com/iota-pico/api.svg)](https://coveralls.io/github/https://github.com/iota-pico/api)
 
 # IOTA Pico Framework API
 
@@ -19,8 +19,8 @@ npm install @iota-pico/api --save
 
 # Platform Abstraction Layers (PALs)
 
-* Browser PAL [@iota-pico/pal-browser](https://github.com/iotaeco/iota-pico-pal-browser)
-* NodeJS PAL [@iota-pico/pal-nodejs](https://github.com/iotaeco/iota-pico-pal-nodejs)
+* Browser PAL [@iota-pico/pal-browser](https://github.com/iota-pico/pal-browser)
+* NodeJS PAL [@iota-pico/pal-nodejs](https://github.com/iota-pico/pal-nodejs)
 
 # Documentation
 
@@ -31,8 +31,8 @@ Documentation for the code can be found in [docs](./docs/README.md) folder.
 The IOTA Pico Framework is a multi-layered set of object oriented JavaScript libraries for use with the IOTA tangle.
 
 If you don't want to use the layered versions of the libraries consider using the  ready bundled versions:
-* [@iota-pico/lib-browser](https://github.com/iotaeco/iota-pico-lib-browser)
-* [@iota-pico/lib-nodejs](https://github.com/iotaeco/iota-pico-lib-nodejs)
+* [@iota-pico/lib-browser](https://github.com/iota-pico/lib-browser)
+* [@iota-pico/lib-nodejs](https://github.com/iota-pico/lib-nodejs)
 
 Each layer is fully abstracted allowing you to replace components with your own implementations very easily.
 
@@ -40,14 +40,14 @@ The layered libraries are written in TypeScript so are all strongly typed. The m
 
 # Tutorials
 
-Some tutorials can be found in the following repo [@iota-pico/tutorials](https://github.com/iotaeco/iota-pico-tutorials)
+Some tutorials can be found in the following repo [@iota-pico/tutorials](https://github.com/iota-pico/tutorials)
 
 # Examples
 
 There is example code using all the functionality of the libraries for the following platforms and languages.
 
-* Browser Examples [@iota-pico/api-examples-browser](https://github.com/iotaeco/iota-pico-api-examples-browser)
-* NodeJS CLI Examples [@iota-pico/api-examples-nodejs](https://github.com/iotaeco/iota-pico-api-examples-nodejs)
+* Browser Examples [@iota-pico/api-examples-browser](https://github.com/iota-pico/api-examples-browser)
+* NodeJS CLI Examples [@iota-pico/api-examples-nodejs](https://github.com/iota-pico/api-examples-nodejs)
 
 # Contributing
 

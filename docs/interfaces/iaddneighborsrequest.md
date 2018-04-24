@@ -25,7 +25,7 @@ Represents the request for addNeighbors command.
 
 **●  uris**:  *`string`[]* 
 
-*Defined in [models/IAddNeighborsRequest.ts:9](https://github.com/iotaeco/iota-pico-api/blob/6fd129f/src/models/IAddNeighborsRequest.ts#L9)*
+*Defined in [models/IAddNeighborsRequest.ts:9](https://github.com/iota-pico/api/blob/242aedb/src/models/IAddNeighborsRequest.ts#L9)*
 
 List of URI elements.
 

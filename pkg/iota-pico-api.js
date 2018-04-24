@@ -81,10 +81,10 @@ return /******/ (function(modules) { // webpackBootstrap
 /************************************************************************/
 /******/ ({
 
-/***/ "../iota-pico-core/dist/error/coreError.js":
-/*!*************************************************!*\
-  !*** ../iota-pico-core/dist/error/coreError.js ***!
-  \*************************************************/
+/***/ "../core/dist/error/coreError.js":
+/*!***************************************!*\
+  !*** ../core/dist/error/coreError.js ***!
+  \***************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -134,9 +134,9 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var jsonHelper_1 = __webpack_require__(/*! ../helpers/jsonHelper */ "../iota-pico-core/dist/helpers/jsonHelper.js");
+var jsonHelper_1 = __webpack_require__(/*! ../helpers/jsonHelper */ "../core/dist/helpers/jsonHelper.js");
 
-var stringHelper_1 = __webpack_require__(/*! ../helpers/stringHelper */ "../iota-pico-core/dist/helpers/stringHelper.js");
+var stringHelper_1 = __webpack_require__(/*! ../helpers/stringHelper */ "../core/dist/helpers/stringHelper.js");
 /**
  * A core implementation of an error.
  */
@@ -218,10 +218,10 @@ exports.CoreError = CoreError;
 
 /***/ }),
 
-/***/ "../iota-pico-core/dist/helpers/arrayHelper.js":
-/*!*****************************************************!*\
-  !*** ../iota-pico-core/dist/helpers/arrayHelper.js ***!
-  \*****************************************************/
+/***/ "../core/dist/helpers/arrayHelper.js":
+/*!*******************************************!*\
+  !*** ../core/dist/helpers/arrayHelper.js ***!
+  \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -238,7 +238,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var objectHelper_1 = __webpack_require__(/*! ./objectHelper */ "../iota-pico-core/dist/helpers/objectHelper.js");
+var objectHelper_1 = __webpack_require__(/*! ./objectHelper */ "../core/dist/helpers/objectHelper.js");
 /**
  * Array helper methods.
  */
@@ -296,10 +296,10 @@ exports.ArrayHelper = ArrayHelper;
 
 /***/ }),
 
-/***/ "../iota-pico-core/dist/helpers/jsonHelper.js":
-/*!****************************************************!*\
-  !*** ../iota-pico-core/dist/helpers/jsonHelper.js ***!
-  \****************************************************/
+/***/ "../core/dist/helpers/jsonHelper.js":
+/*!******************************************!*\
+  !*** ../core/dist/helpers/jsonHelper.js ***!
+  \******************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -366,10 +366,10 @@ exports.JsonHelper = JsonHelper;
 
 /***/ }),
 
-/***/ "../iota-pico-core/dist/helpers/numberHelper.js":
-/*!******************************************************!*\
-  !*** ../iota-pico-core/dist/helpers/numberHelper.js ***!
-  \******************************************************/
+/***/ "../core/dist/helpers/numberHelper.js":
+/*!********************************************!*\
+  !*** ../core/dist/helpers/numberHelper.js ***!
+  \********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -449,10 +449,10 @@ exports.NumberHelper = NumberHelper;
 
 /***/ }),
 
-/***/ "../iota-pico-core/dist/helpers/objectHelper.js":
-/*!******************************************************!*\
-  !*** ../iota-pico-core/dist/helpers/objectHelper.js ***!
-  \******************************************************/
+/***/ "../core/dist/helpers/objectHelper.js":
+/*!********************************************!*\
+  !*** ../core/dist/helpers/objectHelper.js ***!
+  \********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -544,10 +544,10 @@ exports.ObjectHelper = ObjectHelper;
 
 /***/ }),
 
-/***/ "../iota-pico-core/dist/helpers/stringHelper.js":
-/*!******************************************************!*\
-  !*** ../iota-pico-core/dist/helpers/stringHelper.js ***!
-  \******************************************************/
+/***/ "../core/dist/helpers/stringHelper.js":
+/*!********************************************!*\
+  !*** ../core/dist/helpers/stringHelper.js ***!
+  \********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -642,10 +642,10 @@ exports.StringHelper = StringHelper;
 
 /***/ }),
 
-/***/ "../iota-pico-core/dist/loggers/nullLogger.js":
-/*!****************************************************!*\
-  !*** ../iota-pico-core/dist/loggers/nullLogger.js ***!
-  \****************************************************/
+/***/ "../core/dist/loggers/nullLogger.js":
+/*!******************************************!*\
+  !*** ../core/dist/loggers/nullLogger.js ***!
+  \******************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -753,15 +753,15 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var arrayHelper_1 = __webpack_require__(/*! @iota-pico/core/dist/helpers/arrayHelper */ "../iota-pico-core/dist/helpers/arrayHelper.js");
+var arrayHelper_1 = __webpack_require__(/*! @iota-pico/core/dist/helpers/arrayHelper */ "../core/dist/helpers/arrayHelper.js");
 
-var numberHelper_1 = __webpack_require__(/*! @iota-pico/core/dist/helpers/numberHelper */ "../iota-pico-core/dist/helpers/numberHelper.js");
+var numberHelper_1 = __webpack_require__(/*! @iota-pico/core/dist/helpers/numberHelper */ "../core/dist/helpers/numberHelper.js");
 
-var objectHelper_1 = __webpack_require__(/*! @iota-pico/core/dist/helpers/objectHelper */ "../iota-pico-core/dist/helpers/objectHelper.js");
+var objectHelper_1 = __webpack_require__(/*! @iota-pico/core/dist/helpers/objectHelper */ "../core/dist/helpers/objectHelper.js");
 
-var stringHelper_1 = __webpack_require__(/*! @iota-pico/core/dist/helpers/stringHelper */ "../iota-pico-core/dist/helpers/stringHelper.js");
+var stringHelper_1 = __webpack_require__(/*! @iota-pico/core/dist/helpers/stringHelper */ "../core/dist/helpers/stringHelper.js");
 
-var nullLogger_1 = __webpack_require__(/*! @iota-pico/core/dist/loggers/nullLogger */ "../iota-pico-core/dist/loggers/nullLogger.js");
+var nullLogger_1 = __webpack_require__(/*! @iota-pico/core/dist/loggers/nullLogger */ "../core/dist/loggers/nullLogger.js");
 
 var apiError_1 = __webpack_require__(/*! ../error/apiError */ "./dist/error/apiError.js");
 /**
@@ -1669,7 +1669,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var coreError_1 = __webpack_require__(/*! @iota-pico/core/dist/error/coreError */ "../iota-pico-core/dist/error/coreError.js");
+var coreError_1 = __webpack_require__(/*! @iota-pico/core/dist/error/coreError */ "../core/dist/error/coreError.js");
 /**
  * An api implementation of an error.
  */

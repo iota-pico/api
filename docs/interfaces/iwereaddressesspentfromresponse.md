@@ -30,7 +30,7 @@ Represents the response from wereAddressesSpentFrom command.
 
 *Inherited from [ICommonResponse](icommonresponse.md).[duration](icommonresponse.md#duration)*
 
-*Defined in [models/ICommonResponse.ts:9](https://github.com/iotaeco/iota-pico-api/blob/6fd129f/src/models/ICommonResponse.ts#L9)*
+*Defined in [models/ICommonResponse.ts:9](https://github.com/iota-pico/api/blob/242aedb/src/models/ICommonResponse.ts#L9)*
 
 The duration of the request.
 
@@ -42,7 +42,7 @@ ___
 
 **●  states**:  *`boolean`[]* 
 
-*Defined in [models/IWereAddressesSpentFromResponse.ts:11](https://github.com/iotaeco/iota-pico-api/blob/6fd129f/src/models/IWereAddressesSpentFromResponse.ts#L11)*
+*Defined in [models/IWereAddressesSpentFromResponse.ts:11](https://github.com/iota-pico/api/blob/242aedb/src/models/IWereAddressesSpentFromResponse.ts#L11)*
 
 States which are true if the corresponding input address was spent from.
 

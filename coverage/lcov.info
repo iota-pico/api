@@ -1,5 +1,5 @@
 TN:
-SF:D:\Workarea\iotaeco\iota-pico-api\src\index.ts
+SF:D:\Workarea\iota-pico\api\src\index.ts
 FNF:0
 FNH:0
 LF:0
@@ -8,7 +8,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:D:\Workarea\iotaeco\iota-pico-api\src\client\apiClient.ts
+SF:D:\Workarea\iota-pico\api\src\client\apiClient.ts
 FN:58,(anonymous_0)
 FN:75,(anonymous_1)
 FN:84,(anonymous_2)
@@ -265,22 +265,20 @@ BRF:87
 BRH:87
 end_of_record
 TN:
-SF:D:\Workarea\iotaeco\iota-pico-api\src\error\apiError.ts
+SF:D:\Workarea\iota-pico\api\src\error\apiError.ts
 FN:13,(anonymous_0)
 FNF:1
 FNH:1
 FNDA:51,(anonymous_0)
-DA:1,1
-DA:6,1
-DA:14,51
-DA:15,51
-LF:4
-LH:4
+DA:14,1
+DA:15,1
+LF:2
+LH:2
 BRF:0
 BRH:0
 end_of_record
 TN:
-SF:D:\Workarea\iotaeco\iota-pico-api\src\interfaces\IApiClient.ts
+SF:D:\Workarea\iota-pico\api\src\interfaces\IApiClient.ts
 FNF:0
 FNH:0
 LF:0
@@ -289,7 +287,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:D:\Workarea\iotaeco\iota-pico-api\src\models\IAddNeighborsRequest.ts
+SF:D:\Workarea\iota-pico\api\src\models\IAddNeighborsRequest.ts
 FNF:0
 FNH:0
 LF:0
@@ -298,7 +296,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:D:\Workarea\iotaeco\iota-pico-api\src\models\IAddNeighborsResponse.ts
+SF:D:\Workarea\iota-pico\api\src\models\IAddNeighborsResponse.ts
 FNF:0
 FNH:0
 LF:0
@@ -307,7 +305,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:D:\Workarea\iotaeco\iota-pico-api\src\models\IAttachToTangleRequest.ts
+SF:D:\Workarea\iota-pico\api\src\models\IAttachToTangleRequest.ts
 FNF:0
 FNH:0
 LF:0
@@ -316,7 +314,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:D:\Workarea\iotaeco\iota-pico-api\src\models\IAttachToTangleResponse.ts
+SF:D:\Workarea\iota-pico\api\src\models\IAttachToTangleResponse.ts
 FNF:0
 FNH:0
 LF:0
@@ -325,7 +323,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:D:\Workarea\iotaeco\iota-pico-api\src\models\IBroadcastTransactionsRequest.ts
+SF:D:\Workarea\iota-pico\api\src\models\IBroadcastTransactionsRequest.ts
 FNF:0
 FNH:0
 LF:0
@@ -334,7 +332,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:D:\Workarea\iotaeco\iota-pico-api\src\models\ICheckConsistencyRequest.ts
+SF:D:\Workarea\iota-pico\api\src\models\ICheckConsistencyRequest.ts
 FNF:0
 FNH:0
 LF:0
@@ -343,7 +341,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:D:\Workarea\iotaeco\iota-pico-api\src\models\ICheckConsistencyResponse.ts
+SF:D:\Workarea\iota-pico\api\src\models\ICheckConsistencyResponse.ts
 FNF:0
 FNH:0
 LF:0
@@ -352,7 +350,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:D:\Workarea\iotaeco\iota-pico-api\src\models\ICommonResponse.ts
+SF:D:\Workarea\iota-pico\api\src\models\ICommonResponse.ts
 FNF:0
 FNH:0
 LF:0
@@ -361,7 +359,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:D:\Workarea\iotaeco\iota-pico-api\src\models\IFindTransactionsRequest.ts
+SF:D:\Workarea\iota-pico\api\src\models\IFindTransactionsRequest.ts
 FNF:0
 FNH:0
 LF:0
@@ -370,7 +368,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:D:\Workarea\iotaeco\iota-pico-api\src\models\IFindTransactionsResponse.ts
+SF:D:\Workarea\iota-pico\api\src\models\IFindTransactionsResponse.ts
 FNF:0
 FNH:0
 LF:0
@@ -379,7 +377,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:D:\Workarea\iotaeco\iota-pico-api\src\models\IGetBalancesRequest.ts
+SF:D:\Workarea\iota-pico\api\src\models\IGetBalancesRequest.ts
 FNF:0
 FNH:0
 LF:0
@@ -388,7 +386,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:D:\Workarea\iotaeco\iota-pico-api\src\models\IGetBalancesResponse.ts
+SF:D:\Workarea\iota-pico\api\src\models\IGetBalancesResponse.ts
 FNF:0
 FNH:0
 LF:0
@@ -397,7 +395,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:D:\Workarea\iotaeco\iota-pico-api\src\models\IGetInclusionStatesRequest.ts
+SF:D:\Workarea\iota-pico\api\src\models\IGetInclusionStatesRequest.ts
 FNF:0
 FNH:0
 LF:0
@@ -406,7 +404,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:D:\Workarea\iotaeco\iota-pico-api\src\models\IGetInclusionStatesResponse.ts
+SF:D:\Workarea\iota-pico\api\src\models\IGetInclusionStatesResponse.ts
 FNF:0
 FNH:0
 LF:0
@@ -415,7 +413,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:D:\Workarea\iotaeco\iota-pico-api\src\models\IGetMissingTransactionsResponse.ts
+SF:D:\Workarea\iota-pico\api\src\models\IGetMissingTransactionsResponse.ts
 FNF:0
 FNH:0
 LF:0
@@ -424,7 +422,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:D:\Workarea\iotaeco\iota-pico-api\src\models\IGetNeighborsResponse.ts
+SF:D:\Workarea\iota-pico\api\src\models\IGetNeighborsResponse.ts
 FNF:0
 FNH:0
 LF:0
@@ -433,7 +431,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:D:\Workarea\iotaeco\iota-pico-api\src\models\IGetNodeInfoResponse.ts
+SF:D:\Workarea\iota-pico\api\src\models\IGetNodeInfoResponse.ts
 FNF:0
 FNH:0
 LF:0
@@ -442,7 +440,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:D:\Workarea\iotaeco\iota-pico-api\src\models\IGetTipsResponse.ts
+SF:D:\Workarea\iota-pico\api\src\models\IGetTipsResponse.ts
 FNF:0
 FNH:0
 LF:0
@@ -451,7 +449,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:D:\Workarea\iotaeco\iota-pico-api\src\models\IGetTransactionsToApproveRequest.ts
+SF:D:\Workarea\iota-pico\api\src\models\IGetTransactionsToApproveRequest.ts
 FNF:0
 FNH:0
 LF:0
@@ -460,7 +458,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:D:\Workarea\iotaeco\iota-pico-api\src\models\IGetTransactionsToApproveResponse.ts
+SF:D:\Workarea\iota-pico\api\src\models\IGetTransactionsToApproveResponse.ts
 FNF:0
 FNH:0
 LF:0
@@ -469,7 +467,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:D:\Workarea\iotaeco\iota-pico-api\src\models\IGetTrytesRequest.ts
+SF:D:\Workarea\iota-pico\api\src\models\IGetTrytesRequest.ts
 FNF:0
 FNH:0
 LF:0
@@ -478,7 +476,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:D:\Workarea\iotaeco\iota-pico-api\src\models\IGetTrytesResponse.ts
+SF:D:\Workarea\iota-pico\api\src\models\IGetTrytesResponse.ts
 FNF:0
 FNH:0
 LF:0
@@ -487,7 +485,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:D:\Workarea\iotaeco\iota-pico-api\src\models\INeighbor.ts
+SF:D:\Workarea\iota-pico\api\src\models\INeighbor.ts
 FNF:0
 FNH:0
 LF:0
@@ -496,7 +494,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:D:\Workarea\iotaeco\iota-pico-api\src\models\IRemoveNeighborsRequest.ts
+SF:D:\Workarea\iota-pico\api\src\models\IRemoveNeighborsRequest.ts
 FNF:0
 FNH:0
 LF:0
@@ -505,7 +503,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:D:\Workarea\iotaeco\iota-pico-api\src\models\IRemoveNeighborsResponse.ts
+SF:D:\Workarea\iota-pico\api\src\models\IRemoveNeighborsResponse.ts
 FNF:0
 FNH:0
 LF:0
@@ -514,7 +512,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:D:\Workarea\iotaeco\iota-pico-api\src\models\IStoreTransactionsRequest.ts
+SF:D:\Workarea\iota-pico\api\src\models\IStoreTransactionsRequest.ts
 FNF:0
 FNH:0
 LF:0
@@ -523,7 +521,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:D:\Workarea\iotaeco\iota-pico-api\src\models\IWereAddressesSpentFromRequest.ts
+SF:D:\Workarea\iota-pico\api\src\models\IWereAddressesSpentFromRequest.ts
 FNF:0
 FNH:0
 LF:0
@@ -532,7 +530,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:D:\Workarea\iotaeco\iota-pico-api\src\models\IWereAddressesSpentFromResponse.ts
+SF:D:\Workarea\iota-pico\api\src\models\IWereAddressesSpentFromResponse.ts
 FNF:0
 FNH:0
 LF:0
