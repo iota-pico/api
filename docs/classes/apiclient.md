@@ -46,7 +46,7 @@ Default implementation of an api client.
 
 ### ⊕ **new ApiClient**(networkClient: *`INetworkClient`*, apiVersion?: *`string`*, additionalHeaders?: *`object`*, logger?: *`ILogger`*): [ApiClient](apiclient.md)
 
-*Defined in [client/apiClient.ts:49](https://github.com/iota-pico/api/blob/242aedb/src/client/apiClient.ts#L49)*
+*Defined in [client/apiClient.ts:49](https://github.com/iota-pico/api/blob/98be397/src/client/apiClient.ts#L49)*
 
 Create an instance of ApiClient.
 
@@ -73,7 +73,7 @@ Create an instance of ApiClient.
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[addNeighbors](../interfaces/iapiclient.md#addneighbors)*
 
-*Defined in [client/apiClient.ts:93](https://github.com/iota-pico/api/blob/242aedb/src/client/apiClient.ts#L93)*
+*Defined in [client/apiClient.ts:93](https://github.com/iota-pico/api/blob/98be397/src/client/apiClient.ts#L93)*
 
 Add a list of neighbors to your node. It should be noted that this is only temporary, and the added neighbors will be removed from your set of neighbors after you relaunch IRI.
 
@@ -96,7 +96,7 @@ ___
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[attachToTangle](../interfaces/iapiclient.md#attachtotangle)*
 
-*Defined in [client/apiClient.ts:232](https://github.com/iota-pico/api/blob/242aedb/src/client/apiClient.ts#L232)*
+*Defined in [client/apiClient.ts:232](https://github.com/iota-pico/api/blob/98be397/src/client/apiClient.ts#L232)*
 
 Attaches the specified transactions (trytes) to the Tangle by doing Proof of Work. You need to supply branchTransaction as well as trunkTransaction (basically the tips which you're going to validate and reference with this transaction) - both of which you'll get through the getTransactionsToApprove API call.
 
@@ -119,7 +119,7 @@ ___
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[broadcastTransactions](../interfaces/iapiclient.md#broadcasttransactions)*
 
-*Defined in [client/apiClient.ts:264](https://github.com/iota-pico/api/blob/242aedb/src/client/apiClient.ts#L264)*
+*Defined in [client/apiClient.ts:264](https://github.com/iota-pico/api/blob/98be397/src/client/apiClient.ts#L264)*
 
 Broadcast a list of transactions to all neighbors. The input trytes for this call are provided by attachToTangle.
 
@@ -142,7 +142,7 @@ ___
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[checkConsistency](../interfaces/iapiclient.md#checkconsistency)*
 
-*Defined in [client/apiClient.ts:303](https://github.com/iota-pico/api/blob/242aedb/src/client/apiClient.ts#L303)*
+*Defined in [client/apiClient.ts:303](https://github.com/iota-pico/api/blob/98be397/src/client/apiClient.ts#L303)*
 
 Check the consistency of tail hashes.
 
@@ -165,7 +165,7 @@ ___
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[findTransactions](../interfaces/iapiclient.md#findtransactions)*
 
-*Defined in [client/apiClient.ts:133](https://github.com/iota-pico/api/blob/242aedb/src/client/apiClient.ts#L133)*
+*Defined in [client/apiClient.ts:133](https://github.com/iota-pico/api/blob/98be397/src/client/apiClient.ts#L133)*
 
 Find the transactions which match the specified input and return. All input values are lists, for which a list of return values (transaction hashes), in the same order, is returned for all individual elements. The input fields can either be bundles, addresses, tags or approvees. Using multiple of these input fields returns the intersection of the values.
 
@@ -188,7 +188,7 @@ ___
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[getBalances](../interfaces/iapiclient.md#getbalances)*
 
-*Defined in [client/apiClient.ts:189](https://github.com/iota-pico/api/blob/242aedb/src/client/apiClient.ts#L189)*
+*Defined in [client/apiClient.ts:189](https://github.com/iota-pico/api/blob/98be397/src/client/apiClient.ts#L189)*
 
 Returns the confirmed balance which a list of addresses have at the latest confirmed milestone. In addition to the balances, it also returns the milestone as well as the index with which the confirmed balance was determined. The balances is returned as a list in the same order as the addresses were provided as input.
 
@@ -211,7 +211,7 @@ ___
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[getInclusionStates](../interfaces/iapiclient.md#getinclusionstates)*
 
-*Defined in [client/apiClient.ts:168](https://github.com/iota-pico/api/blob/242aedb/src/client/apiClient.ts#L168)*
+*Defined in [client/apiClient.ts:168](https://github.com/iota-pico/api/blob/98be397/src/client/apiClient.ts#L168)*
 
 Get the inclusion states of a set of transactions. This is for determining if a transaction was accepted and confirmed by the network or not. You can search for multiple tips (and thus, milestones) to get past inclusion states of transactions.
 
@@ -234,7 +234,7 @@ ___
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[getMissingTransactions](../interfaces/iapiclient.md#getmissingtransactions)*
 
-*Defined in [client/apiClient.ts:294](https://github.com/iota-pico/api/blob/242aedb/src/client/apiClient.ts#L294)*
+*Defined in [client/apiClient.ts:294](https://github.com/iota-pico/api/blob/98be397/src/client/apiClient.ts#L294)*
 
 Get transactions with missing references.
 
@@ -251,7 +251,7 @@ ___
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[getNeighbors](../interfaces/iapiclient.md#getneighbors)*
 
-*Defined in [client/apiClient.ts:84](https://github.com/iota-pico/api/blob/242aedb/src/client/apiClient.ts#L84)*
+*Defined in [client/apiClient.ts:84](https://github.com/iota-pico/api/blob/98be397/src/client/apiClient.ts#L84)*
 
 Returns the set of neighbors you are connected with, as well as their activity count. The activity counter is reset after restarting IRI.
 
@@ -268,7 +268,7 @@ ___
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[getNodeInfo](../interfaces/iapiclient.md#getnodeinfo)*
 
-*Defined in [client/apiClient.ts:75](https://github.com/iota-pico/api/blob/242aedb/src/client/apiClient.ts#L75)*
+*Defined in [client/apiClient.ts:75](https://github.com/iota-pico/api/blob/98be397/src/client/apiClient.ts#L75)*
 
 Returns information about your node.
 
@@ -285,7 +285,7 @@ ___
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[getTips](../interfaces/iapiclient.md#gettips)*
 
-*Defined in [client/apiClient.ts:122](https://github.com/iota-pico/api/blob/242aedb/src/client/apiClient.ts#L122)*
+*Defined in [client/apiClient.ts:122](https://github.com/iota-pico/api/blob/98be397/src/client/apiClient.ts#L122)*
 
 Returns the list of tips.
 
@@ -302,7 +302,7 @@ ___
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[getTransactionsToApprove](../interfaces/iapiclient.md#gettransactionstoapprove)*
 
-*Defined in [client/apiClient.ts:209](https://github.com/iota-pico/api/blob/242aedb/src/client/apiClient.ts#L209)*
+*Defined in [client/apiClient.ts:209](https://github.com/iota-pico/api/blob/98be397/src/client/apiClient.ts#L209)*
 
 Tip selection which returns trunkTransaction and branchTransaction. The input value is depth, which basically determines how many bundles to go back to for finding the transactions to approve. The higher your depth value, the more "babysitting" you do for the network (as you have to confirm more transactions).
 
@@ -325,7 +325,7 @@ ___
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[getTrytes](../interfaces/iapiclient.md#gettrytes)*
 
-*Defined in [client/apiClient.ts:152](https://github.com/iota-pico/api/blob/242aedb/src/client/apiClient.ts#L152)*
+*Defined in [client/apiClient.ts:152](https://github.com/iota-pico/api/blob/98be397/src/client/apiClient.ts#L152)*
 
 Returns the raw transaction data (trytes) of a specific transaction. These trytes can then be easily converted into the actual transaction object.
 
@@ -348,7 +348,7 @@ ___
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[interruptAttachingToTangle](../interfaces/iapiclient.md#interruptattachingtotangle)*
 
-*Defined in [client/apiClient.ts:255](https://github.com/iota-pico/api/blob/242aedb/src/client/apiClient.ts#L255)*
+*Defined in [client/apiClient.ts:255](https://github.com/iota-pico/api/blob/98be397/src/client/apiClient.ts#L255)*
 
 Interrupts and completely aborts the attachToTangle process
 
@@ -365,7 +365,7 @@ ___
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[removeNeighbors](../interfaces/iapiclient.md#removeneighbors)*
 
-*Defined in [client/apiClient.ts:108](https://github.com/iota-pico/api/blob/242aedb/src/client/apiClient.ts#L108)*
+*Defined in [client/apiClient.ts:108](https://github.com/iota-pico/api/blob/98be397/src/client/apiClient.ts#L108)*
 
 Removes a list of neighbors from your node. This is only temporary, and if you have your neighbors added via the command line, they will be retained after you restart your node.
 
@@ -388,7 +388,7 @@ ___
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[storeTransactions](../interfaces/iapiclient.md#storetransactions)*
 
-*Defined in [client/apiClient.ts:279](https://github.com/iota-pico/api/blob/242aedb/src/client/apiClient.ts#L279)*
+*Defined in [client/apiClient.ts:279](https://github.com/iota-pico/api/blob/98be397/src/client/apiClient.ts#L279)*
 
 Store transactions into the local storage. The trytes to be used for this call are returned by attachToTangle.
 
@@ -411,7 +411,7 @@ ___
 
 *Implementation of [IApiClient](../interfaces/iapiclient.md).[wereAddressesSpentFrom](../interfaces/iapiclient.md#wereaddressesspentfrom)*
 
-*Defined in [client/apiClient.ts:318](https://github.com/iota-pico/api/blob/242aedb/src/client/apiClient.ts#L318)*
+*Defined in [client/apiClient.ts:318](https://github.com/iota-pico/api/blob/98be397/src/client/apiClient.ts#L318)*
 
 Have the requested addresses been spent from already.
 
