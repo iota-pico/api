@@ -56,12 +56,14 @@ export declare class ApiClient implements IApiClient {
     /**
      * Add a list of neighbors to your node. It should be noted that this is only temporary,
      * and the added neighbors will be removed from your set of neighbors after you relaunch IRI.
+     * @param request The add neighbours request object.
      * @returns Promise which resolves to the addNeighbors response object or rejects with error.
      */
     addNeighbors(request: IAddNeighborsRequest): Promise<IAddNeighborsResponse>;
     /**
      * Removes a list of neighbors from your node. This is only temporary, and if you have your
      * neighbors added via the command line, they will be retained after you restart your node.
+     * @param request The remove neighbours request object.
      * @returns Promise which resolves to the removeNeighbors response object or rejects with error.
      */
     removeNeighbors(request: IRemoveNeighborsRequest): Promise<IRemoveNeighborsResponse>;
@@ -75,12 +77,14 @@ export declare class ApiClient implements IApiClient {
      * for which a list of return values (transaction hashes), in the same order, is returned for all
      * individual elements. The input fields can either be bundles, addresses, tags or approvees.
      * Using multiple of these input fields returns the intersection of the values.
+     * @param request The find transactions request object.
      * @returns Promise which resolves to the findTransactions response object or rejects with error.
      */
     findTransactions(request: IFindTransactionsRequest): Promise<IFindTransactionsResponse>;
     /**
      * Returns the raw transaction data (trytes) of a specific transaction.
      * These trytes can then be easily converted into the actual transaction object.
+     * @param request The get trytes request object.
      * @returns Promise which resolves to the findTransactions response object or rejects with error.
      */
     getTrytes(request: IGetTrytesRequest): Promise<IGetTrytesResponse>;
@@ -88,6 +92,7 @@ export declare class ApiClient implements IApiClient {
      * Get the inclusion states of a set of transactions. This is for determining if a transaction
      * was accepted and confirmed by the network or not. You can search for multiple tips (and thus,
      * milestones) to get past inclusion states of transactions.
+     * @param request The get inclusion states request object.
      * @returns Promise which resolves to the getInclusionStates response object or rejects with error.
      */
     getInclusionStates(request: IGetInclusionStatesRequest): Promise<IGetInclusionStatesResponse>;

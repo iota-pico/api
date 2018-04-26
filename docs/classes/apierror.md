@@ -40,7 +40,7 @@ An api implementation of an error.
 
 *Overrides CoreError.__constructor*
 
-*Defined in [error/apiError.ts:6](https://github.com/iota-pico/api/blob/98be397/src/error/apiError.ts#L6)*
+*Defined in [error/apiError.ts:6](https://github.com/iota-pico/api/blob/5406202/src/error/apiError.ts#L6)*
 
 Create an instance of ApiError.
 
@@ -150,11 +150,12 @@ ___
 
 *Inherited from CoreError.format*
 
-*Defined in D:/Workarea/iota-pico/api/node_modules/@iota-pico/core/dist/error/coreError.d.ts:37*
+*Defined in D:/Workarea/iota-pico/api/node_modules/@iota-pico/core/dist/error/coreError.d.ts:38*
 
 Format the error to a readable version.
 
 **Returns:** `string`
+Formatted version of the error.
 
 ___
 

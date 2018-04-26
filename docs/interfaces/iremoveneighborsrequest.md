@@ -25,7 +25,7 @@ Represents the request for removeNeighbors command.
 
 **●  uris**:  *`string`[]* 
 
-*Defined in [models/IRemoveNeighborsRequest.ts:9](https://github.com/iota-pico/api/blob/98be397/src/models/IRemoveNeighborsRequest.ts#L9)*
+*Defined in [models/IRemoveNeighborsRequest.ts:9](https://github.com/iota-pico/api/blob/5406202/src/models/IRemoveNeighborsRequest.ts#L9)*
 
 List of URI elements.
 
