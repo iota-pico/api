@@ -23,9 +23,9 @@ Represents the request for storeTransactions command.
 
 ###  trytes
 
-**●  trytes**:  *`string`[]* 
+**● trytes**: *`string`[]*
 
-*Defined in [models/IStoreTransactionsRequest.ts:9](https://github.com/iota-pico/api/blob/5406202/src/models/IStoreTransactionsRequest.ts#L9)*
+*Defined in [models/IStoreTransactionsRequest.ts:9](https://github.com/iota-pico/api/blob/f238b42/src/models/IStoreTransactionsRequest.ts#L9)*
 
 List of raw data of transactions to be stored.
 

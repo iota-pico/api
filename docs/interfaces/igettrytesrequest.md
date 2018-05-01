@@ -23,9 +23,9 @@ Represents the request for getTrytes command.
 
 ###  hashes
 
-**●  hashes**:  *`string`[]* 
+**● hashes**: *`string`[]*
 
-*Defined in [models/IGetTrytesRequest.ts:9](https://github.com/iota-pico/api/blob/5406202/src/models/IGetTrytesRequest.ts#L9)*
+*Defined in [models/IGetTrytesRequest.ts:9](https://github.com/iota-pico/api/blob/f238b42/src/models/IGetTrytesRequest.ts#L9)*
 
 List of transaction hashes of which you want to get trytes from.
 

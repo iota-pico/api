@@ -27,35 +27,33 @@ Represents the response from getTransactionsToApprove command.
 
 ###  branchTransaction
 
-**●  branchTransaction**:  *`string`* 
+**● branchTransaction**: *`string`*
 
-*Defined in [models/IGetTransactionsToApproveResponse.ts:15](https://github.com/iota-pico/api/blob/5406202/src/models/IGetTransactionsToApproveResponse.ts#L15)*
+*Defined in [models/IGetTransactionsToApproveResponse.ts:15](https://github.com/iota-pico/api/blob/f238b42/src/models/IGetTransactionsToApproveResponse.ts#L15)*
 
 The branch transaction.
 
 ___
-
 <a id="duration"></a>
 
 ###  duration
 
-**●  duration**:  *`number`* 
+**● duration**: *`number`*
 
 *Inherited from [ICommonResponse](icommonresponse.md).[duration](icommonresponse.md#duration)*
 
-*Defined in [models/ICommonResponse.ts:9](https://github.com/iota-pico/api/blob/5406202/src/models/ICommonResponse.ts#L9)*
+*Defined in [models/ICommonResponse.ts:9](https://github.com/iota-pico/api/blob/f238b42/src/models/ICommonResponse.ts#L9)*
 
 The duration of the request.
 
 ___
-
 <a id="trunktransaction"></a>
 
 ###  trunkTransaction
 
-**●  trunkTransaction**:  *`string`* 
+**● trunkTransaction**: *`string`*
 
-*Defined in [models/IGetTransactionsToApproveResponse.ts:11](https://github.com/iota-pico/api/blob/5406202/src/models/IGetTransactionsToApproveResponse.ts#L11)*
+*Defined in [models/IGetTransactionsToApproveResponse.ts:11](https://github.com/iota-pico/api/blob/f238b42/src/models/IGetTransactionsToApproveResponse.ts#L11)*
 
 The trunk transaction.
 

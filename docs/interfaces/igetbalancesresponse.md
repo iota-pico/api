@@ -28,47 +28,44 @@ Represents the response from getBalances command.
 
 ###  balances
 
-**●  balances**:  *`string`[]* 
+**● balances**: *`string`[]*
 
-*Defined in [models/IGetBalancesResponse.ts:11](https://github.com/iota-pico/api/blob/5406202/src/models/IGetBalancesResponse.ts#L11)*
+*Defined in [models/IGetBalancesResponse.ts:11](https://github.com/iota-pico/api/blob/f238b42/src/models/IGetBalancesResponse.ts#L11)*
 
 List of balances for the addresses.
 
 ___
-
 <a id="duration"></a>
 
 ###  duration
 
-**●  duration**:  *`number`* 
+**● duration**: *`number`*
 
 *Inherited from [ICommonResponse](icommonresponse.md).[duration](icommonresponse.md#duration)*
 
-*Defined in [models/ICommonResponse.ts:9](https://github.com/iota-pico/api/blob/5406202/src/models/ICommonResponse.ts#L9)*
+*Defined in [models/ICommonResponse.ts:9](https://github.com/iota-pico/api/blob/f238b42/src/models/ICommonResponse.ts#L9)*
 
 The duration of the request.
 
 ___
-
 <a id="milestone"></a>
 
 ###  milestone
 
-**●  milestone**:  *`string`* 
+**● milestone**: *`string`*
 
-*Defined in [models/IGetBalancesResponse.ts:15](https://github.com/iota-pico/api/blob/5406202/src/models/IGetBalancesResponse.ts#L15)*
+*Defined in [models/IGetBalancesResponse.ts:15](https://github.com/iota-pico/api/blob/f238b42/src/models/IGetBalancesResponse.ts#L15)*
 
 The milestone at which the balances were calculated.
 
 ___
-
 <a id="milestoneindex"></a>
 
 ###  milestoneIndex
 
-**●  milestoneIndex**:  *`number`* 
+**● milestoneIndex**: *`number`*
 
-*Defined in [models/IGetBalancesResponse.ts:19](https://github.com/iota-pico/api/blob/5406202/src/models/IGetBalancesResponse.ts#L19)*
+*Defined in [models/IGetBalancesResponse.ts:19](https://github.com/iota-pico/api/blob/f238b42/src/models/IGetBalancesResponse.ts#L19)*
 
 The milestone index at which the balances were calculated.
 

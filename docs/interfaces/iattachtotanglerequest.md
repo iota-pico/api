@@ -26,45 +26,42 @@ Represents the request for attachToTangle command.
 
 ###  branchTransaction
 
-**●  branchTransaction**:  *`string`* 
+**● branchTransaction**: *`string`*
 
-*Defined in [models/IAttachToTangleRequest.ts:13](https://github.com/iota-pico/api/blob/5406202/src/models/IAttachToTangleRequest.ts#L13)*
+*Defined in [models/IAttachToTangleRequest.ts:13](https://github.com/iota-pico/api/blob/f238b42/src/models/IAttachToTangleRequest.ts#L13)*
 
 Branch transaction to approve.
 
 ___
-
 <a id="minweightmagnitude"></a>
 
 ###  minWeightMagnitude
 
-**●  minWeightMagnitude**:  *`number`* 
+**● minWeightMagnitude**: *`number`*
 
-*Defined in [models/IAttachToTangleRequest.ts:17](https://github.com/iota-pico/api/blob/5406202/src/models/IAttachToTangleRequest.ts#L17)*
+*Defined in [models/IAttachToTangleRequest.ts:17](https://github.com/iota-pico/api/blob/f238b42/src/models/IAttachToTangleRequest.ts#L17)*
 
 Proof of Work intensity. Minimum value is 18
 
 ___
-
 <a id="trunktransaction"></a>
 
 ###  trunkTransaction
 
-**●  trunkTransaction**:  *`string`* 
+**● trunkTransaction**: *`string`*
 
-*Defined in [models/IAttachToTangleRequest.ts:9](https://github.com/iota-pico/api/blob/5406202/src/models/IAttachToTangleRequest.ts#L9)*
+*Defined in [models/IAttachToTangleRequest.ts:9](https://github.com/iota-pico/api/blob/f238b42/src/models/IAttachToTangleRequest.ts#L9)*
 
 Trunk transaction to approve.
 
 ___
-
 <a id="trytes"></a>
 
 ###  trytes
 
-**●  trytes**:  *`string`[]* 
+**● trytes**: *`string`[]*
 
-*Defined in [models/IAttachToTangleRequest.ts:21](https://github.com/iota-pico/api/blob/5406202/src/models/IAttachToTangleRequest.ts#L21)*
+*Defined in [models/IAttachToTangleRequest.ts:21](https://github.com/iota-pico/api/blob/f238b42/src/models/IAttachToTangleRequest.ts#L21)*
 
 List of trytes (raw transaction data) to attach to the tangle.
 

@@ -26,23 +26,22 @@ Represents the response from getNeighbors command.
 
 ###  duration
 
-**●  duration**:  *`number`* 
+**● duration**: *`number`*
 
 *Inherited from [ICommonResponse](icommonresponse.md).[duration](icommonresponse.md#duration)*
 
-*Defined in [models/ICommonResponse.ts:9](https://github.com/iota-pico/api/blob/5406202/src/models/ICommonResponse.ts#L9)*
+*Defined in [models/ICommonResponse.ts:9](https://github.com/iota-pico/api/blob/f238b42/src/models/ICommonResponse.ts#L9)*
 
 The duration of the request.
 
 ___
-
 <a id="neighbors"></a>
 
 ###  neighbors
 
-**●  neighbors**:  *[INeighbor](ineighbor.md)[]* 
+**● neighbors**: *[INeighbor](ineighbor.md)[]*
 
-*Defined in [models/IGetNeighborsResponse.ts:12](https://github.com/iota-pico/api/blob/5406202/src/models/IGetNeighborsResponse.ts#L12)*
+*Defined in [models/IGetNeighborsResponse.ts:12](https://github.com/iota-pico/api/blob/f238b42/src/models/IGetNeighborsResponse.ts#L12)*
 
 The neighbors of the node.
 

@@ -41,203 +41,187 @@ Represents the response from getNodeInfo command.
 
 ###  appName
 
-**●  appName**:  *`string`* 
+**● appName**: *`string`*
 
-*Defined in [models/IGetNodeInfoResponse.ts:11](https://github.com/iota-pico/api/blob/5406202/src/models/IGetNodeInfoResponse.ts#L11)*
+*Defined in [models/IGetNodeInfoResponse.ts:11](https://github.com/iota-pico/api/blob/f238b42/src/models/IGetNodeInfoResponse.ts#L11)*
 
 Name of the IOTA software you're currently using (IRI stands for Initial Reference Implementation).
 
 ___
-
 <a id="appversion"></a>
 
 ###  appVersion
 
-**●  appVersion**:  *`string`* 
+**● appVersion**: *`string`*
 
-*Defined in [models/IGetNodeInfoResponse.ts:15](https://github.com/iota-pico/api/blob/5406202/src/models/IGetNodeInfoResponse.ts#L15)*
+*Defined in [models/IGetNodeInfoResponse.ts:15](https://github.com/iota-pico/api/blob/f238b42/src/models/IGetNodeInfoResponse.ts#L15)*
 
 The version of the IOTA software you're currently running.
 
 ___
-
 <a id="duration"></a>
 
 ###  duration
 
-**●  duration**:  *`number`* 
+**● duration**: *`number`*
 
 *Inherited from [ICommonResponse](icommonresponse.md).[duration](icommonresponse.md#duration)*
 
-*Defined in [models/ICommonResponse.ts:9](https://github.com/iota-pico/api/blob/5406202/src/models/ICommonResponse.ts#L9)*
+*Defined in [models/ICommonResponse.ts:9](https://github.com/iota-pico/api/blob/f238b42/src/models/ICommonResponse.ts#L9)*
 
 The duration of the request.
 
 ___
-
 <a id="jreavailableprocessors"></a>
 
 ###  jreAvailableProcessors
 
-**●  jreAvailableProcessors**:  *`number`* 
+**● jreAvailableProcessors**: *`number`*
 
-*Defined in [models/IGetNodeInfoResponse.ts:19](https://github.com/iota-pico/api/blob/5406202/src/models/IGetNodeInfoResponse.ts#L19)*
+*Defined in [models/IGetNodeInfoResponse.ts:19](https://github.com/iota-pico/api/blob/f238b42/src/models/IGetNodeInfoResponse.ts#L19)*
 
 Available cores on your machine for JRE.
 
 ___
-
 <a id="jrefreememory"></a>
 
 ###  jreFreeMemory
 
-**●  jreFreeMemory**:  *`number`* 
+**● jreFreeMemory**: *`number`*
 
-*Defined in [models/IGetNodeInfoResponse.ts:27](https://github.com/iota-pico/api/blob/5406202/src/models/IGetNodeInfoResponse.ts#L27)*
+*Defined in [models/IGetNodeInfoResponse.ts:27](https://github.com/iota-pico/api/blob/f238b42/src/models/IGetNodeInfoResponse.ts#L27)*
 
 Returns the amount of free memory in the Java Virtual Machine.
 
 ___
-
 <a id="jremaxmemory"></a>
 
 ###  jreMaxMemory
 
-**●  jreMaxMemory**:  *`number`* 
+**● jreMaxMemory**: *`number`*
 
-*Defined in [models/IGetNodeInfoResponse.ts:31](https://github.com/iota-pico/api/blob/5406202/src/models/IGetNodeInfoResponse.ts#L31)*
+*Defined in [models/IGetNodeInfoResponse.ts:31](https://github.com/iota-pico/api/blob/f238b42/src/models/IGetNodeInfoResponse.ts#L31)*
 
 Returns the maximum amount of memory that the Java virtual machine will attempt to use.
 
 ___
-
 <a id="jretotalmemory"></a>
 
 ###  jreTotalMemory
 
-**●  jreTotalMemory**:  *`number`* 
+**● jreTotalMemory**: *`number`*
 
-*Defined in [models/IGetNodeInfoResponse.ts:35](https://github.com/iota-pico/api/blob/5406202/src/models/IGetNodeInfoResponse.ts#L35)*
+*Defined in [models/IGetNodeInfoResponse.ts:35](https://github.com/iota-pico/api/blob/f238b42/src/models/IGetNodeInfoResponse.ts#L35)*
 
 Returns the total amount of memory in the Java virtual machine.
 
 ___
-
 <a id="jreversion"></a>
 
 ###  jreVersion
 
-**●  jreVersion**:  *`number`* 
+**● jreVersion**: *`number`*
 
-*Defined in [models/IGetNodeInfoResponse.ts:23](https://github.com/iota-pico/api/blob/5406202/src/models/IGetNodeInfoResponse.ts#L23)*
+*Defined in [models/IGetNodeInfoResponse.ts:23](https://github.com/iota-pico/api/blob/f238b42/src/models/IGetNodeInfoResponse.ts#L23)*
 
 The version of the Java Virtual Machine.
 
 ___
-
 <a id="latestmilestone"></a>
 
 ###  latestMilestone
 
-**●  latestMilestone**:  *`string`* 
+**● latestMilestone**: *`string`*
 
-*Defined in [models/IGetNodeInfoResponse.ts:39](https://github.com/iota-pico/api/blob/5406202/src/models/IGetNodeInfoResponse.ts#L39)*
+*Defined in [models/IGetNodeInfoResponse.ts:39](https://github.com/iota-pico/api/blob/f238b42/src/models/IGetNodeInfoResponse.ts#L39)*
 
 Latest milestone that was signed off by the coordinator.
 
 ___
-
 <a id="latestmilestoneindex"></a>
 
 ###  latestMilestoneIndex
 
-**●  latestMilestoneIndex**:  *`number`* 
+**● latestMilestoneIndex**: *`number`*
 
-*Defined in [models/IGetNodeInfoResponse.ts:43](https://github.com/iota-pico/api/blob/5406202/src/models/IGetNodeInfoResponse.ts#L43)*
+*Defined in [models/IGetNodeInfoResponse.ts:43](https://github.com/iota-pico/api/blob/f238b42/src/models/IGetNodeInfoResponse.ts#L43)*
 
 Index of the latest milestone.
 
 ___
-
 <a id="latestsolidsubtanglemilestone"></a>
 
 ###  latestSolidSubtangleMilestone
 
-**●  latestSolidSubtangleMilestone**:  *`string`* 
+**● latestSolidSubtangleMilestone**: *`string`*
 
-*Defined in [models/IGetNodeInfoResponse.ts:49](https://github.com/iota-pico/api/blob/5406202/src/models/IGetNodeInfoResponse.ts#L49)*
+*Defined in [models/IGetNodeInfoResponse.ts:49](https://github.com/iota-pico/api/blob/f238b42/src/models/IGetNodeInfoResponse.ts#L49)*
 
 The latest milestone which is solid and is used for sending transactions. For a milestone to become solid your local node must basically approve the subtangle of coordinator-approved transactions, and have a consistent view of all referenced transactions.
 
 ___
-
 <a id="latestsolidsubtanglemilestoneindex"></a>
 
 ###  latestSolidSubtangleMilestoneIndex
 
-**●  latestSolidSubtangleMilestoneIndex**:  *`number`* 
+**● latestSolidSubtangleMilestoneIndex**: *`number`*
 
-*Defined in [models/IGetNodeInfoResponse.ts:53](https://github.com/iota-pico/api/blob/5406202/src/models/IGetNodeInfoResponse.ts#L53)*
+*Defined in [models/IGetNodeInfoResponse.ts:53](https://github.com/iota-pico/api/blob/f238b42/src/models/IGetNodeInfoResponse.ts#L53)*
 
 Index of the latest solid subtangle.
 
 ___
-
 <a id="neighbors"></a>
 
 ###  neighbors
 
-**●  neighbors**:  *`number`* 
+**● neighbors**: *`number`*
 
-*Defined in [models/IGetNodeInfoResponse.ts:57](https://github.com/iota-pico/api/blob/5406202/src/models/IGetNodeInfoResponse.ts#L57)*
+*Defined in [models/IGetNodeInfoResponse.ts:57](https://github.com/iota-pico/api/blob/f238b42/src/models/IGetNodeInfoResponse.ts#L57)*
 
 Number of neighbors you are directly connected with.
 
 ___
-
 <a id="packetsqueuesize"></a>
 
 ###  packetsQueueSize
 
-**●  packetsQueueSize**:  *`number`* 
+**● packetsQueueSize**: *`number`*
 
-*Defined in [models/IGetNodeInfoResponse.ts:61](https://github.com/iota-pico/api/blob/5406202/src/models/IGetNodeInfoResponse.ts#L61)*
+*Defined in [models/IGetNodeInfoResponse.ts:61](https://github.com/iota-pico/api/blob/f238b42/src/models/IGetNodeInfoResponse.ts#L61)*
 
 Packets which are currently queued up.
 
 ___
-
 <a id="time"></a>
 
 ###  time
 
-**●  time**:  *`number`* 
+**● time**: *`number`*
 
-*Defined in [models/IGetNodeInfoResponse.ts:65](https://github.com/iota-pico/api/blob/5406202/src/models/IGetNodeInfoResponse.ts#L65)*
+*Defined in [models/IGetNodeInfoResponse.ts:65](https://github.com/iota-pico/api/blob/f238b42/src/models/IGetNodeInfoResponse.ts#L65)*
 
 Current UNIX timestamp.
 
 ___
-
 <a id="tips"></a>
 
 ###  tips
 
-**●  tips**:  *`number`* 
+**● tips**: *`number`*
 
-*Defined in [models/IGetNodeInfoResponse.ts:69](https://github.com/iota-pico/api/blob/5406202/src/models/IGetNodeInfoResponse.ts#L69)*
+*Defined in [models/IGetNodeInfoResponse.ts:69](https://github.com/iota-pico/api/blob/f238b42/src/models/IGetNodeInfoResponse.ts#L69)*
 
 Number of tips in the network.
 
 ___
-
 <a id="transactionstorequest"></a>
 
 ###  transactionsToRequest
 
-**●  transactionsToRequest**:  *`number`* 
+**● transactionsToRequest**: *`number`*
 
-*Defined in [models/IGetNodeInfoResponse.ts:73](https://github.com/iota-pico/api/blob/5406202/src/models/IGetNodeInfoResponse.ts#L73)*
+*Defined in [models/IGetNodeInfoResponse.ts:73](https://github.com/iota-pico/api/blob/f238b42/src/models/IGetNodeInfoResponse.ts#L73)*
 
 Transactions to request during syncing process.
 

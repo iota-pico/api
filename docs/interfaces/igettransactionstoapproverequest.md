@@ -25,33 +25,31 @@ Represents the request for getTransactionsToApprove command.
 
 ###  depth
 
-**●  depth**:  *`number`* 
+**● depth**: *`number`*
 
-*Defined in [models/IGetTransactionsToApproveRequest.ts:9](https://github.com/iota-pico/api/blob/5406202/src/models/IGetTransactionsToApproveRequest.ts#L9)*
+*Defined in [models/IGetTransactionsToApproveRequest.ts:9](https://github.com/iota-pico/api/blob/f238b42/src/models/IGetTransactionsToApproveRequest.ts#L9)*
 
 Number of bundles to go back to determine the transactions for approval.
 
 ___
-
 <a id="numwalks"></a>
 
 ### `<Optional>` numWalks
 
-**●  numWalks**:  *`number`* 
+**● numWalks**: *`number`*
 
-*Defined in [models/IGetTransactionsToApproveRequest.ts:19](https://github.com/iota-pico/api/blob/5406202/src/models/IGetTransactionsToApproveRequest.ts#L19)*
+*Defined in [models/IGetTransactionsToApproveRequest.ts:19](https://github.com/iota-pico/api/blob/f238b42/src/models/IGetTransactionsToApproveRequest.ts#L19)*
 
 The number of walks to perform.
 
 ___
-
 <a id="reference"></a>
 
 ### `<Optional>` reference
 
-**●  reference**:  *`string`* 
+**● reference**: *`string`*
 
-*Defined in [models/IGetTransactionsToApproveRequest.ts:14](https://github.com/iota-pico/api/blob/5406202/src/models/IGetTransactionsToApproveRequest.ts#L14)*
+*Defined in [models/IGetTransactionsToApproveRequest.ts:14](https://github.com/iota-pico/api/blob/f238b42/src/models/IGetTransactionsToApproveRequest.ts#L14)*
 
 The reference to include in the lookup.
 

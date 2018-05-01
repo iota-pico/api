@@ -23,9 +23,9 @@ Represents the request for wereAddressesSpentFrom command.
 
 ###  addresses
 
-**●  addresses**:  *`string`[]* 
+**● addresses**: *`string`[]*
 
-*Defined in [models/IWereAddressesSpentFromRequest.ts:9](https://github.com/iota-pico/api/blob/5406202/src/models/IWereAddressesSpentFromRequest.ts#L9)*
+*Defined in [models/IWereAddressesSpentFromRequest.ts:9](https://github.com/iota-pico/api/blob/f238b42/src/models/IWereAddressesSpentFromRequest.ts#L9)*
 
 The address hashes to check if they were spent from.
 

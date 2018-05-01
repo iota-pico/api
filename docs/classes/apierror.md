@@ -36,11 +36,13 @@ An api implementation of an error.
 
 <a id="constructor"></a>
 
-### ⊕ **new ApiError**(message: *`string`*, additional?: *`object`*, innerError?: *`Error`*): [ApiError](apierror.md)
+###  constructor
+
+⊕ **new ApiError**(message: *`string`*, additional?: *`object`*, innerError?: *`Error`*): [ApiError](apierror.md)
 
 *Overrides CoreError.__constructor*
 
-*Defined in [error/apiError.ts:6](https://github.com/iota-pico/api/blob/5406202/src/error/apiError.ts#L6)*
+*Defined in [error/apiError.ts:6](https://github.com/iota-pico/api/blob/f238b42/src/error/apiError.ts#L6)*
 
 Create an instance of ApiError.
 
@@ -48,13 +50,13 @@ Create an instance of ApiError.
 
 | Param | Type | Description |
 | ------ | ------ | ------ |
-| message | `string`   |  The message for the error. |
-| additional | `object`   |  Additional details about the error. |
-| innerError | `Error`   |  Add information from inner error if there was one. |
+| message | `string` |  The message for the error. |
+| `Optional` additional | `object` |  Additional details about the error. |
+| `Optional` innerError | `Error` |  Add information from inner error if there was one. |
 
 **Returns:** [ApiError](apierror.md)
 
----
+___
 
 ## Properties
 
@@ -62,7 +64,7 @@ Create an instance of ApiError.
 
 ### `<Optional>` additional
 
-**●  additional**:  *`object`* 
+**● additional**: *`object`*
 
 *Inherited from CoreError.additional*
 
@@ -75,12 +77,11 @@ Additional details about the error.
 [id: `string`]: `any`
 
 ___
-
 <a id="domain"></a>
 
 ###  domain
 
-**●  domain**:  *`string`* 
+**● domain**: *`string`*
 
 *Inherited from CoreError.domain*
 
@@ -89,12 +90,11 @@ ___
 The domain of the error.
 
 ___
-
 <a id="innererror"></a>
 
 ### `<Optional>` innerError
 
-**●  innerError**:  *`Error`* 
+**● innerError**: *`Error`*
 
 *Inherited from CoreError.innerError*
 
@@ -103,36 +103,33 @@ ___
 The inner error if there was one.
 
 ___
-
 <a id="message"></a>
 
 ### `<Static>` message
 
-**●  message**:  *`string`* 
+**● message**: *`string`*
 
 *Inherited from Error.message*
 
 *Defined in D:/Workarea/iota-pico/api/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:886*
 
 ___
-
 <a id="name"></a>
 
 ### `<Static>` name
 
-**●  name**:  *`string`* 
+**● name**: *`string`*
 
 *Inherited from Error.name*
 
 *Defined in D:/Workarea/iota-pico/api/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:885*
 
 ___
-
 <a id="stack"></a>
 
 ### `<Static>``<Optional>` stack
 
-**●  stack**:  *`string`* 
+**● stack**: *`string`*
 
 *Inherited from Error.stack*
 
@@ -158,7 +155,6 @@ Format the error to a readable version.
 Formatted version of the error.
 
 ___
-
 <a id="iserror"></a>
 
 ### `<Static>` isError
@@ -175,7 +171,7 @@ Check if an object could be a CoreError.
 
 | Param | Type | Description |
 | ------ | ------ | ------ |
-| obj | `any`   |  The object to check if it is a CoreError. |
+| obj | `any` |  The object to check if it is a CoreError. |
 
 **Returns:** `boolean`
 true If the tested object is a CoreError.

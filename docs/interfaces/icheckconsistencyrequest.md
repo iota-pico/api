@@ -23,9 +23,9 @@ Represents the request for checkConsistency command.
 
 ###  tails
 
-**●  tails**:  *`string`[]* 
+**● tails**: *`string`[]*
 
-*Defined in [models/ICheckConsistencyRequest.ts:9](https://github.com/iota-pico/api/blob/5406202/src/models/ICheckConsistencyRequest.ts#L9)*
+*Defined in [models/ICheckConsistencyRequest.ts:9](https://github.com/iota-pico/api/blob/f238b42/src/models/ICheckConsistencyRequest.ts#L9)*
 
 The tail hashes to check for consistency.
 
