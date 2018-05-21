@@ -30,7 +30,7 @@ Represents the response from getTips command.
 
 *Inherited from [ICommonResponse](icommonresponse.md).[duration](icommonresponse.md#duration)*
 
-*Defined in [models/ICommonResponse.ts:9](https://github.com/iota-pico/api/blob/f238b42/src/models/ICommonResponse.ts#L9)*
+*Defined in [models/ICommonResponse.ts:9](https://github.com/iota-pico/api/blob/2556ace/src/models/ICommonResponse.ts#L9)*
 
 The duration of the request.
 
@@ -41,7 +41,7 @@ ___
 
 **● hashes**: *`string`[]*
 
-*Defined in [models/IGetTipsResponse.ts:11](https://github.com/iota-pico/api/blob/f238b42/src/models/IGetTipsResponse.ts#L11)*
+*Defined in [models/IGetTipsResponse.ts:11](https://github.com/iota-pico/api/blob/2556ace/src/models/IGetTipsResponse.ts#L11)*
 
 The hashes for the tips.
 

@@ -31,7 +31,7 @@ Represents the response from checkConsistency command.
 
 *Inherited from [ICommonResponse](icommonresponse.md).[duration](icommonresponse.md#duration)*
 
-*Defined in [models/ICommonResponse.ts:9](https://github.com/iota-pico/api/blob/f238b42/src/models/ICommonResponse.ts#L9)*
+*Defined in [models/ICommonResponse.ts:9](https://github.com/iota-pico/api/blob/2556ace/src/models/ICommonResponse.ts#L9)*
 
 The duration of the request.
 
@@ -42,7 +42,7 @@ ___
 
 **● info**: *`string`*
 
-*Defined in [models/ICheckConsistencyResponse.ts:15](https://github.com/iota-pico/api/blob/f238b42/src/models/ICheckConsistencyResponse.ts#L15)*
+*Defined in [models/ICheckConsistencyResponse.ts:15](https://github.com/iota-pico/api/blob/2556ace/src/models/ICheckConsistencyResponse.ts#L15)*
 
 Is the tail reference consistent.
 
@@ -53,7 +53,7 @@ ___
 
 **● state**: *`boolean`*
 
-*Defined in [models/ICheckConsistencyResponse.ts:11](https://github.com/iota-pico/api/blob/f238b42/src/models/ICheckConsistencyResponse.ts#L11)*
+*Defined in [models/ICheckConsistencyResponse.ts:11](https://github.com/iota-pico/api/blob/2556ace/src/models/ICheckConsistencyResponse.ts#L11)*
 
 Is the tail reference consistent.
 

@@ -53,7 +53,7 @@ Represents the common response from all commands.
 
 **● duration**: *`number`*
 
-*Defined in [models/ICommonResponse.ts:9](https://github.com/iota-pico/api/blob/f238b42/src/models/ICommonResponse.ts#L9)*
+*Defined in [models/ICommonResponse.ts:9](https://github.com/iota-pico/api/blob/2556ace/src/models/ICommonResponse.ts#L9)*
 
 The duration of the request.
 
