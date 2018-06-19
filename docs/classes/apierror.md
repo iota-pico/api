@@ -42,7 +42,7 @@ An api implementation of an error.
 
 *Overrides CoreError.__constructor*
 
-*Defined in [error/apiError.ts:6](https://github.com/iota-pico/api/blob/2556ace/src/error/apiError.ts#L6)*
+*Defined in [error/apiError.ts:6](https://github.com/iota-pico/api/blob/4db1362/src/error/apiError.ts#L6)*
 
 Create an instance of ApiError.
 
@@ -111,7 +111,7 @@ ___
 
 *Inherited from Error.message*
 
-*Defined in D:/Workarea/iota-pico/api/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:886*
+*Defined in D:/Workarea/iota-pico/api/node_modules/.registry.npmjs.org/typescript/2.7.2/node_modules/typescript/lib/lib.es5.d.ts:886*
 
 ___
 <a id="name"></a>
@@ -122,7 +122,7 @@ ___
 
 *Inherited from Error.name*
 
-*Defined in D:/Workarea/iota-pico/api/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:885*
+*Defined in D:/Workarea/iota-pico/api/node_modules/.registry.npmjs.org/typescript/2.7.2/node_modules/typescript/lib/lib.es5.d.ts:885*
 
 ___
 <a id="stack"></a>
@@ -133,7 +133,7 @@ ___
 
 *Inherited from Error.stack*
 
-*Defined in D:/Workarea/iota-pico/api/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:887*
+*Defined in D:/Workarea/iota-pico/api/node_modules/.registry.npmjs.org/typescript/2.7.2/node_modules/typescript/lib/lib.es5.d.ts:887*
 
 ___
 
