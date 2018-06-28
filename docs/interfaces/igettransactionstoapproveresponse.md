@@ -29,7 +29,7 @@ Represents the response from getTransactionsToApprove command.
 
 **● branchTransaction**: *`string`*
 
-*Defined in [models/IGetTransactionsToApproveResponse.ts:15](https://github.com/iota-pico/api/blob/4db1362/src/models/IGetTransactionsToApproveResponse.ts#L15)*
+*Defined in [models/IGetTransactionsToApproveResponse.ts:15](https://github.com/iota-pico/api/blob/05accab/src/models/IGetTransactionsToApproveResponse.ts#L15)*
 
 The branch transaction.
 
@@ -42,7 +42,7 @@ ___
 
 *Inherited from [ICommonResponse](icommonresponse.md).[duration](icommonresponse.md#duration)*
 
-*Defined in [models/ICommonResponse.ts:9](https://github.com/iota-pico/api/blob/4db1362/src/models/ICommonResponse.ts#L9)*
+*Defined in [models/ICommonResponse.ts:9](https://github.com/iota-pico/api/blob/05accab/src/models/ICommonResponse.ts#L9)*
 
 The duration of the request.
 
@@ -53,7 +53,7 @@ ___
 
 **● trunkTransaction**: *`string`*
 
-*Defined in [models/IGetTransactionsToApproveResponse.ts:11](https://github.com/iota-pico/api/blob/4db1362/src/models/IGetTransactionsToApproveResponse.ts#L11)*
+*Defined in [models/IGetTransactionsToApproveResponse.ts:11](https://github.com/iota-pico/api/blob/05accab/src/models/IGetTransactionsToApproveResponse.ts#L11)*
 
 The trunk transaction.
 

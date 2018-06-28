@@ -30,7 +30,7 @@ Represents the response from getNeighbors command.
 
 *Inherited from [ICommonResponse](icommonresponse.md).[duration](icommonresponse.md#duration)*
 
-*Defined in [models/ICommonResponse.ts:9](https://github.com/iota-pico/api/blob/4db1362/src/models/ICommonResponse.ts#L9)*
+*Defined in [models/ICommonResponse.ts:9](https://github.com/iota-pico/api/blob/05accab/src/models/ICommonResponse.ts#L9)*
 
 The duration of the request.
 
@@ -41,7 +41,7 @@ ___
 
 **● neighbors**: *[INeighbor](ineighbor.md)[]*
 
-*Defined in [models/IGetNeighborsResponse.ts:12](https://github.com/iota-pico/api/blob/4db1362/src/models/IGetNeighborsResponse.ts#L12)*
+*Defined in [models/IGetNeighborsResponse.ts:12](https://github.com/iota-pico/api/blob/05accab/src/models/IGetNeighborsResponse.ts#L12)*
 
 The neighbors of the node.
 
