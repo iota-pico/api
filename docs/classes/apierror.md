@@ -42,7 +42,7 @@ An api implementation of an error.
 
 *Overrides CoreError.__constructor*
 
-*Defined in [error/apiError.ts:6](https://github.com/iota-pico/api/blob/05accab/src/error/apiError.ts#L6)*
+*Defined in [error/apiError.ts:6](https://github.com/iota-pico/api/tree/master/src/error/apiError.ts#L6*
 
 Create an instance of ApiError.
 

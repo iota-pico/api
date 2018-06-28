@@ -30,7 +30,7 @@ Represents the response from getMissingTransactions command.
 
 *Inherited from [ICommonResponse](icommonresponse.md).[duration](icommonresponse.md#duration)*
 
-*Defined in [models/ICommonResponse.ts:9](https://github.com/iota-pico/api/blob/05accab/src/models/ICommonResponse.ts#L9)*
+*Defined in [models/ICommonResponse.ts:9](https://github.com/iota-pico/api/tree/master/src/models/ICommonResponse.ts#L9*
 
 The duration of the request.
 
@@ -41,7 +41,7 @@ ___
 
 **● hashes**: *`string`[]*
 
-*Defined in [models/IGetMissingTransactionsResponse.ts:11](https://github.com/iota-pico/api/blob/05accab/src/models/IGetMissingTransactionsResponse.ts#L11)*
+*Defined in [models/IGetMissingTransactionsResponse.ts:11](https://github.com/iota-pico/api/tree/master/src/models/IGetMissingTransactionsResponse.ts#L11*
 
 The transactions with missing references.
 

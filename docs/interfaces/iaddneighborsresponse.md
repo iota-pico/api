@@ -28,7 +28,7 @@ Represents the response from addNeighbors command.
 
 **● addedNeighbors**: *`number`*
 
-*Defined in [models/IAddNeighborsResponse.ts:11](https://github.com/iota-pico/api/blob/05accab/src/models/IAddNeighborsResponse.ts#L11)*
+*Defined in [models/IAddNeighborsResponse.ts:11](https://github.com/iota-pico/api/tree/master/src/models/IAddNeighborsResponse.ts#L11*
 
 The number of neighbours added.
 
@@ -41,7 +41,7 @@ ___
 
 *Inherited from [ICommonResponse](icommonresponse.md).[duration](icommonresponse.md#duration)*
 
-*Defined in [models/ICommonResponse.ts:9](https://github.com/iota-pico/api/blob/05accab/src/models/ICommonResponse.ts#L9)*
+*Defined in [models/ICommonResponse.ts:9](https://github.com/iota-pico/api/tree/master/src/models/ICommonResponse.ts#L9*
 
 The duration of the request.
 

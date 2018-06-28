@@ -25,7 +25,7 @@ Represents the request for broadcastTransactions command.
 
 **● trytes**: *`string`[]*
 
-*Defined in [models/IBroadcastTransactionsRequest.ts:9](https://github.com/iota-pico/api/blob/05accab/src/models/IBroadcastTransactionsRequest.ts#L9)*
+*Defined in [models/IBroadcastTransactionsRequest.ts:9](https://github.com/iota-pico/api/tree/master/src/models/IBroadcastTransactionsRequest.ts#L9*
 
 List of raw data of transactions to be rebroadcast.
 

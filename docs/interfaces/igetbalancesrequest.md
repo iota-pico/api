@@ -26,7 +26,7 @@ Represents the request for getBalances command.
 
 **● addresses**: *`string`[]*
 
-*Defined in [models/IGetBalancesRequest.ts:9](https://github.com/iota-pico/api/blob/05accab/src/models/IGetBalancesRequest.ts#L9)*
+*Defined in [models/IGetBalancesRequest.ts:9](https://github.com/iota-pico/api/tree/master/src/models/IGetBalancesRequest.ts#L9*
 
 List of addresses you want to get the confirmed balance from.
 
@@ -37,7 +37,7 @@ ___
 
 **● threshold**: *`number`*
 
-*Defined in [models/IGetBalancesRequest.ts:13](https://github.com/iota-pico/api/blob/05accab/src/models/IGetBalancesRequest.ts#L13)*
+*Defined in [models/IGetBalancesRequest.ts:13](https://github.com/iota-pico/api/tree/master/src/models/IGetBalancesRequest.ts#L13*
 
 Confirmation threshold, should be set to 100.
 

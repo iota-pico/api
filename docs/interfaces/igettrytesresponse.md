@@ -30,7 +30,7 @@ Represents the response from getTrytes command.
 
 *Inherited from [ICommonResponse](icommonresponse.md).[duration](icommonresponse.md#duration)*
 
-*Defined in [models/ICommonResponse.ts:9](https://github.com/iota-pico/api/blob/05accab/src/models/ICommonResponse.ts#L9)*
+*Defined in [models/ICommonResponse.ts:9](https://github.com/iota-pico/api/tree/master/src/models/ICommonResponse.ts#L9*
 
 The duration of the request.
 
@@ -41,7 +41,7 @@ ___
 
 **● trytes**: *`string`[]*
 
-*Defined in [models/IGetTrytesResponse.ts:11](https://github.com/iota-pico/api/blob/05accab/src/models/IGetTrytesResponse.ts#L11)*
+*Defined in [models/IGetTrytesResponse.ts:11](https://github.com/iota-pico/api/tree/master/src/models/IGetTrytesResponse.ts#L11*
 
 Trytes of the requested hashes.
 
