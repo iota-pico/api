@@ -24,13 +24,14 @@ npm install @iota-pico/api --save
 
 # Documentation
 
-Documentation for the code can be found in [docs](./docs/README.md) folder.
+Documentation for the code can be found in [docs](https://github.com/iota-pico/api/blob/master/docs/README.md) folder.
 
 # Library
 
 The IOTA Pico Framework is a multi-layered set of object oriented JavaScript libraries for use with the IOTA tangle.
 
-If you don't want to use the layered versions of the libraries consider using the  ready bundled versions:
+If you don't want to use the layered versions of the libraries consider using the ready bundled versions:
+
 * [@iota-pico/lib-browser](https://github.com/iota-pico/lib-browser)
 * [@iota-pico/lib-nodejs](https://github.com/iota-pico/lib-nodejs)
 
@@ -62,10 +63,13 @@ Come and find us on the IOTA [Discord](https://discordapp.com/invite/fNGZXvh) de
 # Donations
 
 IOTA donations are always welcome :smile:
+
+![QR Code for Trinity](https://raw.githubusercontent.com/iota-pico/api/master/donation.png)
+
 ```shell
 QWJXX99QDEYWUWXEGA9QXSNOWOKHMFKCMSZTXDFLRZAFQRPQTHQDXSZWQQTAHNDNRYHMIKJYWQLKTFHBWSAOJDHAMB
 ```
 
 # License
 
-This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/iota-pico/api/blob/master/LICENSE) file for details.
