@@ -62,7 +62,7 @@ describe("ApiClient", () => {
                 transactionsToRequest: 12,
                 duration: 13
             });
-            networkClientStub.postJson = mock;
+            networkClientStub.json = mock;
 
             chai.expect(await obj.getNodeInfo()).to.deep.equal({
                 appName: "myApp",
@@ -99,7 +99,7 @@ describe("ApiClient", () => {
                 }],
                 duration: 1
             });
-            networkClientStub.postJson = mock;
+            networkClientStub.json = mock;
 
             chai.expect(await obj.getNeighbors()).to.deep.equal({
                 neighbors: [{
@@ -155,7 +155,7 @@ describe("ApiClient", () => {
                 addedNeighbors: 10,
                 duration: 1
             });
-            networkClientStub.postJson = mock;
+            networkClientStub.json = mock;
 
             chai.expect(await obj.addNeighbors({
                 uris: ["udp://1.1.1.1:443"]
@@ -208,7 +208,7 @@ describe("ApiClient", () => {
                 removedNeighbors: 10,
                 duration: 1
             });
-            networkClientStub.postJson = mock;
+            networkClientStub.json = mock;
 
             chai.expect(await obj.removeNeighbors({
                 uris: ["udp://1.1.1.1:443"]
@@ -227,7 +227,7 @@ describe("ApiClient", () => {
                 hashes: ["AAA"],
                 duration: 1
             });
-            networkClientStub.postJson = mock;
+            networkClientStub.json = mock;
 
             chai.expect(await obj.getTips()).to.deep.equal({
                 hashes: ["AAA"],
@@ -279,7 +279,7 @@ describe("ApiClient", () => {
                 ],
                 duration: 1
             });
-            networkClientStub.postJson = mock;
+            networkClientStub.json = mock;
 
             chai.expect(await obj.findTransactions({
                 addresses: ["BBBBB"]
@@ -334,7 +334,7 @@ describe("ApiClient", () => {
                 trytes: ["AAA"],
                 duration: 1
             });
-            networkClientStub.postJson = mock;
+            networkClientStub.json = mock;
 
             chai.expect(await obj.getTrytes({
                 hashes: ["BBB"]
@@ -415,7 +415,7 @@ describe("ApiClient", () => {
                 states: [true],
                 duration: 1
             });
-            networkClientStub.postJson = mock;
+            networkClientStub.json = mock;
 
             chai.expect(await obj.getInclusionStates({
                 transactions: ["BBB"],
@@ -499,7 +499,7 @@ describe("ApiClient", () => {
                 milestoneIndex: 123,
                 duration: 1
             });
-            networkClientStub.postJson = mock;
+            networkClientStub.json = mock;
 
             chai.expect(await obj.getBalances({
                 addresses: ["BBB"],
@@ -581,7 +581,7 @@ describe("ApiClient", () => {
                 trunkTransaction: "12345",
                 branchTransaction: "56789"
             });
-            networkClientStub.postJson = mock;
+            networkClientStub.json = mock;
 
             chai.expect(await obj.getTransactionsToApprove({
                 depth: 10
@@ -729,7 +729,7 @@ describe("ApiClient", () => {
             const mock = sinon.mock().resolves(<IAttachToTangleResponse>{
                 trytes: ["12345"]
             });
-            networkClientStub.postJson = mock;
+            networkClientStub.json = mock;
 
             chai.expect(await obj.attachToTangle({
                 trunkTransaction: "AAAA",
@@ -747,7 +747,7 @@ describe("ApiClient", () => {
         it("can be called", async () => {
             const obj = new ApiClient(networkClientStub);
             const mock = sinon.mock().resolves();
-            networkClientStub.postJson = mock;
+            networkClientStub.json = mock;
 
             chai.expect(await obj.interruptAttachingToTangle()).to.deep.equal(undefined);
             chai.expect(mock.args[0][0].command).to.be.equal("interruptAttachingToTangle");
@@ -792,7 +792,7 @@ describe("ApiClient", () => {
         it("can be called", async () => {
             const obj = new ApiClient(networkClientStub);
             const mock = sinon.mock().resolves();
-            networkClientStub.postJson = mock;
+            networkClientStub.json = mock;
 
             chai.expect(await obj.broadcastTransactions({
                 trytes: ["CCCC"]
@@ -839,7 +839,7 @@ describe("ApiClient", () => {
         it("can be called", async () => {
             const obj = new ApiClient(networkClientStub);
             const mock = sinon.mock().resolves();
-            networkClientStub.postJson = mock;
+            networkClientStub.json = mock;
 
             chai.expect(await obj.storeTransactions({
                 trytes: ["CCCC"]
@@ -855,7 +855,7 @@ describe("ApiClient", () => {
                 hashes: ["CCCC"],
                 duration: 1
             });
-            networkClientStub.postJson = mock;
+            networkClientStub.json = mock;
 
             chai.expect(await obj.getMissingTransactions()).to.deep.equal({
                 hashes: ["CCCC"],
@@ -907,7 +907,7 @@ describe("ApiClient", () => {
                 info: "Blah",
                 duration: 1
             });
-            networkClientStub.postJson = mock;
+            networkClientStub.json = mock;
 
             chai.expect(await obj.checkConsistency({
                 tails: ["CCCC"]
@@ -960,7 +960,7 @@ describe("ApiClient", () => {
             const mock = sinon.mock().resolves(<IWereAddressesSpentFromResponse>{
                 states: [true]
             });
-            networkClientStub.postJson = mock;
+            networkClientStub.json = mock;
 
             chai.expect(await obj.wereAddressesSpentFrom({
                 addresses: ["CCCC"]
@@ -975,7 +975,7 @@ describe("ApiClient", () => {
         it("can fail with no additional information", async () => {
             const obj = new ApiClient(networkClientStub);
             const mock = sinon.mock().rejects(new Error("blah"));
-            networkClientStub.postJson = mock;
+            networkClientStub.json = mock;
             try {
                 await obj.getNodeInfo();
             } catch (err) {
@@ -991,7 +991,7 @@ describe("ApiClient", () => {
                     response: "kjhkjhkj"
                 }
             });
-            networkClientStub.postJson = mock;
+            networkClientStub.json = mock;
             try {
                 await obj.getNodeInfo();
             } catch (err) {
@@ -1007,7 +1007,7 @@ describe("ApiClient", () => {
                     errorResponse: JSON.stringify({ error: "foo" })
                 }
             });
-            networkClientStub.postJson = mock;
+            networkClientStub.json = mock;
             try {
                 await obj.getNodeInfo();
             } catch (err) {
@@ -1024,7 +1024,7 @@ describe("ApiClient", () => {
                     errorResponse: JSON.stringify({ exception: "foo" })
                 }
             });
-            networkClientStub.postJson = mock;
+            networkClientStub.json = mock;
             try {
                 await obj.getNodeInfo();
             } catch (err) {
@@ -1041,7 +1041,7 @@ describe("ApiClient", () => {
                     errorResponse: JSON.stringify({ other: "foo" })
                 }
             });
-            networkClientStub.postJson = mock;
+            networkClientStub.json = mock;
             try {
                 await obj.getNodeInfo();
             } catch (err) {

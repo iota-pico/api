@@ -1125,7 +1125,7 @@ export class ApiClient implements IApiClient {
             value: command,
             enumerable: true
         });
-        return this._networkClient.postJson&lt;T, U&gt;(request, undefined, this.createHeaders())
+        return this._networkClient.json&lt;T, U&gt;(request, "POST", undefined, this.createHeaders())
             .then((response) =&gt; {
                 this._logger.info(`===&gt; ${command}`, response);
                 return response;
