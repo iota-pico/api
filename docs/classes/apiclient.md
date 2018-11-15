@@ -54,7 +54,7 @@ Create an instance of ApiClient.
 
 **Parameters:**
 
-| Param | Type | Default value | Description |
+| Name | Type | Default value | Description |
 | ------ | ------ | ------ | ------ |
 | networkClient | `INetworkClient` | - |  The network client to communicate through. |
 | `Default value` apiVersion | `string` | &quot;1&quot; |  The API version to send with the requests |
@@ -81,7 +81,7 @@ Add a list of neighbors to your node. It should be noted that this is only tempo
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | request | [IAddNeighborsRequest](../interfaces/iaddneighborsrequest.md) |  The add neighbours request object. |
 
@@ -103,7 +103,7 @@ Attaches the specified transactions (trytes) to the Tangle by doing Proof of Wor
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | request | [IAttachToTangleRequest](../interfaces/iattachtotanglerequest.md) |  The attachToTangle request object. |
 
@@ -125,7 +125,7 @@ Broadcast a list of transactions to all neighbors. The input trytes for this cal
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | request | [IBroadcastTransactionsRequest](../interfaces/ibroadcasttransactionsrequest.md) |  The broadcastTransactions request object. |
 
@@ -147,7 +147,7 @@ Check the consistency of tail hashes.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | request | [ICheckConsistencyRequest](../interfaces/icheckconsistencyrequest.md) |  The checkConsistency request object. |
 
@@ -169,7 +169,7 @@ Find the transactions which match the specified input and return. All input valu
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | request | [IFindTransactionsRequest](../interfaces/ifindtransactionsrequest.md) |  The find transactions request object. |
 
@@ -191,7 +191,7 @@ Returns the confirmed balance which a list of addresses have at the latest confi
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | request | [IGetBalancesRequest](../interfaces/igetbalancesrequest.md) |  The getBalances request object. |
 
@@ -213,7 +213,7 @@ Get the inclusion states of a set of transactions. This is for determining if a 
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | request | [IGetInclusionStatesRequest](../interfaces/igetinclusionstatesrequest.md) |  The get inclusion states request object. |
 
@@ -299,7 +299,7 @@ Tip selection which returns trunkTransaction and branchTransaction. The input va
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | request | [IGetTransactionsToApproveRequest](../interfaces/igettransactionstoapproverequest.md) |  The getTransactionsToApprove request object. |
 
@@ -321,7 +321,7 @@ Returns the raw transaction data (trytes) of a specific transaction. These tryte
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | request | [IGetTrytesRequest](../interfaces/igettrytesrequest.md) |  The get trytes request object. |
 
@@ -359,7 +359,7 @@ Removes a list of neighbors from your node. This is only temporary, and if you h
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | request | [IRemoveNeighborsRequest](../interfaces/iremoveneighborsrequest.md) |  The remove neighbours request object. |
 
@@ -381,7 +381,7 @@ Store transactions into the local storage. The trytes to be used for this call a
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | request | [IStoreTransactionsRequest](../interfaces/istoretransactionsrequest.md) |  The storeTransactions request object. |
 
@@ -403,7 +403,7 @@ Have the requested addresses been spent from already.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | request | [IWereAddressesSpentFromRequest](../interfaces/iwereaddressesspentfromrequest.md) |  The wereAddressesSpentFrom request object. |
 

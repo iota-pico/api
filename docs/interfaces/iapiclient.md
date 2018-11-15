@@ -51,7 +51,7 @@ Add a list of neighbors to your node. It should be noted that this is only tempo
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | request | [IAddNeighborsRequest](iaddneighborsrequest.md) |
 
@@ -71,7 +71,7 @@ Attaches the specified transactions (trytes) to the Tangle by doing Proof of Wor
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | request | [IAttachToTangleRequest](iattachtotanglerequest.md) |  The attachToTangle request object. |
 
@@ -91,7 +91,7 @@ Broadcast a list of transactions to all neighbors. The input trytes for this cal
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | request | [IBroadcastTransactionsRequest](ibroadcasttransactionsrequest.md) |  The broadcastTransactions request object. |
 
@@ -111,7 +111,7 @@ Check the consistency of tail hashes.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | request | [ICheckConsistencyRequest](icheckconsistencyrequest.md) |  The checkConsistency request object. |
 
@@ -131,7 +131,7 @@ Find the transactions which match the specified input and return. All input valu
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | request | [IFindTransactionsRequest](ifindtransactionsrequest.md) |
 
@@ -151,7 +151,7 @@ Returns the confirmed balance which a list of addresses have at the latest confi
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | request | [IGetBalancesRequest](igetbalancesrequest.md) |  The getBalances request object. |
 
@@ -171,7 +171,7 @@ Get the inclusion states of a set of transactions. This is for determining if a 
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | request | [IGetInclusionStatesRequest](igetinclusionstatesrequest.md) |
 
@@ -247,7 +247,7 @@ Tip selection which returns trunkTransaction and branchTransaction. The input va
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | request | [IGetTransactionsToApproveRequest](igettransactionstoapproverequest.md) |  The getTransactionsToApprove request object. |
 
@@ -267,7 +267,7 @@ Returns the raw transaction data (trytes) of a specific transaction. These tryte
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | request | [IGetTrytesRequest](igettrytesrequest.md) |
 
@@ -301,7 +301,7 @@ Removes a list of neighbors from your node. This is only temporary, and if you h
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | request | [IRemoveNeighborsRequest](iremoveneighborsrequest.md) |
 
@@ -321,7 +321,7 @@ Store transactions into the local storage. The trytes to be used for this call a
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | request | [IStoreTransactionsRequest](istoretransactionsrequest.md) |  The storeTransactions request object. |
 
@@ -341,7 +341,7 @@ Have the requested addresses been spent from already.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | request | [IWereAddressesSpentFromRequest](iwereaddressesspentfromrequest.md) |  The wereAddressesSpentFrom request object. |
 
