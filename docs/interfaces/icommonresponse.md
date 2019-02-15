@@ -3,6 +3,7 @@
 # Interface: ICommonResponse
 
 Represents the common response from all commands.
+
 *__interface__*: 
 
 ## Hierarchy

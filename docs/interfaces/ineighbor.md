@@ -3,6 +3,7 @@
 # Interface: INeighbor
 
 Represents the a neighbor.
+
 *__interface__*: 
 
 ## Hierarchy

@@ -3,6 +3,7 @@
 # Interface: IGetNeighborsResponse
 
 Represents the response from getNeighbors command.
+
 *__interface__*: 
 
 ## Hierarchy

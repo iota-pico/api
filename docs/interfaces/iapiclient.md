@@ -3,6 +3,7 @@
 # Interface: IApiClient
 
 Represents a client for performing communication with a node api.
+
 *__interface__*: 
 
 ## Hierarchy

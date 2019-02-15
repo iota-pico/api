@@ -3,6 +3,7 @@
 # Interface: IGetTipsResponse
 
 Represents the response from getTips command.
+
 *__interface__*: 
 
 ## Hierarchy

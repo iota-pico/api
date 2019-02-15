@@ -3,6 +3,7 @@
 # Interface: IAddNeighborsResponse
 
 Represents the response from addNeighbors command.
+
 *__interface__*: 
 
 ## Hierarchy

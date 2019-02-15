@@ -3,6 +3,7 @@
 # Interface: IAttachToTangleResponse
 
 Represents the response from attachToTangle command.
+
 *__interface__*: 
 
 ## Hierarchy

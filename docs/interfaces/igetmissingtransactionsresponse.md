@@ -3,6 +3,7 @@
 # Interface: IGetMissingTransactionsResponse
 
 Represents the response from getMissingTransactions command.
+
 *__interface__*: 
 
 ## Hierarchy

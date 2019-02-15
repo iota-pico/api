@@ -3,6 +3,7 @@
 # Interface: IBroadcastTransactionsRequest
 
 Represents the request for broadcastTransactions command.
+
 *__interface__*: 
 
 ## Hierarchy

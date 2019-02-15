@@ -3,6 +3,7 @@
 # Interface: IRemoveNeighborsResponse
 
 Represents the response from removeNeighbors command.
+
 *__interface__*: 
 
 ## Hierarchy

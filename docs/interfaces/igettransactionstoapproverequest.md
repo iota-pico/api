@@ -3,6 +3,7 @@
 # Interface: IGetTransactionsToApproveRequest
 
 Represents the request for getTransactionsToApprove command.
+
 *__interface__*: 
 
 ## Hierarchy

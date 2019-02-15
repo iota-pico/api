@@ -3,6 +3,7 @@
 # Interface: IFindTransactionsRequest
 
 Represents the request for findTransactions command.
+
 *__interface__*: 
 
 ## Hierarchy

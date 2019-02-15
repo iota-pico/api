@@ -3,6 +3,7 @@
 # Interface: IWereAddressesSpentFromResponse
 
 Represents the response from wereAddressesSpentFrom command.
+
 *__interface__*: 
 
 ## Hierarchy

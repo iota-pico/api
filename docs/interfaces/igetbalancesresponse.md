@@ -3,6 +3,7 @@
 # Interface: IGetBalancesResponse
 
 Represents the response from getBalances command.
+
 *__interface__*: 
 
 ## Hierarchy

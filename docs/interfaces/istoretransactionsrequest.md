@@ -3,6 +3,7 @@
 # Interface: IStoreTransactionsRequest
 
 Represents the request for storeTransactions command.
+
 *__interface__*: 
 
 ## Hierarchy

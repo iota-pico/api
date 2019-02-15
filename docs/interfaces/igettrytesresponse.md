@@ -3,6 +3,7 @@
 # Interface: IGetTrytesResponse
 
 Represents the response from getTrytes command.
+
 *__interface__*: 
 
 ## Hierarchy

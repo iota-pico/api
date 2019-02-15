@@ -3,6 +3,7 @@
 # Interface: IGetInclusionStatesResponse
 
 Represents the response from getInclusionStates command.
+
 *__interface__*: 
 
 ## Hierarchy

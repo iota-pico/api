@@ -3,6 +3,7 @@
 # Interface: IGetNodeInfoResponse
 
 Represents the response from getNodeInfo command.
+
 *__interface__*: 
 
 ## Hierarchy

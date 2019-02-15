@@ -3,6 +3,7 @@
 # Interface: IGetInclusionStatesRequest
 
 Represents the request for getInclusionStates command.
+
 *__interface__*: 
 
 ## Hierarchy
